@@ -122,7 +122,7 @@ const counterObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 });
 
-// Formulário de contato (se existir)
+// Formulário de contato
 const contactForm = document.querySelector('#contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
@@ -146,7 +146,7 @@ if (contactForm) {
   });
 }
 
-// Back to top button
+// botao de voltar ao topo
 const backToTopBtn = document.createElement('button');
 backToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
 backToTopBtn.className = 'fixed bottom-20 right-6 bg-blue-600 hover:bg-blue-700 text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 opacity-0 pointer-events-none z-40';
@@ -171,7 +171,7 @@ backToTopBtn.addEventListener('click', () => {
   });
 });
 
-// Preloader (opcional)
+// Preloader 
 window.addEventListener('load', () => {
   const preloader = document.querySelector('.preloader');
   if (preloader) {
@@ -202,7 +202,7 @@ document.querySelectorAll('[data-tooltip]').forEach(element => {
   });
 });
 
-// Debounce function para otimizar performance
+// Funçao Debounce  para otimizar performance
 function debounce(func, wait) {
   let timeout;
   return function executedFunction(...args) {
