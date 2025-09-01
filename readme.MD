@@ -1,6 +1,6 @@
 # ✂️ CorteAzulTea - Barbeiro Especializado em Crianças Autistas
 
-![CorteAzulTea](img/capaprojeto.png)
+![CorteAzulTea](https://i.imgur.com/BIm0qm4.png)
 
 ##  **Sobre o Projeto**
 
