@@ -1,0 +1,256 @@
+/* Configurações globais */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navegação */
+.nav-link {
+  @apply text-black hover:text-blue-700 font-medium transition-colors duration-300 relative;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+/* Botões e cards já existentes */
+.btn-whatsapp {
+  @apply bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold;
+}
+
+.btn-primary {
+  @apply bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold;
+}
+
+.card {
+  @apply bg-white shadow p-6 rounded-xl;
+}
+
+.cta-button {
+  @apply inline-flex items-center justify-center transition-all duration-300;
+}
+
+/* Configurações específicas para vídeos */
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Configurações para imagens de avaliação */
+.avaliacao-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avaliacao-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.avaliacao-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.avaliacao-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Floating WhatsApp */
+.floating-whatsapp {
+  @apply fixed bottom-6 right-6 bg-blue-700 hover:bg-blue-800 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg text-2xl z-50 transition-all duration-300;
+  background-image: url('img/whatsapp.svg');
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.floating-whatsapp:hover {
+  @apply transform scale-110 shadow-xl;
+}
+
+/* Video container */
+.video-container iframe {
+  @apply rounded-xl shadow;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 1s ease forwards;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+.delay-200 { animation-delay: 0.2s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-800 { animation-delay: 0.8s; }
+
+/* Efeitos hover */
+.hover-lift {
+  @apply transition-all duration-300;
+}
+
+.hover-lift:hover {
+  @apply transform -translate-y-2 shadow-xl;
+}
+
+/* Gradientes personalizados */
+.gradient-blue {
+  background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%);
+}
+
+.gradient-autism {
+  background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%);
+}
+
+/* Cards com efeito glassmorphism */
+.glass-card {
+  @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-xl;
+}
+
+/* Loading spinner */
+.spinner {
+  @apply animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600;
+}
+
+/* Responsividade melhorada */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .floating-whatsapp {
+    @apply w-12 h-12;
+    background-size: 20px;
+  }
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-blue-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-800;
+}
+
+/* Efeitos de foco para acessibilidade */
+button:focus,
+a:focus {
+  @apply outline-none ring-2 ring-blue-700 ring-offset-2;
+}
+
+/* Animações de entrada para elementos */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efeito parallax suave */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
