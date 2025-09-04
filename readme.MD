@@ -130,12 +130,7 @@ This project is for personal and commercial use by Jonathan Rodrigues. All right
 - **Performance**: Fast and efficient loading
 
 ## Contact
-
-- **Jonathan Rodrigues**: ASD Specialized Barber
-- **WhatsApp**: (51) 98660-4404
 - **Instagram**: @corteazultea
-- **Location**: Viamão/RS, Brazil
-
 ---
 
 ⭐ **If this project helped you, leave a star in the repository!**
