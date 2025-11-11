@@ -92,25 +92,6 @@ ProjetoCorteAzulTea/
 # Clone the repository
 git clone https://github.com/your-username/corteazultea.git
 
-# Enter the folder
-cd corteazultea
-
-# Open index.html in browser
-# Or use a local server:
-python -m http.server 8000
-# Access: http://localhost:8000
-```
-
-## Deployment
-
-### Vercel
-Successfully deployed on Vercel platform.
-
-### Alternative Platforms
-- **GitHub Pages**: Enable in repository settings
-- **Netlify**: Connect repository for automatic deployment
-- **Firebase Hosting**: Google's hosting solution
-
 ## PWA Features
 
 - **Manifest**: Installation configuration
@@ -129,8 +110,4 @@ This project is for personal and commercial use by Jonathan Rodrigues. All right
 - **SEO**: Optimized for search engines
 - **Performance**: Fast and efficient loading
 
-## Contact
-- **Instagram**: @corteazultea
----
-
-⭐ **If this project helped you, leave a star in the repository!**
+⭐ Star the repository!
