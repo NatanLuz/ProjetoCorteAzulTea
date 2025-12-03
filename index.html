@@ -22,10 +22,10 @@
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#3b82f6">
 </head>
-<body class="font-sans bg-white text-black scroll-smooth">
+<body class="font-sans bg-gray-50 text-black scroll-smooth">
 
 <!-- Navegação -->
-<nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300" id="navbar">
+<nav class="fixed top-0 w-full bg-gray-50/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300" id="navbar">
   <div class="max-w-6xl mx-auto px-6 py-4">
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-4">
@@ -34,10 +34,7 @@
       <div class="hidden md:flex items-center space-x-8">
         <a href="#sobre" class="nav-link">Sobre</a>
         <a href="#diferenciais" class="nav-link">Diferenciais</a>
-        <a href="#como-funciona" class="nav-link">Como Funciona</a>
         <a href="#precos" class="nav-link">Preços</a>
-        <a href="#galeria" class="nav-link">Galeria</a>
-        <a href="#movimento-pela-causa" class="nav-link">Movimento pela Causa</a>
         <a href="#depoimentos" class="nav-link">Depoimentos</a>
         <a href="#contato" class="nav-link">Contato</a>
       </div>
@@ -50,14 +47,11 @@
   </div>
 
   <!-- Menu Mobile -->
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+  <div id="mobile-menu" class="hidden md:hidden bg-gray-50 border-t">
     <div class="px-6 py-4 space-y-4">
       <a href="#sobre" class="block py-2 text-gray-600 hover:text-blue-600">Sobre</a>
       <a href="#diferenciais" class="block py-2 text-gray-600 hover:text-blue-600">Diferenciais</a>
-      <a href="#como-funciona" class="block py-2 text-gray-600 hover:text-blue-600">Como Funciona</a>
       <a href="#precos" class="block py-2 text-gray-600 hover:text-blue-600">Preços</a>
-      <a href="#galeria" class="block py-2 text-gray-600 hover:text-blue-600">Galeria</a>
-      <a href="#movimento-pela-causa" class="block py-2 text-gray-600 hover:text-blue-600">Movimento pela Causa</a>
       <a href="#depoimentos" class="block py-2 text-gray-600 hover:text-blue-600">Depoimentos</a>
       <a href="#contato" class="block py-2 text-gray-600 hover:text-blue-600">Contato</a>
     </div>
@@ -76,10 +70,7 @@
       <p class="mb-8 text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
         Atendimento especializado, ambiente acolhedor e experiência humanizada para toda a família.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a href="https://wa.me/5551986604404" target="_blank" rel="noopener" class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-          <img src="img/whatsapp.svg" alt="WhatsApp" class="w-6 h-6 mr-2 inline"> Agendar pelo WhatsApp
-        </a>
+      <div class="flex justify-center items-center">
         <a href="#sobre" class="cta-button bg-blue-700/20 hover:bg-blue-700/30 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 backdrop-blur-sm">
           <i class="fas fa-info-circle mr-2"></i> Saiba Mais
         </a>
@@ -105,7 +96,7 @@
       </p>
       <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-8 rounded-2xl mb-8">
         <p class="text-lg text-black leading-relaxed">
-          <span class="text-2xl">👋</span> Olá! Seja muito bem-vindo(a) ao <strong>Corte Azul</strong> <span class="text-blue-700">✂💙</span><br>
+        </span>Seja muito bem-vindo(a) ao <strong>Corte Azul</strong> <span class="text-blue-700">✂💙</span><br>
           Sou especialista em cortes de cabelo para crianças autistas, com carinho, paciência aonde quer que seja <span class="text-blue-700">💙</span>.
         </p>
       </div>
@@ -127,7 +118,7 @@
           <span class="text-2xl">✂️</span>
         </div>
         <h3 class="text-xl font-semibold mb-3 text-black">Barbeiro Especialista TEA</h3>
-        <p class="text-black">Atendimento humanizado para crianças autistas com técnicas especializadas.</p>
+        <p class="text-black">Atendimento humanizado para crianças AUTISTAS T.E.A com técnicas especializadas.</p>
       </div>
     </div>
     <div class="card hover-lift group">
@@ -154,7 +145,7 @@
           <span class="text-2xl">🎓</span>
         </div>
         <h3 class="text-xl font-semibold mb-3 text-black">Formação Contínua</h3>
-        <p class="text-black">Cursando Terapia Ocupacional para se especializar no atendimento de crianças autistas.</p>
+        <p class="text-black">Cursando Bacharelado em Terapia Ocupacional para se especializar no atendimento de crianças autistas.</p>
       </div>
     </div>
   </div>
@@ -208,348 +199,294 @@
   </div>
 </section>
 
-<!-- Como Funciona -->
-<section id="como-funciona" class="py-16 px-6 max-w-6xl mx-auto text-center">
-  <h2 class="text-3xl font-bold mb-6">Como Funciona</h2>
-  <div class="grid md:grid-cols-3 gap-8 mb-12">
-    <div>
-      <h3 class="text-xl font-semibold mb-2">1. Agende pelo WhatsApp</h3>
-      <p class="text-gray-600 mb-3">Escolha o melhor horário para sua criança.</p>
-      <div class="bg-yellow-100 border-l-4 border-yellow-500 p-3 rounded">
-        <p class="text-sm text-yellow-800 font-semibold">
-          <i class="fas fa-exclamation-triangle mr-1"></i>
-          <strong>IMPORTANTE:</strong> Preencha a Ficha de Anamnese antes do atendimento para um serviço mais personalizado e seguro.
-        </p>
-      </div>
-    </div>
-    <div>
-      <h3 class="text-xl font-semibold mb-2">2. Atendimento Adaptado</h3>
-      <p class="text-gray-600">Ambiente preparado e técnicas acolhedoras.</p>
-    </div>
-    <div>
-      <h3 class="text-xl font-semibold mb-2">3. Experiência Positiva</h3>
-      <p class="text-gray-600">Corte tranquilo, seguro e sem estresse.</p>
-    </div>
-  </div>
-
-  <!-- Vídeo Atendimento -->
-  <div class="relative w-full max-w-3xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video mb-12">
-    <video class="w-full h-full object-cover" controls>
-      <source src="img/comofuncionaatendimento.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <!-- Transformação do Atendimento -->
-  <div class="max-w-5xl mx-auto">
-    <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-8 rounded-2xl shadow-lg mb-8">
-      <div class="text-center mb-8">
-        <h3 class="text-3xl font-bold text-black mb-4">
-          Seu filho chora, se agita e não deixa cortar o cabelo?
-        </h3>
-        <p class="text-lg text-gray-700 mb-6">
-          Você já tentou de tudo… mas nada funciona?
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <!-- Problema -->
-        <div class="bg-white/80 p-6 rounded-xl shadow-md">
-          <h4 class="text-xl font-bold text-red-600 mb-4 flex items-center">
-            <i class="fas fa-exclamation-triangle mr-2"></i>
-            O Problema
-          </h4>
-          <ul class="space-y-3 text-gray-700">
-            <li class="flex items-start">
-              <i class="fas fa-times-circle text-red-500 mr-2 mt-1"></i>
-              <span>Cada corte parece uma batalha</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-times-circle text-red-500 mr-2 mt-1"></i>
-              <span>Barulho, toques inesperados, salão cheio</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-times-circle text-red-500 mr-2 mt-1"></i>
-              <span>Ele sofre. Você se frustra</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-times-circle text-red-500 mr-2 mt-1"></i>
-              <span>"Será que meu filho nunca vai conseguir?"</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Solução -->
-        <div class="bg-white/80 p-6 rounded-xl shadow-md">
-          <h4 class="text-xl font-bold text-green-600 mb-4 flex items-center">
-            <i class="fas fa-check-circle mr-2"></i>
-            A Solução Corte Azul
-          </h4>
-          <ul class="space-y-3 text-gray-700">
-            <li class="flex items-start">
-              <i class="fas fa-heart text-green-500 mr-2 mt-1"></i>
-              <span>Com paciência, carinho e respeito ao tempo dele</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-heart text-green-500 mr-2 mt-1"></i>
-              <span>Ele se sente seguro</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-heart text-green-500 mr-2 mt-1"></i>
-              <span>Confia e colabora</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-heart text-green-500 mr-2 mt-1"></i>
-              <span>E sai sorrindo</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Diferenciais -->
-      <div class="bg-white/90 p-6 rounded-xl shadow-md">
-        <h4 class="text-xl font-bold text-blue-600 mb-4 text-center">
-          <i class="fas fa-star mr-2"></i>
-          Nossos Diferenciais
-        </h4>
-        <div class="grid md:grid-cols-3 gap-4 text-center">
-          <div class="p-4">
-            <i class="fas fa-home text-2xl text-blue-600 mb-2"></i>
-            <p class="font-semibold text-gray-800">Atendimento no conforto da sua casa</p>
-          </div>
-          <div class="p-4">
-            <i class="fas fa-brain text-2xl text-blue-600 mb-2"></i>
-            <p class="font-semibold text-gray-800">Preparo sensorial e linguagem acessível</p>
-          </div>
-          <div class="p-4">
-            <i class="fas fa-hands-helping text-2xl text-blue-600 mb-2"></i>
-            <p class="font-semibold text-gray-800">Empatia de verdade</p>
-          </div>
-        </div>
-        <div class="text-center mt-6">
-          <p class="text-lg font-bold text-blue-700 italic">
-            É assim que transformamos um momento de medo em confiança e alegria.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Tabela de Preços -->
 <section id="precos" class="bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-6">
-  <div class="max-w-6xl mx-auto text-center">
-    <div class="animate-fadeInUp">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
       <h2 class="text-4xl md:text-5xl font-bold mb-4 text-black">
-        <span class="text-blue-700">Preços</span>
+        <span class="text-blue-700">Serviços</span>
       </h2>
-      <p class="text-lg text-black mb-12 max-w-3xl mx-auto">
-        Investimento justo para um atendimento especializado e humanizado
-      </p>
     </div>
 
     <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-      <!-- Atendimento na Barbearia TEA -->
-      <div class="card hover-lift group text-center relative">
-        <div class="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg h-full">
-          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
-            <i class="fas fa-cut text-2xl text-blue-600"></i>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-black">Atendimento na Barbearia</h3>
+      <!-- Corte Kids -->
+      <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <div class="p-8">
           <div class="mb-6">
-            <span class="text-4xl font-bold text-blue-700">85 R$</span>
-            <span class="text-gray-600">/atendimento</span>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Corte Kids — R$ 45</h3>
+            <p class="text-sm text-gray-600 mb-3">Para crianças sem dificuldade no momento do corte.</p>
+            <p class="text-sm font-medium text-gray-700 mb-4">
+              <i class="fas fa-clock text-green-600 mr-2"></i>
+              Duração: 40–45 min
+            </p>
           </div>
-          <p class="text-black mb-6 font-semibold">Criança TEA</p>
-          <ul class="text-left space-y-3 mb-8">
-            <li class="flex items-center">
-              <i class="fas fa-check text-green-500 mr-3"></i>
-              <span class="text-black">Atendimento especializado TEA</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-check text-green-500 mr-3"></i>
-              <span class="text-black">Ambiente acolhedor</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-check text-green-500 mr-3"></i>
-              <span class="text-black">Técnicas adaptadas</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-check text-green-500 mr-3"></i>
-              <span class="text-black">Tempo sem pressa</span>
-            </li>
-          </ul>
-          <a href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar um atendimento na barbearia para 85 R$" target="_blank" rel="noopener"
-             class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center">
-            <i class="fab fa-whatsapp mr-2"></i>
-            Agendar Atendimento
-          </a>
-        </div>
-      </div>
 
-      <!-- Atendimento a Domicílio TEA -->
-      <div class="card hover-lift group text-center relative transform scale-105">
-        <div class="bg-gradient-to-br from-blue-600 to-blue-700 p-1 rounded-2xl shadow-xl">
-          <div class="bg-white p-8 rounded-xl h-full">
-            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span class="bg-yellow-400 text-black px-4 py-1 rounded-full text-sm font-bold">MAIS POPULAR</span>
-            </div>
-            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
-              <i class="fas fa-home text-2xl text-blue-600"></i>
-            </div>
-            <h3 class="text-2xl font-bold mb-4 text-black">Atendimento a Domicílio</h3>
-            <div class="mb-6">
-              <span class="text-4xl font-bold text-blue-700">100 R$</span>
-              <span class="text-gray-600">/atendimento</span>
-            </div>
-            <p class="text-black mb-6 font-semibold">Criança TEA - Viamão</p>
-            <ul class="text-left space-y-3 mb-8">
-              <li class="flex items-center">
-                <i class="fas fa-check text-green-500 mr-3"></i>
-                <span class="text-black">Atendimento no conforto de casa</span>
+          <div class="mb-6">
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">
+              Um atendimento simples, tranquilo e direto, ideal para crianças que se sentem confortáveis com o processo e participam naturalmente.
+            </p>
+            
+            <p class="text-sm font-semibold text-gray-800 mb-3">Indicado para crianças que:</p>
+            <ul class="space-y-2 mb-4 text-sm text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-600 mr-2">•</span>
+                <span>cortam sem resistência;</span>
               </li>
-              <li class="flex items-center">
-                <i class="fas fa-check text-green-500 mr-3"></i>
-                <span class="text-black">Ambiente familiar e seguro</span>
+              <li class="flex items-start">
+                <span class="text-green-600 mr-2">•</span>
+                <span>permanecem calmas durante o atendimento;</span>
               </li>
-              <li class="flex items-center">
-                <i class="fas fa-check text-green-500 mr-3"></i>
-                <span class="text-black">Técnicas especializadas TEA</span>
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check text-green-500 mr-3"></i>
-                <span class="text-black">Flexibilidade de horário</span>
+              <li class="flex items-start">
+                <span class="text-green-600 mr-2">•</span>
+                <span>não apresentam ansiedade ou desconforto.</span>
               </li>
             </ul>
-            <a href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar um atendimento a domicílio para 100 R$" target="_blank" rel="noopener"
-               class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center">
-              <i class="fab fa-whatsapp mr-2"></i>
-              Agendar Domicílio
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Corte Kids Não TEA -->
-      <div class="card hover-lift group text-center relative">
-        <div class="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg h-full">
-          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-200 transition-colors">
-            <i class="fas fa-child text-2xl text-green-600"></i>
+            <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+              <p class="text-sm font-semibold text-gray-800 mb-1">Objetivo:</p>
+              <p class="text-sm text-gray-700">
+                um corte leve, rápido e bem-feito, em um ambiente acolhedor.
+              </p>
+            </div>
           </div>
-          <h3 class="text-2xl font-bold mb-4 text-black">Corte Kids</h3>
-          <div class="mb-6">
-            <span class="text-4xl font-bold text-green-700">60 R$</span>
-            <span class="text-gray-600">/atendimento</span>
-          </div>
-          <p class="text-black mb-6 font-semibold">Crianças (NÃO TEA)</p>
-          <ul class="text-left space-y-3 mb-8">
-            <li class="flex items-center">
-              <i class="fas fa-check text-green-500 mr-3"></i>
-              <span class="text-black">Corte infantil especializado</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-check text-green-500 mr-3"></i>
-              <span class="text-black">Ambiente acolhedor</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-check text-green-500 mr-3"></i>
-              <span class="text-black">Atendimento humanizado</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-check text-green-500 mr-3"></i>
-              <span class="text-black">Paciência e carinho</span>
-            </li>
-          </ul>
-          <a href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar um corte kids para 60 R$" target="_blank" rel="noopener"
+
+          <a href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar um Corte Kids para R$ 45" target="_blank" rel="noopener"
              class="cta-button bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center">
             <i class="fab fa-whatsapp mr-2"></i>
             Agendar Corte Kids
           </a>
         </div>
       </div>
-    </div>
 
-    <!-- Informações Adicionais -->
-    <div class="mt-12 bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg max-w-4xl mx-auto">
-      <h3 class="text-2xl font-bold mb-6 text-black">
-        <i class="fas fa-info-circle text-blue-600 mr-2"></i>
-        Informações Importantes
-      </h3>
-      <div class="grid md:grid-cols-2 gap-6 text-left">
-        <div>
-          <h4 class="font-semibold text-black mb-3">Formas de Pagamento</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li class="flex items-center">
-              <i class="fas fa-money-bill-wave text-green-500 mr-2"></i>
-              Dinheiro
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-credit-card text-blue-500 mr-2"></i>
-              Cartão de débito/crédito
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-mobile-alt text-green-600 mr-2"></i>
-              PIX
-            </li>
-          </ul>
+      <!-- Corte Lúdico -->
+      <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <div class="p-8">
+          <div class="mb-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Corte Lúdico — R$ 65</h3>
+            <p class="text-sm text-gray-600 mb-3">Para crianças não-TEA com alguma dificuldade ou ansiedade.</p>
+            <p class="text-sm font-medium text-gray-700 mb-4">
+              <i class="fas fa-clock text-blue-600 mr-2"></i>
+              Duração: 50 min
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">
+              Atendimento com abordagem lúdica e acolhedora, ideal para crianças que precisam de mais tempo, interação e sensibilidade.
+            </p>
+            
+            <p class="text-sm font-semibold text-gray-800 mb-3">Indicado para crianças que:</p>
+            <ul class="space-y-2 mb-4 text-sm text-gray-700">
+              <li class="flex items-start">
+                <span class="text-blue-600 mr-2">•</span>
+                <span>ficam ansiosas ou inquietas;</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-600 mr-2">•</span>
+                <span>tiveram experiências negativas;</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-600 mr-2">•</span>
+                <span>precisam de condução diferenciada.</span>
+              </li>
+            </ul>
+
+            <p class="text-sm font-semibold text-gray-800 mb-3">Utilizamos:</p>
+            <p class="text-sm text-gray-700 mb-4">
+              manejo lúdico, brincadeiras, reforçadores e aproximação gradual.
+            </p>
+
+            <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+              <p class="text-sm font-semibold text-gray-800 mb-1">Objetivo:</p>
+              <p class="text-sm text-gray-700">
+                tornar o corte mais leve, divertido e positivo.
+              </p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar um Corte Lúdico para R$ 65" target="_blank" rel="noopener"
+             class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center">
+            <i class="fab fa-whatsapp mr-2"></i>
+            Agendar Corte Lúdico
+          </a>
         </div>
-        <div>
-          <h4 class="font-semibold text-black mb-3">Políticas</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li class="flex items-center">
-              <i class="fas fa-clock text-blue-500 mr-2"></i>
-              Agendamento obrigatório
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-calendar-times text-orange-500 mr-2"></i>
-              Cancelamento com 24h de antecedência
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-file-alt text-purple-500 mr-2"></i>
-              Ficha de anamnese obrigatória
-            </li>
-          </ul>
+      </div>
+
+      <!-- Corte TEA Especial -->
+      <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <div class="p-8">
+          <div class="mb-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Corte TEA Especial — R$ 85</h3>
+            <p class="text-sm text-gray-600 mb-3">Atendimento especializado para crianças TEA com dificuldade.</p>
+            <p class="text-sm font-medium text-gray-700 mb-4">
+              <i class="fas fa-clock text-purple-600 mr-2"></i>
+              Duração: 1h15
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">
+              Abordagem personalizada com foco em acolhimento, adaptação sensorial e respeito total ao ritmo da criança.
+            </p>
+            
+            <p class="text-sm font-semibold text-gray-800 mb-3">Inclui:</p>
+            <ul class="space-y-2 mb-4 text-sm text-gray-700">
+              <li class="flex items-start">
+                <span class="text-purple-600 mr-2">•</span>
+                <span>vínculo afetivo;</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-600 mr-2">•</span>
+                <span>reforçadores personalizados;</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-600 mr-2">•</span>
+                <span>adaptação sensorial completa;</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-600 mr-2">•</span>
+                <span>anamnese detalhada;</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-600 mr-2">•</span>
+                <span>tempo ampliado para pausas e autorregulação.</span>
+              </li>
+            </ul>
+
+            <p class="text-sm text-gray-700 leading-relaxed mb-4">
+              Segunda sessão gratuita, caso o corte não seja concluído no primeiro dia.
+            </p>
+
+            <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+              <p class="text-sm font-semibold text-gray-800 mb-1">Objetivo:</p>
+              <p class="text-sm text-gray-700">
+                garantir uma experiência segura, humana e confortável.
+              </p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar um Corte TEA Especial para R$ 85" target="_blank" rel="noopener"
+             class="cta-button bg-purple-700 hover:bg-purple-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center">
+            <i class="fab fa-whatsapp mr-2"></i>
+            Agendar Corte TEA Especial
+          </a>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- Ficha de Anamnese -->
-<section class="py-16 px-6 bg-gradient-to-br from-blue-50 to-white">
-  <div class="max-w-4xl mx-auto">
-    <div class="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg">
-      <div class="text-center">
-        <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-          <i class="fas fa-clipboard-list text-3xl text-blue-600"></i>
+    <!-- Ficha de Anamnese -->
+    <div class="mt-12 max-w-4xl mx-auto">
+      <div class="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-center">
+        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-clipboard-list text-white text-2xl"></i>
         </div>
-        <h3 class="text-2xl font-bold mb-4 text-black">
-          <span class="text-blue-700">FICHA DE ANAMNESE</span> - Fundamental para o Atendimento
+        <h3 class="text-2xl font-bold mb-4 text-white">
+          FICHA DE ANAMNESE - Fundamental para o Atendimento
         </h3>
-        <p class="text-lg text-black mb-6 leading-relaxed">
-          Para garantir o melhor atendimento possível e personalizado para sua criança,
-          <strong>é essencial preencher nossa FICHA DE ANAMNESE</strong>.
-          Este formulário nos ajuda a entender as necessidades específicas,
-          preferências sensoriais e características individuais da criança,
-          permitindo um atendimento mais seguro e eficaz.
+        <p class="text-white/90 mb-6 leading-relaxed max-w-3xl mx-auto">
+          PARA GARANTIR O MELHOR ATENDIMENTO POSSÍVEL E PERSONALIZADO PARA SUA CRIANÇA
+          <strong>É ESSENCIAL QUE VOCÊ PREENCHA NOSSA FICHA ANAMNESE</strong>.
+          PREENCHENDO ESTE FORMULÁRIO VOCÊ ME AJUDA A ENTENDER AS NECESSIDADES ESPECÍFICAS, PREFERÊNCIAS SENSORIAIS E CARACTERÍSTICAS INDIVIDUAIS DA CRIANÇA 
+          PERMITINDO UM ATENDIMENTO COM MAIS SEGURO E EFICAZ!
         </p>
         <a href="https://forms.gle/u8yAf4K8eaDSxFns9" target="_blank" rel="noopener"
-           class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center">
+           class="cta-button bg-white hover:bg-gray-100 text-blue-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center">
           <i class="fas fa-file-alt mr-2"></i>
-          Preencher FICHA DE ANAMNESE
+        Preencher FICHA DE ANAMNESE
         </a>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- Galeria de Atendimento -->
-<section id="galeria" class="py-16 px-6 max-w-6xl mx-auto text-center">
-  <h2 class="text-3xl font-bold mb-10">Galeria de Atendimento</h2>
-  <div class="grid md:grid-cols-4 gap-6">
-            <img src="img/atendimento5.jpg" alt="Atendimento 1" class="rounded-xl shadow">
-        <img src="img/Atendimento1.jpg" alt="Atendimento 2" class="rounded-xl shadow">
-        <img src="img/atendimento4.jpg" alt="Atendimento 3" class="rounded-xl shadow">
-        <img src="img/atendimento3.jpg" alt="Foto do Barbeiro" class="rounded-xl shadow">
+    <!-- Informações Adicionais -->
+    <div class="mt-12 max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Formas de Pagamento -->
+        <div class="rounded-2xl p-6 transition-all duration-300">
+          <div class="flex items-center mb-4">
+            <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-3 shadow-md">
+              <i class="fas fa-wallet text-white text-lg"></i>
+            </div>
+            <h4 class="text-lg font-bold text-gray-900">Formas de Pagamento</h4>
+          </div>
+          <ul class="space-y-2.5">
+            <li class="flex items-center p-2.5 bg-gray-50 rounded-xl hover:bg-green-50 transition-colors duration-200">
+              <div class="w-9 h-9 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                <i class="fas fa-money-bill-wave text-green-600"></i>
+              </div>
+              <span class="text-gray-800 font-medium text-sm">Dinheiro</span>
+            </li>
+            <li class="flex items-center p-2.5 bg-gray-50 rounded-xl hover:bg-blue-50 transition-colors duration-200">
+              <div class="w-9 h-9 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                <i class="fas fa-credit-card text-blue-600"></i>
+              </div>
+              <span class="text-gray-800 font-medium text-sm">Cartão de Débito & Crédito</span>
+            </li>
+            <li class="flex items-center p-2.5 bg-gray-50 rounded-xl hover:bg-emerald-50 transition-colors duration-200">
+              <div class="w-9 h-9 bg-emerald-100 rounded-lg flex items-center justify-center mr-3">
+                <i class="fas fa-qrcode text-emerald-600"></i>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-mobile-alt text-emerald-600"></i>
+                <span class="text-gray-800 font-medium text-sm">PIX</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Políticas -->
+        <div class="rounded-2xl p-6 transition-all duration-300">
+          <div class="flex items-center mb-5">
+            <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-3 shadow-md">
+              <i class="fas fa-shield-alt text-white text-lg"></i>
+            </div>
+            <h4 class="text-lg font-bold text-gray-900">Políticas do Atendimento</h4>
+          </div>
+          <div class="space-y-4">
+            <div class="p-4 bg-blue-50/50 rounded-xl border-l-4 border-blue-500 hover:bg-blue-50 transition-colors duration-200">
+              <div class="flex items-start">
+                <div class="w-9 h-9 bg-blue-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                  <i class="fas fa-calendar-check text-blue-600"></i>
+                </div>
+                <div class="flex-1">
+                  <h5 class="text-base font-bold text-gray-900 mb-1.5">Agendamento Obrigatório</h5>
+                  <p class="text-gray-700 text-sm leading-snug">
+                    Todos os serviços devem ser previamente agendados. Recomendamos reservar seu horário com antecedência para garantir disponibilidade.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="p-4 bg-orange-50/50 rounded-xl border-l-4 border-orange-500 hover:bg-orange-50 transition-colors duration-200">
+              <div class="flex items-start">
+                <div class="w-9 h-9 bg-orange-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                  <i class="fas fa-calendar-times text-orange-600"></i>
+                </div>
+                <div class="flex-1">
+                  <h5 class="text-base font-bold text-gray-900 mb-1.5">Política de Cancelamento</h5>
+                  <p class="text-gray-700 text-sm leading-snug">
+                    Cancelamentos ou alterações de horário devem ser informados com, no mínimo, 24 horas de antecedência. Essa medida garante organização e respeito ao tempo de todos os clientes.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="p-4 bg-purple-50/50 rounded-xl border-l-4 border-purple-500 hover:bg-purple-50 transition-colors duration-200">
+              <div class="flex items-start">
+                <div class="w-9 h-9 bg-purple-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                  <i class="fas fa-file-medical text-purple-600"></i>
+                </div>
+                <div class="flex-1">
+                  <h5 class="text-base font-bold text-gray-900 mb-1.5">Ficha de ANAMNESE</h5>
+                  <p class="text-gray-700 text-sm leading-snug">
+                    O preenchimento da Ficha de Anamnese é obrigatório antes do atendimento. Esse procedimento é essencial para assegurar maior segurança, qualidade e personalização dos serviços oferecidos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -565,7 +502,7 @@
 
 <!-- Vídeo do Atendimento - Podcast -->
 <section id="video-atendimento-podcast" class="py-16 px-6 max-w-6xl mx-auto text-center">
-  <h2 class="text-3xl font-bold mb-6">Atendimento em Detalhes</h2>
+  <h2 class="text-3xl font-bold mb-6">Detalhes Do Atendimento</h2>
   <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video">
     <video class="w-full h-full object-cover" controls>
       <source src="img/comofuncionaatendimentopodcast.mp4" type="video/mp4">
@@ -588,7 +525,7 @@
   </div>
 
   <div>
-    <h3 class="text-2xl font-semibold mb-2">Coordenador projeto MOAB Brasil</h3>
+    <h3 class="text-2xl font-semibold mb-2">Coordenador do projeto MOAB Brasil</h3>
     <p class="text-gray-600 max-w-3xl mx-auto mb-4">
       O Projeto MOAB Brasil também é coordenado por Jonathan, focado em inclusão e suporte a famílias atípicas.
     </p>
@@ -604,10 +541,10 @@
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
     <!-- Notícia 1 -->
-    <div class="bg-white shadow rounded-xl overflow-hidden">
+    <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
               <img src="img/Noticia.PNG" alt="Notícia Giro de Viamão" class="w-full h-48 object-cover">
       <div class="p-4">
-        <h3 class="font-bold mb-2">Barbeiro de Viamão desenvolve projeto inclusivo</h3>
+        <h3 class="font-bold mb-2">Barbeiro de Viamão desenvolve PROJETO inclusivo</h3>
         <p class="text-gray-600 text-sm mb-3">Jonathan impacta a vida de famílias atípicas da região com seu trabalho inovador.</p>
         <a href="https://girodeviamao.com.br/barbeiro-de-viamao-desenvolve-projeto-inclusivo-e-impacta-a-vida-de-familias-atipicas-da-regiao/" target="_blank" rel="noopener" class="text-blue-600 font-semibold hover:underline text-sm">Ler na íntegra</a>
         <p class="text-xs text-gray-400 mt-2">Fonte: Giro de Viamão</p>
@@ -615,10 +552,10 @@
     </div>
 
     <!-- Notícia 2 -->
-    <div class="bg-white shadow rounded-xl overflow-hidden">
+    <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
               <img src="img/noticiag1.jpg" alt="Pesquisa Google" class="w-full h-48 object-cover">
       <div class="p-4">
-        <h3 class="font-bold mb-2">Barbeiro para Autista</h3>
+        <h3 class="font-bold mb-2">Barbeiro para Crianças Autistas T.E.A</h3>
         <p class="text-gray-600 text-sm mb-3"> Pai de Davi e Theo, ambos diagnosticados com Transtorno do Espectro Autista (TEA)</p>
         <a href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2025/08/10/pai-atipico-barbeiro-cria-espaco-para-atender-criancas-autistas-inspirado-nos-proprios-filhos.ghtml" target="_blank" rel="noopener" class="text-blue-600 font-semibold hover:underline text-sm">Ler na íntegra</a>
         <p class="text-xs text-gray-400 mt-2">Fonte: G1 Globo</p>
@@ -626,7 +563,7 @@
     </div>
 
     <!-- Notícia 3 -->
-    <div class="bg-white shadow rounded-xl overflow-hidden">
+    <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
       <video class="w-full h-48 object-cover" controls>
         <source src="img/entrevistaemvideo.mp4" type="video/mp4">
         Seu navegador não suporta vídeos.
@@ -634,58 +571,10 @@
       <div class="p-4">
         <h3 class="font-bold mb-2">Entrevista em Vídeo</h3>
         <p class="text-gray-600 text-sm mb-3">Assista à entrevista especial com Jonathan Rodrigues, falando sobre sua iniciativa inclusiva.</p>
-        <p class="text-xs text-gray-400 mt-2">Fonte: Arquivo Local</p>
+        <p class="text-xs text-gray-400 mt-2">Fonte: Jonathan Rodrigues</p>
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- Podcasts -->
-<section id="podcasts" class="py-16 px-6 max-w-6xl mx-auto">
-  <h2 class="text-3xl font-bold mb-10 text-center">Podcast's</h2>
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="bg-white shadow rounded-xl overflow-hidden">
-      <iframe class="w-full h-64" src="https://www.youtube.com/embed/1y22htxEM2s" title="Pod Saúde Urgente" allowfullscreen></iframe>
-      <div class="p-4">
-        <h3 class="font-bold">Pod Saúde Urgente com Jonathan Rodrigues(Ep.48)</h3>
-        <p class="text-gray-600">Canal: Pod Saúde Urgente</p>
-      </div>
-    </div>
-    <div class="bg-white shadow rounded-xl overflow-hidden">
-      <iframe class="w-full h-64" src="https://www.youtube.com/embed/_07dLzKhMgk" title="Made in Viamão" allowfullscreen></iframe>
-      <div class="p-4">
-        <h3 class="font-bold">Made in Viamão (Ep.013)</h3>
-        <p class="text-gray-600">Canal: Viamão Web</p>
-      </div>
-    </div>
-    <div class="bg-white shadow rounded-xl overflow-hidden">
-      <iframe class="w-full h-64" src="https://www.youtube.com/embed/VT5x8OaXJvw" title="Fala Barbeiro com Jonathan Corte Azul" allowfullscreen></iframe>
-      <div class="p-4">
-        <h3 class="font-bold">Fala Barbeiro com: Jonathan Corte Azul</h3>
-        <p class="text-gray-600">Canal: Fala Barbeiro Podcast</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Movimento pela Causa -->
-<section id="movimento-pela-causa" class="py-16 px-6 max-w-6xl mx-auto text-center">
-  <h2 class="text-3xl font-bold mb-6">Movimento pela Causa</h2>
-  <p class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-    Conheça mais sobre o movimento que promove a inclusão e conscientização sobre o autismo através do trabalho especializado.
-  </p>
-  <div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-    <div class="relative w-full overflow-hidden rounded-xl shadow-lg aspect-video">
-      <video class="w-full h-full object-cover" controls>
-        <source src="img/movimentopelacausa..mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="relative w-full overflow-hidden rounded-xl shadow-lg aspect-video">
-      <video class="w-full h-full object-cover" controls>
-        <source src="img/videodacausa.mp4" type="video/mp4">
-      </video>
-    </div>
   </div>
 </section>
 
@@ -697,7 +586,7 @@
         Depoimentos e <span class="text-blue-700">Avaliações</span>
       </h2>
       <p class="text-lg text-black mb-12 max-w-3xl mx-auto">
-        Veja o que as famílias dizem sobre nossa experiência de atendimento especializado
+        Veja o que as famílias dizem após o atendimento especializado
       </p>
     </div>
 
@@ -705,49 +594,49 @@
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
       <!-- Avaliação 1 -->
       <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-white">
+        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-gray-50">
           <img src="img/avaliaçao1.jpg" alt="Avaliação Cliente" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300">
         </div>
       </div>
 
       <!-- Avaliação 2 -->
       <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-white">
+        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-gray-50">
           <img src="img/avaliaçao2.jpg" alt="Avaliação Cliente" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300">
         </div>
       </div>
 
       <!-- Avaliação 3 -->
       <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-white">
+        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-gray-50">
           <img src="img/avaliaçao3.jpg" alt="Avaliação Cliente" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300">
         </div>
       </div>
 
       <!-- Avaliação 4 -->
       <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-white">
+        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-gray-50">
           <img src="img/avaliaçao4.jpg" alt="Avaliação Cliente" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300">
         </div>
       </div>
 
       <!-- Avaliação 5 -->
       <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-white">
+        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-gray-50">
           <img src="img/avaliaçao5.jpg" alt="Avaliação Cliente" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300">
         </div>
       </div>
 
       <!-- Avaliação 6 -->
       <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-white">
+        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-gray-50">
           <img src="img/avaliaçao6.jpg" alt="Avaliação Cliente" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300">
         </div>
       </div>
 
       <!-- Avaliação 7 -->
       <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-white">
+        <div class="w-full rounded-xl overflow-hidden shadow-lg bg-gray-50">
           <img src="img/avaliaçao7.jpg" alt="Avaliação Cliente" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300">
         </div>
       </div>
@@ -759,7 +648,7 @@
             <i class="fab fa-instagram text-4xl text-white mb-4"></i>
             <h4 class="text-white font-semibold text-lg mb-3">Depoimento em Vídeo</h4>
             <a href="https://www.instagram.com/reel/DIU14s2MAXs/" target="_blank" rel="noopener"
-               class="inline-flex items-center bg-white text-pink-600 px-4 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+               class="inline-flex items-center bg-gray-50 text-pink-600 px-4 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors">
               <i class="fab fa-instagram mr-2"></i>
               Ver no Instagram
             </a>
@@ -769,7 +658,7 @@
     </div>
 
     <!-- Informação Adicional -->
-    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg max-w-4xl mx-auto">
+    <div class="bg-gray-50/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg max-w-4xl mx-auto">
       <p class="text-lg text-black font-semibold">
         <i class="fas fa-heart text-blue-600 mr-2"></i>
         Cada avaliação representa uma família que confiou em nosso trabalho especializado
@@ -781,7 +670,7 @@
 
 <!-- Reportagem Jornal do Almoço -->
 <section id="reportagem" class="bg-gray-100 py-16 px-6 text-center">
-  <h2 class="text-3xl font-bold mb-6">Reportagem Jornal do Almoço</h2>
+  <h2 class="text-3xl font-bold mb-6">Reportagem Do Jornal do Almoço</h2>
   <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video">
     <video class="w-full h-full object-cover" controls>
       <source src="img/reportagem no final.mp4" type="video/mp4">
@@ -797,10 +686,8 @@
         Redes <span class="text-blue-700">Sociais</span>
       </h2>
       <p class="text-lg text-black max-w-3xl mx-auto leading-relaxed">
-        Para agendar ou tirar dúvidas, fale conosco pelo Instagram.<br>
-        Para um atendimento mais seguro e personalizado, preencha a
-        <a href="https://forms.gle/u8yAf4K8eaDSxFns9" target="_blank" rel="noopener" class="text-blue-700 underline font-semibold hover:text-blue-800 transition-colors">
-          FICHA DE ANAMNESE
+        Para agendar ou tirar dúvidas, fale comigo pelo Instagram.<br>
+    Se quiser um atendimento mais seguro e personalizado, preencha a <strong></strong>FICHA DE ANAMNESE</strong>
         </a>.
       </p>
     </div>
@@ -811,8 +698,6 @@
         <div class="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-pink-200 transition-colors">
           <i class="fab fa-instagram text-3xl text-pink-600"></i>
         </div>
-        <h3 class="text-2xl font-bold mb-4 text-black">Instagram</h3>
-        <p class="text-black mb-6">Acompanhe nosso trabalho e envie sua mensagem</p>
         <a href="https://www.instagram.com/corteazultea" target="_blank" rel="noopener" class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
           <i class="fab fa-instagram mr-2"></i> Acessar Instagram
         </a>
@@ -826,7 +711,7 @@
           <span class="text-blue-700">Localização</span>
         </h3>
         <p class="text-lg text-black max-w-2xl mx-auto">
-          Venha nos visitar estamos localizados em um local de fácil acesso, ao lado do McDonald's.
+          Venha visitar nosso espaço 
         </p>
       </div>
 
@@ -851,7 +736,7 @@
           <!-- Botões de navegação -->
           <div class="mt-4 space-y-3">
             <a
-              href="https://maps.google.com/maps?q=Av.+Senador+Salgado+Filho+9745+Viamão+RS"
+              href="https://www.google.com/maps?q=-30.0831154,-51.0323322"
               target="_blank"
               rel="noopener"
               class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center">
@@ -860,7 +745,7 @@
             </a>
 
             <a
-              href="https://waze.com/ul?q=Av.+Senador+Salgado+Filho+9745+Viamão+RS"
+              href="https://waze.com/ul?ll=-30.0831154,-51.0323322&navigate=yes"
               target="_blank"
               rel="noopener"
               class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center">
@@ -927,12 +812,12 @@
 
     <!-- Informações adicionais -->
     <div class="mt-12 text-center">
-      <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
+      <div class="bg-gray-50/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
         <h4 class="text-xl font-semibold mb-4 text-black">Como Chegar</h4>
         <div class="grid md:grid-cols-3 gap-6 text-sm text-black">
           <div>
             <i class="fas fa-car text-blue-600 mb-2 text-xl"></i>
-            <p><strong>De Carro:</strong> Estacionamento disponível</p>
+            <p><strong>De Carro</strong>
           </div>
           <div>
             <i class="fas fa-bus text-blue-600 mb-2 text-xl"></i>
@@ -949,7 +834,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-white text-gray-800 py-12 px-6">
+<footer class="bg-gray-50 text-gray-800 py-12 px-6">
   <div class="max-w-6xl mx-auto text-center">
     <p class="mt-4">© 2025 @CorteAzulTea - Jonathan Rodrigues. Todos os direitos reservados.</p>
     <p>Desenvolvido por <a href="https://www.github.com/NatanLuz" target="_blank" rel="noopener" class="text-suede hover:opacity-80">Natan Da Luz</a></p>
@@ -958,7 +843,7 @@
 
 
 <!-- Floating WhatsApp -->
-<a href="https://wa.me/5551986604404" class="floating-whatsapp" aria-label="Entrar em contato via WhatsApp"></a>
+<a href="https://wa.me/5551986604404" class="floating-whatsapp" aria-label="Entrar em contato por WhatsApp"></a>
 
 <script src="script.js"></script>
 </body>
