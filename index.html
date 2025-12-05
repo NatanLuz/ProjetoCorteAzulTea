@@ -27,21 +27,30 @@
 <!-- Navegação -->
 <nav class="fixed top-0 w-full bg-gray-50/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300" id="navbar">
   <div class="max-w-6xl mx-auto px-6 py-4">
-    <div class="flex items-center justify-between">
-      <div class="flex items-center space-x-4">
+    <div class="grid grid-cols-3 items-center">
+      <!-- Marca (esquerda) -->
+      <div class="flex items-center">
         <h1 class="text-2xl font-bold text-blue-700">CorteAzulTea</h1>
       </div>
-      <div class="hidden md:flex items-center space-x-8">
-        <a href="#sobre" class="nav-link">Sobre</a>
-        <a href="#diferenciais" class="nav-link">Diferenciais</a>
-        <a href="#precos" class="nav-link">Preços</a>
-        <a href="#depoimentos" class="nav-link">Depoimentos</a>
-        <a href="#contato" class="nav-link">Contato</a>
+
+      <!-- Links -->
+      <div class="flex justify-center">
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#diferenciais" class="nav-link">Diferenciais</a>
+          <a href="#precos" class="nav-link">Preços</a>
+          <a href="#depoimentos" class="nav-link">Depoimentos</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </div>
       </div>
-      <div class="md:hidden">
-        <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600" aria-label="Abrir menu de navegação">
-          <i class="fas fa-bars text-xl"></i>
-        </button>
+
+      <!--botão mobile (aparece apenas em telas pequenas) -->
+      <div class="flex justify-end">
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600" aria-label="Abrir menu de navegação">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -97,7 +106,7 @@
       <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-8 rounded-2xl mb-8">
         <p class="text-lg text-black leading-relaxed">
         </span>Seja muito bem-vindo(a) ao <strong>Corte Azul</strong> <span class="text-blue-700">✂💙</span><br>
-          Sou especialista em cortes de cabelo para crianças autistas, com carinho, paciência aonde quer que seja <span class="text-blue-700">💙</span>.
+          Sou especialista em cortes de cabelo para crianças autistas, com carinho, paciência aonde quer que seja <span></span>
         </p>
       </div>
     </div>
@@ -208,9 +217,17 @@
       </h2>
     </div>
 
+    <!-- Aviso destacado: segundo atendimento gratuito se necessário -->
+    <div class="max-w-4xl mx-auto mb-8">
+      <div class="p-6 rounded-2xl bg-yellow-50 border-l-4 border-yellow-500 text-black text-left">
+        <p class="font-semibold">Caso a criança não consiga concluir o corte no primeiro atendimento, oferecemos um segundo atendimento gratuito.</p>
+        <p class="mt-2">Se identificarmos que ela precisa retornar para finalizar o serviço, combinaremos uma nova data com a família, sem custo adicional.</p>
+      </div>
+    </div>
+
     <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-      <!-- Corte Kids -->
-      <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+  <!-- Corte Kids -->
+  <div class="rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
         <div class="p-8">
           <div class="mb-6">
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Corte Kids — R$ 45</h3>
@@ -258,8 +275,8 @@
         </div>
       </div>
 
-      <!-- Corte Lúdico -->
-      <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+  <!-- Corte Lúdico -->
+  <div class="rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
         <div class="p-8">
           <div class="mb-6">
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Corte Lúdico — R$ 65</h3>
@@ -304,7 +321,7 @@
             </div>
           </div>
 
-          <a href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar um Corte Lúdico para R$ 65" target="_blank" rel="noopener"
+          <a href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar Corte Lúdico para R$ 65" target="_blank" rel="noopener"
              class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center">
             <i class="fab fa-whatsapp mr-2"></i>
             Agendar Corte Lúdico
@@ -312,8 +329,8 @@
         </div>
       </div>
 
-      <!-- Corte TEA Especial -->
-      <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+  <!-- Corte TEA Especial -->
+  <div class="rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
         <div class="p-8">
           <div class="mb-6">
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Corte TEA Especial — R$ 85</h3>
@@ -365,7 +382,7 @@
             </div>
           </div>
 
-          <a href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar um Corte TEA Especial para R$ 85" target="_blank" rel="noopener"
+          <a href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar Corte TEA Especial para R$ 85" target="_blank" rel="noopener"
              class="cta-button bg-purple-700 hover:bg-purple-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center">
             <i class="fab fa-whatsapp mr-2"></i>
             Agendar Corte TEA Especial
@@ -509,33 +526,7 @@
     </video>
   </div>
 </section>
-
-<!-- Projetos -->
-<section id="projetos" class="bg-gray-100 py-16 px-6 max-w-6xl mx-auto text-center">
-  <h2 class="text-3xl font-bold mb-6">Projetos</h2>
-
-  <div class="mb-10">
-    <h3 class="text-2xl font-semibold mb-2">Coordenador do projeto Angelina Luz</h3>
-    <p class="text-gray-600 max-w-3xl mx-auto mb-4">
-      O Projeto Angelina Luz é coordenado por Jonathan e promove a inclusão e acolhimento de famílias atípicas através do cuidado e respeito.
-    </p>
-    <a href="https://linktr.ee/ProjetoAngelinaLuz" target="_blank" class="btn-primary bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold shadow-lg transform hover:-translate-y-1 transition-all duration-300">
-      Saiba Mais
-    </a>
-  </div>
-
-  <div>
-    <h3 class="text-2xl font-semibold mb-2">Coordenador do projeto MOAB Brasil</h3>
-    <p class="text-gray-600 max-w-3xl mx-auto mb-4">
-      O Projeto MOAB Brasil também é coordenado por Jonathan, focado em inclusão e suporte a famílias atípicas.
-    </p>
-    <a href="https://www.facebook.com/MOABBrasil" target="_blank" class="btn-primary bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold shadow-lg transform hover:-translate-y-1 transition-all duration-300">
-      Saiba Mais
-    </a>
-  </div>
-</section>
-
-<!-- Notícias -->
+<!-- Parte de Notícias -->
 <section id="noticias" class="py-16 px-6 max-w-6xl mx-auto">
   <h2 class="text-3xl font-bold mb-10 text-center">Notícias e Destaques</h2>
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -578,7 +569,7 @@
   </div>
 </section>
 
-<!-- Depoimentos/Avaliações do Atendimento -->
+<!-- Depoimento e Avaliações -->
 <section id="depoimentos" class="bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-6">
   <div class="max-w-6xl mx-auto text-center">
     <div class="animate-fadeInUp">
@@ -771,9 +762,7 @@
               <div>
                 <h5 class="font-semibold text-black mb-1">Endereço</h5>
                 <p class="text-black leading-relaxed">
-                  Av. Senador Salgado Filho, 9745<br>
-                  Viamão - RS<br>
-                  <span class="text-sm text-gray-600">Ao lado do McDonald's</span>
+                  R. Vinte e Nove de Julho, 39 - Centro De Viamão<br>
                 </p>
               </div>
             </div>
