@@ -1,113 +1,107 @@
-# CorteAzulTea - Specialized Barber for Autistic Children
+# CorteAzulTea - Site Profissional para Atendimento de Crianças Autistas
 
 ![CorteAzulTea](https://i.imgur.com/BIm0qm4.png)
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)](https://fontawesome.com/)
 [![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://fonts.google.com/)
 
-## About the Project
+## Sobre o Projeto feito :
 
-**CorteAzulTea** is a professional website for barber Jonathan Rodrigues, specialized in humanized care for autistic children (ASD). The project provides a complete digital experience, presenting specialized services, family testimonials, and information about the autism cause movement.
+O **CorteAzulTea** é um site profissional desenvolvido para o barbeiro Jonathan Rodrigues, especializado em atendimento humanizado para crianças autistas (TEA). O projeto apresenta serviços especializados, depoimentos de famílias e informações sobre a causa do autismo.
 
-It was developed for Jonathan, aiming to facilitate service delivery, streamline appointment scheduling, and maximize time and organization when starting work. The website not only explains how the service works but also tells his life story, aiming to facilitate his work as a barber and connect more easily with clients and ASD children who need special and dedicated care from a professional who truly understands them.
+O objetivo é facilitar o agendamento, otimizar o tempo e a organização do trabalho, além de aproximar Jonathan das famílias que buscam um atendimento diferenciado e acolhedor para seus filhos.
 
-## Main Features
+## Principais Funcionalidades
 
-- **Specialized ASD Care**: Focus on autistic children with adapted techniques
-- **Responsive Design**: Modern interface accessible on all devices
-- **Work Gallery**: Photos and videos of completed services
-- **Testimonials**: Real evaluations from served families
-- **Contact Information**: WhatsApp, Instagram, and location
-- **PWA Ready**: Manifest and Progressive Web App configurations
+- **Atendimento Especializado TEA**: Foco em crianças autistas, com técnicas adaptadas
+- **Design Responsivo**: Interface moderna e acessível em todos os dispositivos
+- **Galeria de Trabalhos**: Fotos e vídeos dos atendimentos
+- **Depoimentos**: Avaliações reais de famílias atendidas
+- **Contato**: WhatsApp, Instagram e localização
+- **PWA**: Pronto para ser instalado como aplicativo
 
-## Technologies Used
+## Tecnologias Utilizadas
 
 - **Frontend**: HTML5, CSS3, JavaScript ES6+
-- **CSS Framework**: Tailwind CSS
-- **Icons**: Font Awesome 6.5.0
-- **Fonts**: Google Fonts (Inter)
-- **Responsiveness**: Mobile-first design
-- **Animations**: CSS transitions and keyframes
+- **Framework CSS**: Tailwind CSS
+- **Ícones**: Font Awesome 6.5.0
+- **Fontes**: Google Fonts (Inter)
+- **Responsividade**: Mobile-first
+- **Animações**: Transições e keyframes em CSS
 
-## Services Offered
+## Conteúdo Multimídia
 
-- **Barbershop Service** (R$ 85)
-- **Home Service** (R$ 100)
-- **Kids Cut** (R$ 60)
+- Vídeos explicativos sobre o atendimento
+- Galeria de fotos dos serviços
+- Podcasts, entrevistas e reportagens
 
-## Multimedia Content
-
-- Explanatory service videos
-- Service photo gallery
-- Podcasts and interviews
-- Media coverage
-
-## Project Structure
+## Estrutura do Projeto
 
 ```
 ProjetoCorteAzulTea/
-├── index.html          # Main page
-├── style.css           # Custom styles
-├── script.js           # JavaScript functionality
-├── manifest.json       # PWA configurations
-├── tailwind.config.js  # Tailwind configuration
-├── img/                # Images and videos
-│   ├── *.jpg          # Service photos
-│   ├── *.mp4          # Explanatory videos
-│   └── *.svg          # Icons
-└── README.md           # Documentation
+├── index.html          # Página principal
+├── style.css           # Estilos personalizados
+├── script.js           # Funcionalidades em JavaScript
+├── manifest.json       # Configuração PWA
+├── tailwind.config.js  # Configuração do Tailwind
+├── img/                # Imagens e vídeos
+│   ├── *.jpg           # Fotos dos serviços
+│   ├── *.mp4           # Vídeos explicativos
+│   └── *.svg           # Ícones
+└── README.md           # Documentação
 ```
 
-## Design and UX
+## Design e Experiência do Usuário
 
-- **Color Palette**: Blue (#3b82f6) as primary color
-- **Typography**: Inter for better readability
-- **Animations**: Smooth transitions and hover effects
-- **Accessibility**: Keyboard navigation and screen reader support
-- **Performance**: Lazy loading and CSS optimizations
+- **Paleta de Cores**: Azul (#3b82f6) como cor principal
+- **Tipografia**: Inter para melhor leitura
+- **Animações**: Transições suaves e efeitos de hover
+- **Acessibilidade**: Navegação por teclado e suporte a leitores de tela
+- **Performance**: Lazy loading e otimizações de CSS
 
-## Website Sections
+## Seções do Site
 
-1. **Hero**: Main presentation with call-to-action
-2. **About**: Information about Jonathan and specialization
-3. **Differentiators**: What makes the service unique
-4. **How It Works**: Service process
-5. **Pricing**: Service table and values
-6. **Gallery**: Photos of completed services
-7. **Testimonials**: Family evaluations
-8. **Contact**: Location information and social networks
+1. **Hero**: Apresentação principal e chamada para ação
+2. **Sobre**: Informações sobre Jonathan e sua especialização
+3. **Diferenciais**: O que torna o serviço único
+4. **Como Funciona**: Processo do atendimento
+5. **Preços**: Tabela de serviços e valores
+6. **Galeria**: Fotos dos atendimentos
+7. **Depoimentos**: Avaliações das famílias
+8. **Contato**: Localização e redes sociais
 
-## Installation and Usage
+## Instalação e Uso
 
-### Requirements
-- Modern browser (Chrome, Firefox, Safari, Edge)
-- Local web server (optional for development)
+### Requisitos
 
-### Local Execution
+- Navegador moderno (Chrome, Firefox, Safari, Edge)
+- Servidor local (opcional para desenvolvimento)
+
+### Execução Local
+
 ```bash
-# Clone the repository
+# Clone o repositório
 git clone https://github.com/your-username/corteazultea.git
+```
 
-## PWA Features
+Abra o arquivo `index.html` no navegador ou utilize um servidor local para testar o PWA.
 
-- **Manifest**: Installation configuration
-- **Service Worker**: Offline cache (future implementation)
-- **Icons**: Different sizes for devices
-- **Theme**: Custom colors for interface
+## Recursos PWA
 
-## License
+- **Manifest**: Configuração para instalação
+- **Service Worker**: Cache offline (implementação futura)
+- **Ícones**: Diversos tamanhos para dispositivos
+- **Tema**: Cores personalizadas para a interface
 
-This project is for personal and commercial use by Jonathan Rodrigues. All rights reserved.
+## Desenvolvimento
 
-## Development
+- **Desenvolvedor**: Natan Da Luz
+- **Design**: Interface moderna e responsiva
+- **SEO**: Otimizado para mecanismos de busca
+- **Performance**: Carregamento rápido e eficiente
 
-- **Developer**: Natan Da Luz
-- **Design**: Modern and responsive interface
-- **SEO**: Optimized for search engines
-- **Performance**: Fast and efficient loading
-
-⭐ Star the repository!
+⭐ Deixe uma estrela no repositório!
