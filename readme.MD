@@ -1,83 +1,105 @@
-# Nome do Projeto
+# CorteAzulTea
 
-CorteAzulTea — Site institucional para atendimento humanizado de crianças autistas (T.E.A).
+[![corteazultea.png](https://i.postimg.cc/8P5mb0Mt/corteazultea.png)](https://postimg.cc/QV278S6T)
 
-Uma breve descrição do projeto aqui: site com layout organizado via PHP (includes), Tailwind CSS e JavaScript no cliente, focado em acessibilidade e performance.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 
-Introdução
+Site institucional do **CorteAzulTea**, serviço especializado em cortes de cabelo para crianças com Transtorno do Espectro Autista (TEA), com foco em atendimento humanizado, ambiente acolhedor e comunicação clara com as famílias.
 
-O objetivo deste projeto é apresentar os serviços do barbeiro Jonathan Rodrigues com uma experiência moderna, responsiva e inclusiva. As principais funcionalidades incluem:
+---
 
-- Navegação por âncoras com scroll suave.
-- Seções: hero, sobre, diferenciais, preços, vídeos, notícias, depoimentos, contato.
-- Imagens e vídeos com carregamento otimizado.
-- Acessibilidade básica (skip link, aria, foco visível).
+## Visão Geral
 
-⚙️ Pré-requisitos
+O projeto apresenta informações completas sobre o CorteAzulTea, incluindo vídeos explicativos do atendimento, depoimentos, reportagem, valores e canais de contato.  
+O site foi desenvolvido com foco em **acessibilidade, performance e organização de código**, utilizando PHP para composição de layout e Tailwind CSS para estilização.
 
-Para instalar/rodar localmente, você precisa de:
+---
 
-- PHP 7.4+ (pode usar XAMPP/WAMP) e um navegador moderno.
-- Git (opcional) para clonar o repositório.
+## Funcionalidades
 
-Exemplo (verificar versão do PHP):
+- Estrutura modular com PHP (partials e sections)
+- Navegação por âncoras com scroll suave
+- Vídeos informativos e institucionais
+- Design responsivo (mobile-first)
+- CTA flutuante para WhatsApp e Instagram
+- SEO básico (metatags e Open Graph)
+- Boas práticas de acessibilidade (semântica, contraste, ARIA)
 
-```powershell
-php -v
+---
+
+## Estrutura do Projeto
+
+```
+ProjetoCorteAzulTea/
+├─ public/
+│  ├─ index.html         # Versão estática
+│  ├─ index.php          # Entrada principal (PHP)
+│  ├─ manifest.json
+│  └─ assets/
+│     ├─ css/style.css
+│     ├─ js/script.js
+│     └─ img/            # Imagens e vídeos
+├─ partials/             # Head, header e footer
+├─ sections/             # Seções do site
+├─ tailwind.config.js
+├─ README.md
+└─ LICENSE.md
 ```
 
-🔨 Guia de instalação
+---
 
-Etapas para instalar e rodar o ambiente de desenvolvimento:
+## Tecnologias Utilizadas
 
-Passo 1: Clonar o repositório
-
-```powershell
-git clone <URL_DO_REPOSITORIO>
-cd ProjetoCorteAzulTea
-```
-
-Passo 2: Iniciar servidor local do PHP
-
-```powershell
-php -S localhost:8000 -t public
-```
-
-Acesse: http://localhost:8000
-
-Passo 3 (Opcional): Usar XAMPP/WAMP
-
-- Aponte o DocumentRoot para a pasta `public/`.
-- Reinicie o servidor e acesse a URL configurada (ex.: `http://localhost/`).
-
-📦 Tecnologias usadas:
-
-Front-end:
 - HTML5
-- TailwindCSS
+- Tailwind CSS (via CDN)
 - JavaScript
+- PHP (organização de layout)
+- Font Awesome e SVGs
 
-Back-end (organização de layout):
-- PHP (includes)
+---
 
-Badges:
+## Como Rodar Localmente
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-[![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
+### Opção 1 — Servidor PHP
 
-👷 Autores
+```bash
+php -S localhost:8080 -t public
+```
 
-- Natan Da Luz — Desenvolvimento e manutenção
+Acesse: http://localhost:8080
 
-📄 Licença
+### Opção 2 — Servidor estático (HTML)
 
-Esse projeto está sob a licença **MIT** — veja [LICENSE.md](LICENSE.md).
+```bash
+python -m http.server 8080
+```
 
-💡 Expressões de gratidão
+Recomendado servir a pasta `public` como raiz para evitar problemas de caminhos absolutos.
 
-Um agradecimento público a todos que apoiam o projeto.
-Para suporte, mande um email para natandaluz01@gmail.com
+---
 
-LinkedIn: [text](https://www.linkedin.com/in/natandaluzdesenvolvedor/)
+## Licença
+
+Este projeto está sob a licença MIT.  
+Veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
+
+---
+
+## Autor
+
+**Natan Da Luz**  
+Desenvolvimento e manutenção  
+GitHub: https://github.com/NatanLuz  
+LinkedIn: https://www.linkedin.com/in/natan-da-luz
+
+---
+
+## Contato do Projeto
+
+Instagram: [@corteazultea](https://www.instagram.com/corteazultea)  
+WhatsApp: disponível no botão flutuante do site

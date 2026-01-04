@@ -224,7 +224,7 @@ video {
   @apply transform -translate-y-2 shadow-xl;
 }
 
-/* Gradientes personalizados */
+
 .gradient-blue {
   background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
 }
@@ -233,12 +233,12 @@ video {
   background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
 }
 
-/* Cards com efeito glassmorphism */
+
 .glass-card {
   @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-xl;
 }
 
-/* carregamento com spinner */
+
 .spinner {
   @apply animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600;
 }
