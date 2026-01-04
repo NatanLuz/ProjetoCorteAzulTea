@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CorteAzulTea - Barbeiro especializado em cortes de cabelo para crianças autistas. Atendimento humanizado e ambiente acolhedor em Viamão/RS."
+    />
+    <meta
+      name="keywords"
+      content="barbeiro autismo, corte cabelo criança autista, atendimento especializado, Viamão, TEA"
+    />
+    <meta name="author" content="Jonathan Rodrigues" />
+    <meta
+      property="og:title"
+      content="CorteAzulTea - Cortes para Crianças Autistas"
+    />
+    <meta
+      property="og:description"
+      content="Atendimento especializado e humanizado para crianças autistas em Viamão/RS"
+    />
+    <meta property="og:image" content="/assets/img/capaprojeto.png" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#3b82f6" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Configuração mínima do Tailwind via CDN (opcional)
+      tailwind = {
+        config: {
+          theme: {
+            extend: {
+              fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] },
+              colors: {
+                brand: {
+                  50: "#eff6ff",
+                  100: "#dbeafe",
+                  200: "#bfdbfe",
+                  300: "#93c5fd",
+                  400: "#60a5fa",
+                  500: "#3b82f6",
+                  600: "#2563eb",
+                  700: "#1d4ed8",
+                  800: "#1e40af",
+                  900: "#1e3a8a",
+                },
+                black: "#000000",
+                white: "#ffffff",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>CorteAzulTea - Atendimento de crianças Autistas | Viamão - RS</title>
+  </head>
+  <body class="font-sans bg-gray-50 text-black scroll-smooth">
+    <a href="#conteudo" class="skip-link">Pular para o conteúdo principal</a>
+    <!-- Navegação -->
+    <nav
+      class="fixed top-0 w-full bg-gray-50/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300"
+      id="navbar"
+      role="navigation"
+      aria-label="Menu principal"
+    >
+      <div class="max-w-6xl mx-auto px-6 py-4">
+        <div class="grid grid-cols-3 items-center">
+            <div class="hidden md:flex items-center space-x-8">
+              <a href="#sobre" class="nav-link">Sobre</a>
+              <a href="#diferenciais" class="nav-link">Diferenciais</a>
+              <a href="#precos" class="nav-link">Preços</a>
+              <a href="#depoimentos" class="nav-link">Depoimentos</a>
+              <a href="#contato" class="nav-link">Contato</a>
+              <a href="https://www.instagram.com/corteazultea" target="_blank" rel="noopener" aria-label="Instagram" class="ml-6 md:ml-10 inline-flex items-center space-x-2">
+                <span class="text-black">Instagram</span>
+                <img src="/assets/img/instagram.svg" alt="Instagram" class="h-6 w-6" />
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <div class="md:hidden">
+              <button
+                id="mobile-menu-btn"
+                class="text-gray-600 hover:text-blue-600"
+                aria-label="Abrir menu de navegação"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <i class="fas fa-bars text-xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-50 border-t">
+        <div class="px-6 py-4 space-y-4">
+          <a href="#sobre" class="block py-2 text-gray-600 hover:text-blue-600"
+            >Sobre</a
+          >
+          <a
+            href="#diferenciais"
+            class="block py-2 text-gray-600 hover:text-blue-600"
+            >Diferenciais</a
+          >
+          <a href="#precos" class="block py-2 text-gray-600 hover:text-blue-600"
+            >Preços</a
+          >
+          <a
+            href="#depoimentos"
+            class="block py-2 text-gray-600 hover:text-blue-600"
+            >Depoimentos</a
+          >
+          <a
+            href="#contato"
+            class="block py-2 text-gray-600 hover:text-blue-600"
+            >Contato</a
+          >
+            <a
+              href="https://www.instagram.com/corteazultea"
+              target="_blank"
+              rel="noopener"
+              class="block py-2 text-gray-600 hover:text-pink-600"
+              aria-label="Instagram"
+              >
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+      </div>
+    </nav>
+    <main id="conteudo">
+      <!-- Hero -->
+
+      <section
+        id="hero"
+        class="hero relative min-h-screen flex items-center justify-center text-white text-center pt-20"
+      >
+        <div
+          class="absolute inset-0 bg-cover bg-center bg-fixed"
+          style="background-image: url('/assets/img/capaprojeto.png')"
+        ></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-blue-800/80 via-blue-600/60 to-white/90"
+        ></div>
+        <div class="relative z-10 max-w-4xl px-6">
+          <div class="animate-fadeInUp">
+            <h1
+              class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+            >
+              Atendimento para Crianças Autistas
+              <span class="text-blue-200"></span> 🧩
+            </h1>
+            <p
+              class="mb-8 text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed"
+            >
+              Atendimento especializado, ambiente acolhedor e experiência
+              humanizada para toda a família.
+            </p>
+            <div class="flex justify-center items-center">
+              <a
+                href="#sobre"
+                class="cta-button bg-blue-700/20 hover:bg-blue-700/30 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 backdrop-blur-sm"
+              >
+                <i class="fas fa-info-circle mr-2"></i> Saiba Mais
+              </a>
+              <a
+                href="https://www.instagram.com/corteazultea"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+                class="ml-4 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                <img src="/assets/img/instagram.svg" alt="Instagram" class="h-6 w-6" />
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+        >
+          <i class="fas fa-chevron-down text-blue-700 text-2xl"></i>
+        </div>
+      </section>
+
+      <!-- Sobre -->
+
+      <section id="sobre" class="py-20 px-6 max-w-6xl mx-auto text-center">
+        <div class="animate-fadeInUp">
+          <h2 class="text-4xl md:text-5xl font-bold mb-8 text-black">
+            Quem é o <span class="text-blue-700">CorteAzul</span>?
+          </h2>
+          <div class="max-w-4xl mx-auto">
+            <p class="text-lg text-black mb-6 leading-relaxed">
+              O <strong>CorteAzul</strong> é um projeto especializado em cortes
+              de cabelo para crianças autistas, idealizado por
+              <strong>Jonathan Rodrigues</strong>. Com foco no respeito, na
+              sensibilidade e no cuidado individual, o CorteAzul transforma o
+              momento do corte em uma experiência segura, tranquila e acolhedora
+              para as crianças e suas famílias.
+            </p>
+            <div
+              class="bg-gradient-to-r from-blue-50 to-blue-100 p-8 rounded-2xl mb-8"
+            >
+              <p class="text-lg text-black leading-relaxed">
+                Atuando com paciência, carinho e atenção às necessidades
+                específicas de cada criança, o serviço é realizado com
+                profissionalismo e empatia, oferecendo conforto e confiança
+                aonde for necessário.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative w-full max-w-3xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video mb-12"
+        >
+          <video class="w-full h-full object-contain" controls>
+            <source src="/assets/img/corteazul1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          <div class="card hover-lift group">
+            <div class="text-center">
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors"
+              >
+                <span class="text-2xl">✂️</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-3 text-black">
+                Barbeiro Especialista TEA
+              </h3>
+              <p class="text-black">
+                Atendimento humanizado para crianças AUTISTAS T.E.A com técnicas
+                especializadas.
+              </p>
+            </div>
+          </div>
+          <div class="card hover-lift group">
+            <div class="text-center">
+              <div
+                class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors"
+              >
+                <span class="text-2xl">👦</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-3 text-black">
+                Cortes Infantis
+              </h3>
+              <p class="text-black">
+                Experiência tranquila, respeitando o tempo e necessidades da
+                criança.
+              </p>
+            </div>
+          </div>
+          <div class="card hover-lift group">
+            <div class="text-center">
+              <div
+                class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors"
+              >
+                <span class="text-2xl">🧩</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-3 text-black">
+                Terapeuta ABA
+              </h3>
+              <p class="text-black">
+                Integra princípios da análise comportamental aplicada no
+                cuidado.
+              </p>
+            </div>
+          </div>
+          <div class="card hover-lift group">
+            <div class="text-center">
+              <div
+                class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-200 transition-colors"
+              >
+                <span class="text-2xl">🎓</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-3 text-black">
+                Formação Contínua
+              </h3>
+              <p class="text-black">
+                Cursando Bacharelado em Terapia Ocupacional para se especializar
+                no atendimento de crianças autistas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diferenciais -->
+
+      <section
+        id="diferenciais"
+        class="bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-6"
+      >
+        <div class="max-w-6xl mx-auto text-center">
+          <div class="animate-fadeInUp">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-black">
+              Diferenciais do <span class="text-blue-700">Barbeiro TEA</span>
+            </h2>
+            <p class="text-lg text-black mb-12 max-w-3xl mx-auto">
+              Conheça o que torna o atendimento do Jonathan único e
+              especializado para crianças autistas
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="card hover-lift group text-center">
+              <div
+                class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors"
+              >
+                <i class="fas fa-heart text-3xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-black">
+                Atendimento Especializado
+              </h3>
+              <p class="text-black leading-relaxed">
+                Compreensão profunda das necessidades sensoriais e emocionais de
+                cada criança.
+              </p>
+            </div>
+            <div class="card hover-lift group text-center">
+              <div
+                class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-200 transition-colors"
+              >
+                <i class="fas fa-home text-3xl text-green-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-black">
+                Ambiente Acolhedor
+              </h3>
+              <p class="text-black leading-relaxed">
+                Espaço cuidadosamente preparado para receber com carinho e
+                respeito.
+              </p>
+            </div>
+            <div class="card hover-lift group text-center">
+              <div
+                class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-200 transition-colors"
+              >
+                <i class="fas fa-users text-3xl text-purple-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-black">
+                Experiência Humanizada
+              </h3>
+              <p class="text-black leading-relaxed">
+                Corte sem pressa, com paciência, empatia e respeito ao tempo da
+                criança.
+              </p>
+            </div>
+            <div class="card hover-lift group text-center">
+              <div
+                class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-200 transition-colors"
+              >
+                <i class="fas fa-shield-alt text-3xl text-yellow-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-black">
+                Confiança da Família
+              </h3>
+              <p class="text-black leading-relaxed">
+                Respeito e diálogo constante com os pais, construindo confiança
+                mútua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Preços -->
+
+      <section
+        id="precos"
+        class="bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-6"
+      >
+      </section>
+
+      <!-- Vídeos -->
+
+      <section
+        id="video-atendimento"
+        class="py-16 px-6 max-w-6xl mx-auto text-center"
+      >
+        <h2 class="text-3xl font-bold mb-6">Como funciona o Atendimento ?</h2>
+        <div
+          class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video"
+        >
+          <video class="w-full h-full object-cover" controls preload="metadata">
+            <source
+              src="/assets/img/Comofuncionaoatendimento.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </section>
+      <section
+        id="video-atendimento-podcast"
+        class="py-16 px-6 max-w-6xl mx-auto text-center"
+      >
+        <h2 class="text-3xl font-bold mb-6">Detalhes Do Atendimento</h2>
+        <div
+          class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video"
+        >
+          <video class="w-full h-full object-cover" controls preload="metadata">
+            <source
+              src="/assets/img/comofuncionaatendimentopodcast.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </section>
+
+      <!-- Notícias -->
+
+      <section id="noticias" class="py-16 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 text-center">
+          Notícias e Destaques
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
+            <img
+              src="/assets/img/Noticia.PNG"
+              alt="Notícia Giro de Viamão"
+              class="w-full h-48 object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="p-4">
+              <h3 class="font-bold mb-2">
+                Barbeiro de Viamão desenvolve PROJETO inclusivo
+              </h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Jonathan impacta a vida de famílias atípicas da região com seu
+                trabalho inovador.
+              </p>
+              <a
+                href="https://girodeviamao.com.br/barbeiro-de-viamao-desenvolve-projeto-inclusivo-e-impacta-a-vida-de-familias-atipicas-da-regiao/"
+                target="_blank"
+                rel="noopener"
+                class="text-blue-600 font-semibold hover:underline text-sm"
+                >Ler na íntegra</a
+              >
+              <p class="text-xs text-gray-400 mt-2">Fonte: Giro de Viamão</p>
+            </div>
+          </div>
+          <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
+            <img
+              src="/assets/img/noticiag1.jpg"
+              alt="Pesquisa Google"
+              class="w-full h-48 object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="p-4">
+              <h3 class="font-bold mb-2">
+                Barbeiro para Crianças Autistas T.E.A
+              </h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Pai de Davi e Theo, ambos diagnosticados com Transtorno do
+                Espectro Autista (TEA)
+              </p>
+              <a
+                href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2025/08/10/pai-atipico-barbeiro-cria-espaco-para-atender-criancas-autistas-inspirado-nos-proprios-filhos.ghtml"
+                target="_blank"
+                rel="noopener"
+                class="text-blue-600 font-semibold hover:underline text-sm"
+                >Ler na íntegra</a
+              >
+              <p class="text-xs text-gray-400 mt-2">Fonte: G1 Globo</p>
+            </div>
+          </div>
+          <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
+            <video class="w-full h-48 object-cover" controls preload="none">
+              <source
+                src="/assets/img/entrevistaemvideo.mp4"
+                type="video/mp4"
+              />
+              Seu navegador não suporta vídeos.
+            </video>
+            <div class="p-4">
+              <h3 class="font-bold mb-2">Entrevista em Vídeo</h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Assista à entrevista especial com Jonathan Rodrigues, falando
+                sobre sua iniciativa inclusiva.
+              </p>
+              <p class="text-xs text-gray-400 mt-2">Fonte: CorteAzul</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Depoimentos -->
+
+      <section
+        id="depoimentos"
+        class="bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-6"
+      >
+        <div class="max-w-6xl mx-auto text-center">
+          <div class="animate-fadeInUp">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-black">
+              Depoimentos e <span class="text-blue-700">Avaliações</span>
+            </h2>
+            <p class="text-lg text-black mb-12 max-w-3xl mx-auto">
+              Veja o que as famílias dizem após o atendimento especializado
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12"
+          >
+            <!-- Cards de avaliação replicados conforme seção -->
+          </div>
+          <div
+            class="bg-gray-50/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg max-w-4xl mx-auto"
+          >
+            <p class="text-lg text-black font-semibold">
+              <i class="fas fa-heart text-blue-600 mr-2"></i> Cada avaliação
+              representa uma família que confiou em nosso trabalho especializado
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reportagem -->
+
+      <section id="reportagem" class="bg-gray-100 py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6">Reportagem Do Jornal do Almoço</h2>
+        <div
+          class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video"
+        >
+          <video class="w-full h-full object-cover" controls preload="none">
+            <source
+              src="/assets/img/reportagemnofinal.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </section>
+
+      <!-- Contato -->
+
+      <section
+        id="contato"
+        class="py-20 px-6 bg-gradient-to-br from-blue-50 to-white"
+      >
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-black">
+              Redes <span class="text-blue-700">Sociais</span>
+            </h2>
+            <p class="text-lg text-black max-w-3xl mx-auto leading-relaxed">
+              Para agendar ou tirar dúvidas, fale comigo pelo Instagram.<br />
+              Se quiser um atendimento mais seguro e personalizado, preencha a
+              <strong>FICHA DE ANAMNESE</strong>.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-1 gap-8 place-items-center">
+            <div class="card hover-lift group text-center max-w-sm w-full">
+              <div
+                class="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-pink-200 transition-colors"
+              >
+                <i class="fab fa-instagram text-3xl text-pink-600"></i>
+              </div>
+              <a
+                href="https://www.instagram.com/corteazultea"
+                target="_blank"
+                rel="noopener"
+                class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                <i class="fab fa-instagram mr-2"></i> Acessar Instagram
+              </a>
+            </div>
+          </div>
+          <!-- Localização e informações omitidas por brevidade -->
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-50 text-gray-800 py-12 px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="mt-4">
+          © 2025 @CorteAzulTea - Jonathan Rodrigues. Todos os direitos
+          reservados.
+        </p>
+        <p>
+          Desenvolvido por
+          <a
+            href="https://www.github.com/NatanLuz"
+            target="_blank"
+            rel="noopener"
+            class="text-suede hover:opacity-80"
+            >Natan Da Luz</a
+          >
+        </p>
+      </div>
+    </footer>
+    <a
+      href="https://wa.me/5551986604404"
+      class="floating-whatsapp"
+      aria-label="Entrar em contato por WhatsApp"
+    ></a>
+    <script src="/assets/js/script.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
+      defer
+    ></script>
+  </body>
+</html>
