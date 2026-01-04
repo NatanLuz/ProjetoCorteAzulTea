@@ -24,7 +24,8 @@ include __DIR__ . '/../sections/contato.php';
 ?>
     </main>
     <?php include __DIR__ . '/../partials/footer.php'; ?>
-    <script src="/assets/js/script.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/depoimentos.js" defer></script>
 </body>
 
 </html>

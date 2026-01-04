@@ -1,7 +1,7 @@
 <!-- Hero -->
 <section id="hero" class="hero relative min-h-screen flex items-center justify-center text-white text-center pt-20">
     <div class="absolute inset-0 bg-cover bg-center bg-fixed"
-        style="background-image: url('/assets/img/capaprojeto.png');"></div>
+        style="background-image: url('assets/img/capaprojeto.png');"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-blue-800/80 via-blue-600/60 to-white/90"></div>
     <div class="relative z-10 max-w-4xl px-6">
         <div class="animate-fadeInUp">
@@ -18,7 +18,7 @@
                 </a>
                 <a href="https://www.instagram.com/corteazultea" target="_blank" rel="noopener" aria-label="Instagram"
                     class="ml-4 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
-                    <img src="/assets/img/instagram.svg" alt="Instagram" class="h-6 w-6" />
+                    <img src="assets/img/instagram.svg" alt="Instagram" class="h-6 w-6" />
                     <span>Instagram</span>
                 </a>
             </div>

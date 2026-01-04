@@ -18,7 +18,7 @@
                     <a href="https://www.instagram.com/corteazultea" target="_blank" rel="noopener"
                         aria-label="Instagram" class="ml-6 md:ml-10 inline-flex items-center space-x-2">
                         <span class="text-black">Instagram</span>
-                        <img src="/assets/img/instagram.svg" alt="Instagram" class="h-6 w-6" />
+                        <img src="assets/img/instagram.svg" alt="Instagram" class="h-6 w-6" />
                     </a>
                 </div>
             </div>

@@ -23,7 +23,7 @@
     <!-- Vídeo Sobre -->
     <div class="relative w-full max-w-3xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video mb-12">
         <video class="w-full h-full object-contain" controls>
-            <source src="/assets/img/corteazul1.mp4" type="video/mp4">
+            <source src="assets/img/corteazul1.mp4" type="video/mp4">
         </video>
     </div>
 

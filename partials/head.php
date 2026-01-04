@@ -7,7 +7,7 @@
   <meta name="author" content="Jonathan Rodrigues">
     <meta property="og:title" content="CorteAzulTea - Cortes para Crianças Autistas">
     <meta property="og:description" content="Atendimento especializado e humanizado para crianças autistas em Viamão/RS">
-    <meta property="og:image" content="/assets/img/capaprojeto.png">
+    <meta property="og:image" content="assets/img/capaprojeto.png">
     <meta property="og:url" content="https://example.com/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -20,9 +20,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="icon" href="assets/img/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/img/capaprojeto.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#3b82f6">

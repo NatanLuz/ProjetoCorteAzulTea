@@ -127,7 +127,7 @@ video {
 /* Botão flutuante do WhatsApp */
 .floating-whatsapp {
   @apply fixed bottom-6 right-6 bg-blue-700 hover:bg-blue-800 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg text-2xl z-50 transition-all duration-300;
-  background-image: url("/assets/img/whatsapp.svg");
+  background-image: url("../img/whatsapp.svg");
   background-size: 24px;
   background-position: center;
   background-repeat: no-repeat;
@@ -224,7 +224,6 @@ video {
   @apply transform -translate-y-2 shadow-xl;
 }
 
-
 .gradient-blue {
   background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
 }
@@ -233,11 +232,9 @@ video {
   background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
 }
 
-
 .glass-card {
   @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-xl;
 }
-
 
 .spinner {
   @apply animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600;

@@ -5,7 +5,7 @@
 
         <!-- Notícia 1 -->
         <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
-            <img src="/assets/img/Noticia.PNG" alt="Notícia Giro de Viamão" class="w-full h-48 object-cover"
+            <img src="assets/img/Noticia.PNG" alt="Notícia Giro de Viamão" class="w-full h-48 object-cover"
                 loading="lazy" decoding="async">
             <div class="p-4">
                 <h3 class="font-bold mb-2">Barbeiro de Viamão desenvolve PROJETO inclusivo</h3>
@@ -20,7 +20,7 @@
 
         <!-- Notícia 2 -->
         <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
-            <img src="/assets/img/noticiag1.jpg" alt="Pesquisa Google" class="w-full h-48 object-cover" loading="lazy"
+            <img src="assets/img/noticiag1.jpg" alt="Pesquisa Google" class="w-full h-48 object-cover" loading="lazy"
                 decoding="async">
             <div class="p-4">
                 <h3 class="font-bold mb-2">Barbeiro para Crianças Autistas T.E.A</h3>
@@ -36,7 +36,7 @@
         <!-- Notícia 3 -->
         <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
             <video class="w-full h-48 object-cover" controls preload="none">
-                <source src="/assets/img/entrevistaemvideo.mp4" type="video/mp4">
+                <source src="assets/img/entrevistaemvideo.mp4" type="video/mp4">
                 Seu navegador não suporta vídeos.
             </video>
             <div class="p-4">
