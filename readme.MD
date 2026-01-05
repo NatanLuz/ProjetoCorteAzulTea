@@ -1,105 +1,172 @@
 # CorteAzulTea
 
-[![corteazultea.png](https://i.postimg.cc/8P5mb0Mt/corteazultea.png)](https://postimg.cc/QV278S6T)
+Desenvolvi o Site institucional do  Projeto **CorteAzulTea**, um serviço do Jonathan Rodrigues especializado em cortes de cabelo para crianças com Transtorno do Espectro Autista (T.E.A), com foco em atendimento humanizado, ambiente acolhedor e comunicação clara com as famílias.
+
+[![corteazultea.png](https://img.shields.io/badge/CorteAzulTea-Site%20Institucional-blue)](https://www.instagram.com/corteazultea)
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
-
-Site institucional do **CorteAzulTea**, serviço especializado em cortes de cabelo para crianças com Transtorno do Espectro Autista (TEA), com foco em atendimento humanizado, ambiente acolhedor e comunicação clara com as famílias.
 
 ---
 
-## Visão Geral
+## 🔥 Introdução
 
-O projeto apresenta informações completas sobre o CorteAzulTea, incluindo vídeos explicativos do atendimento, depoimentos, reportagem, valores e canais de contato.  
-O site foi desenvolvido com foco em **acessibilidade, performance e organização de código**, utilizando PHP para composição de layout e Tailwind CSS para estilização.
+O **CorteAzulTea** é um site responsivo pensado para apresentar, de forma clara e acolhedora, o trabalho do barbeiro especializado em crianças autistas.
+
+O projeto tem como objetivos principais:
+
+- Explicar como funciona o atendimento especializado para crianças TEA.
+- Apresentar serviços, valores e políticas de atendimento de forma transparente.
+- Facilitar o contato via WhatsApp e Instagram.
+- Mostrar depoimentos reais, notícias e reportagem de TV sobre o projeto.
+- Indicar de forma simples a localização e as formas de pagamento.
+
+Principais funcionalidades do site:
+
+- Navegação por seções com **scroll suave**.
+- Layout **100% responsivo** (mobile, tablet e desktop).
+- Seções de **serviços**, **ficha de anamnese**, **formas de pagamento** e **políticas de atendimento**.
+- Seção de **depoimentos** dinâmica, carregada via JavaScript.
+- Seção de **notícias e reportagem** em vídeo.
+- Seção de **localização** com Google Maps incorporado e rotas via Google Maps e Waze.
+- **Botão flutuante do WhatsApp** exclusivo para dúvidas.
 
 ---
 
-## Funcionalidades
+## ⚙️ Pré-requisitos
 
-- Estrutura modular com PHP (partials e sections)
-- Navegação por âncoras com scroll suave
-- Vídeos informativos e institucionais
-- Design responsivo (mobile-first)
-- CTA flutuante para WhatsApp e Instagram
-- SEO básico (metatags e Open Graph)
-- Boas práticas de acessibilidade (semântica, contraste, ARIA)
+Este é um projeto **front-end estático**, portanto os requisitos são mínimos:
+
+- Navegador moderno (Chrome, Firefox, Edge, etc.).
+- Git instalado (opcional, para clonar o repositório).
+- Alguma forma de servir arquivos estáticos (recomendado para ambiente local), como por exemplo:
+  - Extensão **Live Server** no VS Code,
+  - `python -m http.server`,
+  - ou `npx serve`.
+
+Não é necessário banco de dados ou back-end para rodar o projeto.
 
 ---
 
-## Estrutura do Projeto
+## 🔨 Guia de instalação
 
+Abaixo um passo a passo para ter o projeto rodando em ambiente de desenvolvimento.
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/NatanLuz/ProjetoCorteAzulTea.git
+cd ProjetoCorteAzulTea
 ```
+
+### 2. Estrutura principal
+
+Estrutura simplificada da pasta:
+
+```bash
 ProjetoCorteAzulTea/
 ├─ public/
-│  ├─ index.html         # Versão estática
-│  ├─ index.php          # Entrada principal (PHP)
+│  ├─ index.html
 │  ├─ manifest.json
 │  └─ assets/
-│     ├─ css/style.css
-│     ├─ js/script.js
-│     └─ img/            # Imagens e vídeos
-├─ partials/             # Head, header e footer
-├─ sections/             # Seções do site
+│     ├─ css/
+│     │  └─ style.css
+│     ├─ js/
+│     │  ├─ script.js
+│     │  └─ depoimentos.js
+│     └─ img/   # Imagens e vídeos
 ├─ tailwind.config.js
-├─ README.md
-└─ LICENSE.md
+└─ readme.MD
 ```
 
----
+### 3. Rodar localmente com servidor estático
 
-## Tecnologias Utilizadas
+Qualquer servidor de arquivos estáticos que aponte para a pasta `public` funciona. Alguns exemplos:
 
-- HTML5
-- Tailwind CSS (via CDN)
-- JavaScript
-- PHP (organização de layout)
-- Font Awesome e SVGs
-
----
-
-## Como Rodar Localmente
-
-### Opção 1 — Servidor PHP
+#### Opção A — Python (3.x)
 
 ```bash
-php -S localhost:8080 -t public
-```
-
-Acesse: http://localhost:8080
-
-### Opção 2 — Servidor estático (HTML)
-
-```bash
+cd public
 python -m http.server 8080
 ```
 
-Recomendado servir a pasta `public` como raiz para evitar problemas de caminhos absolutos.
+Acesse em seguida:
+
+```text
+http://localhost:8080
+```
+
+#### Opção B — `npx serve`
+
+```bash
+npm install -g serve   # opcional, pode usar npx
+cd public
+serve .
+```
+
+#### Opção C — Live Server (VS Code)
+
+1. Abrir a pasta do projeto no VS Code.
+2. Clicar com o botão direito em `public/index.html`.
+3. Selecionar **“Open with Live Server”**.
 
 ---
 
-## Licença
+## 🛠️ Executando os testes.
 
-Este projeto está sob a licença MIT.  
-Veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
+Algumas formas de validar o funcionamento manualmente:
 
----
-
-## Autor
-
-**Natan Da Luz**  
-Desenvolvimento e manutenção  
-GitHub: https://github.com/NatanLuz  
-LinkedIn: https://www.linkedin.com/in/natan-da-luz
+- Verificar a navegação entre as seções pelo menu (incluindo menu mobile).
+- Testar o botão flutuante de WhatsApp para dúvidas.
+- Clicar nos botões de **Google Maps** e **Waze** na seção de Localização.
+- Reproduzir os vídeos de atendimento e reportagem.
+- Conferir a responsividade em diferentes larguras de tela (mobile, tablet e desktop).
 
 ---
 
-## Contato do Projeto
+## 📦 Tecnologias usadas
 
-Instagram: [@corteazultea](https://www.instagram.com/corteazultea)  
-WhatsApp: disponível no botão flutuante do site
+Principais tecnologias e ferramentas utilizadas neste projeto:
+
+- **HTML5**
+- **CSS3**
+- **Tailwind CSS** (via CDN)
+- **JavaScript** (vanilla)
+- **Font Awesome** (ícones)
+- **SVGs personalizados** (Instagram, WhatsApp, etc.)
+
+---
+
+## 👷 Autores
+
+
+- **Natan Da Luz** — Desenvolvedor do site.
+
+GitHub do desenvolvedor: https://github.com/NatanLuz  
+LinkedIn do desenvolvedor: https://www.linkedin.com/in/natan-da-luz
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença **MIT**.  
+Consulte o arquivo `LICENSE.md` para mais detalhes.
+
+---
+
+## 💭 FAQ - Perguntas frequentes
+
+**1. O site possui área administrativa ou login?**  
+Não. O objetivo atual é ser um site institucional informativo, focado em apresentar o serviço e facilitar o contato.
+
+**2. Preciso de algum back-end para rodar o projeto?**  
+Não. Basta um servidor estático simples apontando para a pasta `public`.
+
+**3. É possível adaptar o layout para outra barbearia/clínica?**  
+Sim. Todo o conteúdo está organizado em seções no `index.html`, podendo ser adaptado com textos, imagens e cores de outra marca.
+
+---
+
+Para suporte ou dúvidas sobre o site e falar sobre a parte técnica do projeto, entre em contato comigo pelo LinkedIn: https://www.linkedin.com/in/natan-da-luz

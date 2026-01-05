@@ -30,7 +30,7 @@
       rel="stylesheet"
     />
     <script>
-      // Configuração mínima do Tailwind via CDN (opcional)
+      // Configuração do Tailwind
       tailwind = {
         config: {
           theme: {
@@ -62,10 +62,11 @@
     <link rel="icon" href="assets/img/favicon.svg" />
     <link rel="apple-touch-icon" href="assets/img/capaprojeto.png" />
     <link rel="manifest" href="manifest.json" />
-    <title>CorteAzulTea - Atendimento de crianças Autistas | Viamão - RS</title>
+    <title>CorteAzulTea - Barbeiro T.E.A</title>
   </head>
   <body class="font-sans bg-gray-50 text-black scroll-smooth">
     <a href="#conteudo" class="skip-link">Pular para o conteúdo principal</a>
+
     <!-- Navegação -->
     <nav
       class="fixed top-0 w-full bg-gray-50/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300"
@@ -74,66 +75,76 @@
       aria-label="Menu principal"
     >
       <div class="max-w-6xl mx-auto px-6 py-4">
-        <div class="grid grid-cols-3 items-center">
-            <div class="hidden md:flex items-center space-x-8">
-              <a href="#sobre" class="nav-link">Sobre</a>
-              <a href="#diferenciais" class="nav-link">Diferenciais</a>
-              <a href="#precos" class="nav-link">Preços</a>
-              <a href="#depoimentos" class="nav-link">Depoimentos</a>
-              <a href="#contato" class="nav-link">Contato</a>
-              <a href="https://www.instagram.com/corteazultea" target="_blank" rel="noopener" aria-label="Instagram" class="ml-6 md:ml-10 inline-flex items-center space-x-2">
-                <span class="text-black">Instagram</span>
-                <img src="assets/img/instagram.svg" alt="Instagram" class="h-6 w-6" />
-              </a>
-            </div>
-          </div>
-          <div class="flex justify-end">
-            <div class="md:hidden">
-              <button
-                id="mobile-menu-btn"
-                class="text-gray-600 hover:text-blue-600"
-                aria-label="Abrir menu de navegação"
-                aria-controls="mobile-menu"
-                aria-expanded="false"
-              >
-                <i class="fas fa-bars text-xl"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="mobile-menu" class="hidden md:hidden bg-gray-50 border-t">
-        <div class="px-6 py-4 space-y-4">
-          <a href="#sobre" class="block py-2 text-gray-600 hover:text-blue-600"
-            >Sobre</a
-          >
+        <div class="hidden md:flex items-center justify-center space-x-8">
           <a
-            href="#diferenciais"
-            class="block py-2 text-gray-600 hover:text-blue-600"
+            href="#hero"
+            aria-label="Início"
+            class="font-semibold text-blue-700"
+            >CorteAzulTea</a
+          >
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#diferenciais" class="nav-link">Diferenciais</a>
+          <a href="#precos" class="nav-link">Preços</a>
+          <a href="#depoimentos" class="nav-link">Depoimentos</a>
+          <a href="#localizacao" class="nav-link">Localização</a>
+          <a
+            href="https://www.instagram.com/corteazultea"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            class="ml-6 md:ml-10 inline-flex items-center justify-center"
+          >
+            <img
+              src="assets/img/instagram.svg"
+              alt="Instagram"
+              class="h-6 w-6"
+            />
+          </a>
+        </div>
+
+        <div class="flex items-center justify-between md:hidden">
+          <a
+            href="#hero"
+            aria-label="Início"
+            class="font-semibold text-blue-700"
+            >CorteAzulTea</a
+          >
+          <button
+            id="mobile-menu-btn"
+            class="p-2 rounded-md text-gray-700 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden mt-3 space-y-2 border-t border-gray-200 pt-3"
+        >
+          <a href="#sobre" class="block py-2 text-gray-700 nav-link">Sobre</a>
+          <a href="#diferenciais" class="block py-2 text-gray-700 nav-link"
             >Diferenciais</a
           >
-          <a href="#precos" class="block py-2 text-gray-600 hover:text-blue-600"
-            >Preços</a
-          >
-          <a
-            href="#depoimentos"
-            class="block py-2 text-gray-600 hover:text-blue-600"
+          <a href="#precos" class="block py-2 text-gray-700 nav-link">Preços</a>
+          <a href="#depoimentos" class="block py-2 text-gray-700 nav-link"
             >Depoimentos</a
           >
-          <a
-            href="#contato"
-            class="block py-2 text-gray-600 hover:text-blue-600"
-            >Contato</a
+          <a href="#localizacao" class="block py-2 text-gray-700 nav-link"
+            >Localização</a
           >
-            <a
-              href="https://www.instagram.com/corteazultea"
-              target="_blank"
-              rel="noopener"
-              class="block py-2 text-gray-600 hover:text-pink-600"
-              aria-label="Instagram"
-              >
-              <i class="fab fa-instagram"></i> Instagram
-            </a>
+          <a
+            href="https://www.instagram.com/corteazultea"
+            target="_blank"
+            rel="noopener"
+            class="block py-2 text-gray-700 hover:text-pink-600 text-xl"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
       </div>
     </nav>
@@ -151,7 +162,7 @@
         <div
           class="absolute inset-0 bg-gradient-to-b from-blue-800/80 via-blue-600/60 to-white/90"
         ></div>
-        <div class="relative z-10 max-w-4xl px-6">
+        <div class="relative z-10 max-w-4xl px-6 mx-auto text-center">
           <div class="animate-fadeInUp">
             <h1
               class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
@@ -179,7 +190,11 @@
                 aria-label="Instagram"
                 class="ml-4 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                <img src="assets/img/instagram.svg" alt="Instagram" class="h-6 w-6" />
+                <img
+                  src="assets/img/instagram.svg"
+                  alt="Instagram"
+                  class="h-6 w-6"
+                />
                 <span>Instagram</span>
               </a>
             </div>
@@ -386,153 +401,257 @@
           </div>
 
           <div class="max-w-4xl mx-auto mb-8">
-            <div class="flex items-start gap-4 p-6 rounded-2xl bg-yellow-50 border-l-4 border-yellow-500 shadow-md">
+            <div
+              class="flex items-start gap-4 p-6 rounded-2xl bg-yellow-50 border-l-4 border-yellow-500 shadow-md"
+            >
               <div class="flex-shrink-0 mt-1">
                 <i class="fas fa-child-reaching text-yellow-500 text-3xl"></i>
               </div>
-              <div id="depoimentos-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12"></div>
-              <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-                <div class="w-full rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-pink-500 to-purple-600 p-6 flex items-center justify-center h-48 md:h-64">
-                  <div class="text-center">
-                    <i class="fab fa-instagram text-4xl text-white mb-4"></i>
-                    <h4 class="text-white font-semibold text-lg mb-3">Depoimento em Vídeo</h4>
-                    <a href="https://www.instagram.com/reel/DIU14s2MAXs/" target="_blank" rel="noopener" class="inline-flex items-center bg-gray-50 text-pink-600 px-4 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-                      <i class="fab fa-instagram mr-2"></i>
-                      Ver no Instagram
-                    </a>
-                  </div>
-                </div>
-              </div>
-                  melhor ou se adaptar ao ambiente, agendamos um novo momento com a família quando for
-                  necessário<strong> sem custo adicional</strong>.<br />
-                  Nessas sessões, acompanhamos o processo da criança no seu próprio ritmo, <strong>sem garantir
-                    que o corte acontecerá naquele atendimento</strong>.
+              <div class="flex-1">
+                <h3 class="text-xl font-bold text-black mb-3">
+                  Atendimento Humanizado e Respeito ao Tempo da Criança
+                </h3>
+                <p class="text-black leading-relaxed mb-3">
+                  O atendimento é conduzido de forma humanizada e respeitando o
+                  tempo de cada criança T.E.A.
                 </p>
-                <p class="mt-4 text-black leading-relaxed">
-                  <span class="block font-semibold text-base text-blue-800 mb-1">Atendimento a domicílio</span>
-                  <span class="text-sm text-gray-700">Ofereço a opção de atendimento no conforto da sua casa,
-                    proporcionando praticidade e comodidade para a família.</span>
-                <ul class="mt-2 ml-4 list-disc text-sm text-gray-800">
-                  <li><strong>Viamão:</strong> R$ 100,00</li>
-                  <li><strong>Porto Alegre:</strong> R$ 120,00</li>
-                  <li><strong>Demais regiões:</strong> a consultar</li>
+                <p class="text-black leading-relaxed mb-3">
+                  Se durante o primeiro encontro identificarmos que ela precisa
+                  de uma nova sessão para se regular melhor ou se adaptar ao
+                  ambiente, agendamos um novo momento com a família quando for
+                  necessário
+                  <span class="font-semibold">sem custo adicional</span>.
+                </p>
+                <p class="text-black leading-relaxed mb-4">
+                  Nessas sessões, acompanhamos o processo da criança no seu
+                  próprio ritmo,
+                  <span class="font-semibold"
+                    >sem garantir que o corte acontecerá naquele
+                    atendimento</span
+                  >.
+                </p>
+
+                <p class="font-semibold text-blue-800 mb-1">
+                  Atendimento a domicílio
+                </p>
+                <p class="text-black leading-relaxed mb-2">
+                  Ofereço a opção de atendimento no conforto da sua casa,
+                  proporcionando praticidade e comodidade para a família.
+                </p>
+                <ul class="ml-4 list-disc text-black">
+                  <li><span class="font-semibold">Viamão:</span> R$ 100,00</li>
+                  <li>
+                    <span class="font-semibold">Porto Alegre:</span> R$ 120,00
+                  </li>
+                  <li>
+                    <span class="font-semibold">Demais Regiões:</span> a
+                    consultar
+                  </li>
                 </ul>
-                </p>
               </div>
             </div>
           </div>
 
           <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-            <div class="rounded-2xl bg-white border border-blue-100 shadow-md hover:shadow-lg overflow-hidden transition-shadow duration-300">
+            <div
+              class="rounded-2xl bg-white border border-blue-100 shadow-md hover:shadow-lg overflow-hidden transition-shadow duration-300"
+            >
               <div class="p-8" aria-labelledby="title-kids">
                 <div class="mb-6">
-                  <h3 id="title-kids" class="text-2xl font-bold text-blue-800">Corte Kids — R$ 45</h3>
-                  <p class="text-sm text-black mb-3">Para crianças sem dificuldade no momento do corte.</p>
-                  <p class="text-sm font-medium text-black mb-4">Duração: 40–45 min</p>
+                  <h3 id="title-kids" class="text-2xl font-bold text-blue-800">
+                    Corte Kids — R$ 45
+                  </h3>
+                  <p class="text-sm text-black mb-3">
+                    Para crianças sem dificuldade no momento do corte.
+                  </p>
+                  <p class="text-sm font-medium text-black mb-4">
+                    Duração: 40–45 min
+                  </p>
                 </div>
 
                 <div class="mb-6">
                   <p class="text-black text-sm leading-relaxed mb-4">
-                    Um atendimento simples, tranquilo e direto, ideal para crianças que se sentem confortáveis
-                    com o processo e participam naturalmente.
+                    Um atendimento simples, tranquilo e direto, ideal para
+                    crianças que se sentem confortáveis com o processo e
+                    participam naturalmente.
                   </p>
 
-                  <p class="text-sm font-semibold text-blue-800 mb-2">Indicado para crianças que:</p>
+                  <p class="text-sm font-semibold text-blue-800 mb-2">
+                    Indicado para crianças que:
+                  </p>
                   <div class="space-y-2 mb-4 text-sm text-black">
-                    <p><span class="text-blue-600">•</span> cortam sem resistência;</p>
-                    <p><span class="text-blue-600">•</span> permanecem calmas durante o atendimento;</p>
-                    <p><span class="text-blue-600">•</span> não apresentam ansiedade ou desconforto.</p>
+                    <p>
+                      <span class="text-blue-600">•</span> cortam sem
+                      resistência;
+                    </p>
+                    <p>
+                      <span class="text-blue-600">•</span> permanecem calmas
+                      durante o atendimento;
+                    </p>
+                    <p>
+                      <span class="text-blue-600">•</span> não apresentam
+                      ansiedade ou desconforto.
+                    </p>
                   </div>
 
-                  <p class="text-sm font-semibold text-blue-800 mb-1">Objetivo:</p>
-                  <p class="text-sm text-black">um corte leve, rápido e bem-feito, em um ambiente acolhedor.</p>
+                  <p class="text-sm font-semibold text-blue-800 mb-1">
+                    Objetivo:
+                  </p>
+                  <p class="text-sm text-black">
+                    um corte leve, rápido e bem-feito, em um ambiente acolhedor.
+                  </p>
                 </div>
 
-                <a aria-label="Agendar Corte Kids"
+                <a
+                  aria-label="Agendar Corte Kids"
                   href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar um Corte Kids para R$ 45"
-                  target="_blank" rel="noopener"
-                  class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center">
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center"
+                >
                   <i class="fab fa-whatsapp mr-2"></i>
                   Agendar Corte Kids
                 </a>
               </div>
             </div>
 
-            <div class="rounded-2xl bg-white border border-blue-100 shadow-md hover:shadow-lg overflow-hidden transition-shadow duration-300">
+            <div
+              class="rounded-2xl bg-white border border-blue-100 shadow-md hover:shadow-lg overflow-hidden transition-shadow duration-300"
+            >
               <div class="p-8" aria-labelledby="title-ludico">
                 <div class="mb-6">
-                  <h3 id="title-ludico" class="text-2xl font-bold text-blue-800">Corte Lúdico — R$ 65</h3>
-                  <p class="text-sm text-black mb-3">Para crianças não-TEA com alguma dificuldade ou ansiedade.</p>
-                  <p class="text-sm font-medium text-black mb-4">Duração: 50 min</p>
+                  <h3
+                    id="title-ludico"
+                    class="text-2xl font-bold text-blue-800"
+                  >
+                    Corte Lúdico — R$ 65
+                  </h3>
+                  <p class="text-sm text-black mb-3">
+                    Para crianças não-TEA com alguma dificuldade ou ansiedade.
+                  </p>
+                  <p class="text-sm font-medium text-black mb-4">
+                    Duração: 50 min
+                  </p>
                 </div>
 
                 <div class="mb-6">
                   <p class="text-black text-sm leading-relaxed mb-4">
-                    Atendimento com abordagem lúdica e acolhedora, ideal para crianças que precisam de mais
-                    tempo, interação e sensibilidade.
+                    Atendimento com abordagem lúdica e acolhedora, ideal para
+                    crianças que precisam de mais tempo, interação e
+                    sensibilidade.
                   </p>
 
-                  <p class="text-sm font-semibold text-blue-800 mb-2">Indicado para crianças que:</p>
+                  <p class="text-sm font-semibold text-blue-800 mb-2">
+                    Indicado para crianças que:
+                  </p>
                   <div class="space-y-2 mb-4 text-sm text-black">
-                    <p><span class="text-blue-600">•</span> ficam ansiosas ou inquietas;</p>
-                    <p><span class="text-blue-600">•</span> tiveram experiências negativas;</p>
-                    <p><span class="text-blue-600">•</span> precisam de condução diferenciada.</p>
+                    <p>
+                      <span class="text-blue-600">•</span> ficam ansiosas ou
+                      inquietas;
+                    </p>
+                    <p>
+                      <span class="text-blue-600">•</span> tiveram experiências
+                      negativas;
+                    </p>
+                    <p>
+                      <span class="text-blue-600">•</span> precisam de condução
+                      diferenciada.
+                    </p>
                   </div>
 
-                  <p class="text-sm font-semibold text-blue-800 mb-3">Utilizamos:</p>
+                  <p class="text-sm font-semibold text-blue-800 mb-3">
+                    Utilizamos:
+                  </p>
                   <p class="text-sm text-black mb-4">
-                    manejo lúdico, brincadeiras, reforçadores e aproximação gradual.
+                    manejo lúdico, brincadeiras, reforçadores e aproximação
+                    gradual.
                   </p>
 
-                  <p class="text-sm font-semibold text-blue-800 mb-1">Objetivo:</p>
-                  <p class="text-sm text-black">tornar o corte mais leve, divertido e positivo.</p>
+                  <p class="text-sm font-semibold text-blue-800 mb-1">
+                    Objetivo:
+                  </p>
+                  <p class="text-sm text-black">
+                    tornar o corte mais leve, divertido e positivo.
+                  </p>
                 </div>
 
-                <a aria-label="Agendar Corte Lúdico"
+                <a
+                  aria-label="Agendar Corte Lúdico"
                   href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar Corte Lúdico para R$ 65"
-                  target="_blank" rel="noopener"
-                  class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center">
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center"
+                >
                   <i class="fab fa-whatsapp mr-2"></i>
                   Agendar Corte Lúdico
                 </a>
               </div>
             </div>
 
-            <div class="rounded-2xl bg-white border border-blue-100 shadow-md hover:shadow-lg overflow-hidden transition-shadow duration-300">
+            <div
+              class="rounded-2xl bg-white border border-blue-100 shadow-md hover:shadow-lg overflow-hidden transition-shadow duration-300"
+            >
               <div class="p-8" aria-labelledby="title-tea">
                 <div class="mb-6">
-                  <h3 id="title-tea" class="text-2xl font-bold text-blue-800">Corte TEA Especial — R$ 85</h3>
-                  <p class="text-sm text-black mb-3">Atendimento especializado para crianças TEA com dificuldade.</p>
-                  <p class="text-sm font-medium text-black mb-4">Duração: 1h15</p>
+                  <h3 id="title-tea" class="text-2xl font-bold text-blue-800">
+                    Corte TEA Especial — R$ 85
+                  </h3>
+                  <p class="text-sm text-black mb-3">
+                    Atendimento especializado para crianças TEA com dificuldade.
+                  </p>
+                  <p class="text-sm font-medium text-black mb-4">
+                    Duração: 1h15
+                  </p>
                 </div>
 
                 <div class="mb-6">
                   <p class="text-black text-sm leading-relaxed mb-4">
-                    Abordagem personalizada com foco em acolhimento, adaptação sensorial e respeito total ao
-                    ritmo da criança.
+                    Abordagem personalizada com foco em acolhimento, adaptação
+                    sensorial e respeito total ao ritmo da criança.
                   </p>
 
-                  <p class="text-sm font-semibold text-blue-800 mb-2">Inclui:</p>
+                  <p class="text-sm font-semibold text-blue-800 mb-2">
+                    Inclui:
+                  </p>
                   <div class="space-y-2 mb-4 text-sm text-black">
                     <p><span class="text-blue-600">•</span> vínculo afetivo;</p>
-                    <p><span class="text-blue-600">•</span> reforçadores personalizados;</p>
-                    <p><span class="text-blue-600">•</span> adaptação sensorial completa;</p>
-                    <p><span class="text-blue-600">•</span> anamnese detalhada;</p>
-                    <p><span class="text-blue-600">•</span> tempo ampliado para pausas e autorregulação.</p>
+                    <p>
+                      <span class="text-blue-600">•</span> reforçadores
+                      personalizados;
+                    </p>
+                    <p>
+                      <span class="text-blue-600">•</span> adaptação sensorial
+                      completa;
+                    </p>
+                    <p>
+                      <span class="text-blue-600">•</span> anamnese detalhada;
+                    </p>
+                    <p>
+                      <span class="text-blue-600">•</span> tempo ampliado para
+                      pausas e autorregulação.
+                    </p>
                   </div>
 
                   <p class="text-sm text-black leading-relaxed mb-4">
-                    Segunda sessão gratuita, caso o corte não seja concluído no primeiro dia.
+                    Segunda sessão gratuita, caso o corte não seja concluído no
+                    primeiro dia.
                   </p>
 
-                  <p class="text-sm font-semibold text-blue-800 mb-1">Objetivo:</p>
-                  <p class="text-sm text-black">garantir uma experiência segura, humana e confortável.</p>
+                  <p class="text-sm font-semibold text-blue-800 mb-1">
+                    Objetivo:
+                  </p>
+                  <p class="text-sm text-black">
+                    garantir uma experiência segura, humana e confortável.
+                  </p>
                 </div>
 
-                <a aria-label="Agendar Corte TEA Especial"
+                <a
+                  aria-label="Agendar Corte TEA Especial"
                   href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar Corte TEA Especial para R$ 85"
-                  target="_blank" rel="noopener"
-                  class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duração-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center">
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duração-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center"
+                >
                   <i class="fab fa-whatsapp mr-2"></i>
                   Agendar Corte TEA Especial
                 </a>
@@ -541,28 +660,136 @@
           </div>
 
           <div class="mt-12 max-w-4xl mx-auto">
-            <div class="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-center">
-              <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div
+              class="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-center"
+            >
+              <div
+                class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
                 <i class="fas fa-clipboard-list text-white text-2xl"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-4 text-white">FICHA DE ANAMNESE - Fundamental para o Atendimento</h3>
+              <h3 class="text-2xl font-bold mb-4 text-white">
+                FICHA DE ANAMNESE - Fundamental para o Atendimento
+              </h3>
               <p class="text-white/90 mb-6 leading-relaxed max-w-3xl mx-auto">
-                PARA GARANTIR O MELHOR ATENDIMENTO POSSÍVEL E PERSONALIZADO PARA SUA CRIANÇA
-                <strong>É ESSENCIAL QUE VOCÊ PREENCHA NOSSA FICHA ANAMNESE</strong>.
-                PREENCHENDO ESTE FORMULÁRIO VOCÊ ME AJUDA A ENTENDER AS NECESSIDADES ESPECÍFICAS, PREFERÊNCIAS SENSORIAIS E CARACTERÍSTICAS INDIVIDUAIS DA CRIANÇA
-                PERMITINDO UM ATENDIMENTO COM MAIS SEGURO E EFICAZ!
+                PARA GARANTIR O MELHOR ATENDIMENTO POSSÍVEL E PERSONALIZADO PARA
+                SUA CRIANÇA
+                <strong
+                  >É ESSENCIAL QUE VOCÊ PREENCHA NOSSA FICHA ANAMNESE</strong
+                >. PREENCHENDO ESTE FORMULÁRIO VOCÊ ME AJUDA A ENTENDER AS
+                NECESSIDADES ESPECÍFICAS, PREFERÊNCIAS SENSORIAIS E
+                CARACTERÍSTICAS INDIVIDUAIS DA CRIANÇA PERMITINDO UM ATENDIMENTO
+                COM MAIS SEGURO E EFICAZ!
               </p>
-              <a href="https://forms.gle/u8yAf4K8eaDSxFns9" target="_blank" rel="noopener"
-                class="cta-button bg-white hover:bg-gray-100 text-blue-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center">
+              <a
+                href="https://forms.gle/u8yAf4K8eaDSxFns9"
+                target="_blank"
+                rel="noopener"
+                class="cta-button bg-white hover:bg-gray-100 text-blue-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center"
+              >
                 <i class="fas fa-file-alt mr-2"></i>
                 Preencher FICHA DE ANAMNESE
               </a>
             </div>
           </div>
+
+          <div class="mt-8 max-w-4xl mx-auto">
+            <div
+              class="bg-white rounded-2xl shadow-md p-8 text-center border border-blue-100"
+            >
+              <h3 class="text-2xl font-bold mb-4 text-blue-800">
+                FORMAS DE PAGAMENTO
+              </h3>
+              <p class="text-black mb-2 font-semibold">DINHEIRO</p>
+              <p class="text-black mb-2 font-semibold">
+                CARTÃO DE CRÉDITO &amp; DÉBITO
+              </p>
+              <p class="text-black mb-4 font-semibold">PIX</p>
+              <p class="text-black text-sm leading-relaxed max-w-2xl mx-auto">
+                Pagamento pode ser efetuado pelo WhatsApp ou diretamente na
+                barbearia.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-10 max-w-4xl mx-auto">
+            <h3
+              class="text-2xl font-bold mb-6 text-black text-left md:text-center"
+            >
+              Políticas do Atendimento
+            </h3>
+
+            <div class="space-y-4">
+              <!-- Configurando parte do agendamento -->
+              <div
+                class="relative rounded-2xl bg-white shadow-md border border-blue-100 p-5 flex gap-4"
+              >
+                <div
+                  class="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-calendar-check text-blue-600"></i>
+                </div>
+                <div class="text-left">
+                  <h4 class="text-lg font-semibold text-blue-800 mb-1">
+                    Agendamento Obrigatório
+                  </h4>
+                  <p class="text-sm text-black leading-relaxed">
+                    Todos os serviços devem ser previamente agendados.
+                    Recomendamos reservar seu horário com antecedência para
+                    garantir disponibilidade.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Política de cancelamento -->
+              <div
+                class="relative rounded-2xl bg-white shadow-md border border-orange-100 p-5 flex gap-4"
+              >
+                <div
+                  class="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-calendar-times text-orange-500"></i>
+                </div>
+                <div class="text-left">
+                  <h4 class="text-lg font-semibold text-orange-700 mb-1">
+                    Política de Cancelamento
+                  </h4>
+                  <p class="text-sm text-black leading-relaxed">
+                    Cancelamentos ou alterações de horário devem ser informados
+                    com, no mínimo, 24 horas de antecedência. Essa medida
+                    garante organização e respeito ao tempo de todos os
+                    clientes.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Ficha de ANAMNESE -->
+              <div
+                class="relative rounded-2xl bg-white shadow-md border border-purple-100 p-5 flex gap-4"
+              >
+                <div
+                  class="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-file-alt text-purple-600"></i>
+                </div>
+                <div class="text-left">
+                  <h4 class="text-lg font-semibold text-purple-700 mb-1">
+                    Ficha de ANAMNESE
+                  </h4>
+                  <p class="text-sm text-black leading-relaxed">
+                    O preenchimento da Ficha de Anamnese é obrigatório antes do
+                    atendimento. Esse procedimento é essencial para assegurar
+                    maior segurança, qualidade e personalização dos serviços
+                    oferecidos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Vídeos -->
+      <!-- Parte de como funciona  -->
 
       <section
         id="video-atendimento"
@@ -601,7 +828,7 @@
 
       <section id="noticias" class="py-16 px-6 max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold mb-10 text-center">
-          Notícias e Destaques
+          Notícias & Entrevistas
         </h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
@@ -658,10 +885,7 @@
           </div>
           <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
             <video class="w-full h-48 object-cover" controls preload="none">
-              <source
-                src="assets/img/entrevistaemvideo.mp4"
-                type="video/mp4"
-              />
+              <source src="assets/img/entrevistaemvideo.mp4" type="video/mp4" />
               Seu navegador não suporta vídeos.
             </video>
             <div class="p-4">
@@ -691,57 +915,15 @@
               Veja o que as famílias dizem após o atendimento especializado
             </p>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
-            <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-              <div class="w-full rounded-xl overflow-hidden shadow-lg bg-white p-2 flex items-center justify-center">
-                <img src="assets/img/avaliaçao1.jpg" alt="Avaliação Cliente" class="w-full h-48 md:h-64 object-contain" loading="lazy" decoding="async" />
-              </div>
-            </div>
-            <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-              <div class="w-full rounded-xl overflow-hidden shadow-lg bg-white p-2 flex items-center justify-center">
-                <img src="assets/img/avaliaçao2.jpg" alt="Avaliação Cliente" class="w-full h-48 md:h-64 object-contain" loading="lazy" decoding="async" />
-              </div>
-            </div>
-            <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-              <div class="w-full rounded-xl overflow-hidden shadow-lg bg-white p-2 flex items-center justify-center">
-                <img src="assets/img/avaliaçao3.jpg" alt="Avaliação Cliente" class="w-full h-48 md:h-64 object-contain" loading="lazy" decoding="async" />
-              </div>
-            </div>
-            <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-              <div class="w-full rounded-xl overflow-hidden shadow-lg bg-white p-2 flex items-center justify-center">
-                <img src="assets/img/avaliaçao4.jpg" alt="Avaliação Cliente" class="w-full h-48 md:h-64 object-contain" loading="lazy" decoding="async" />
-              </div>
-            </div>
-            <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-              <div class="w-full rounded-xl overflow-hidden shadow-lg bg-white p-2 flex items-center justify-center">
-                <img src="assets/img/avaliaçao5.jpg" alt="Avaliação Cliente" class="w-full h-48 md:h-64 object-contain" loading="lazy" decoding="async" />
-              </div>
-            </div>
-            <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-              <div class="w-full rounded-xl overflow-hidden shadow-lg bg-white p-2 flex items-center justify-center">
-                <img src="assets/img/avaliaçao6.jpg" alt="Avaliação Cliente" class="w-full h-48 md:h-64 object-contain" loading="lazy" decoding="async" />
-              </div>
-            </div>
-            
-            <div class="avaliacao-card card hover-lift group text-center transform transition-all duration-300 hover:scale-105">
-              <div class="w-full rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-pink-500 to-purple-600 p-6 flex items-center justify-center h-48 md:h-64">
-                <div class="text-center">
-                  <i class="fab fa-instagram text-4xl text-white mb-4"></i>
-                  <h4 class="text-white font-semibold text-lg mb-3">Depoimento em Vídeo</h4>
-                  <a href="https://www.instagram.com/reel/DIU14s2MAXs/" target="_blank" rel="noopener" class="inline-flex items-center bg-gray-50 text-pink-600 px-4 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-                    <i class="fab fa-instagram mr-2"></i>
-                    Ver no Instagram
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div id="depoimentos-carousel" class="mb-12"></div>
           <div
             class="bg-gray-50/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg max-w-4xl mx-auto"
           >
             <p class="text-lg text-black font-semibold">
-              <i class="fas fa-heart text-blue-600 mr-2"></i> Cada avaliação
-              representa uma família que confiou em nosso trabalho especializado
+              Cada avaliação representa uma família que confiou em nosso
+              trabalho especializado e saiu satisfeita. Agradecemos a todos pelo
+              carinho e apoio!
+              <i class="fas fa-heart text-blue-600 ml-2"></i>
             </p>
           </div>
         </div>
@@ -755,49 +937,109 @@
           class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video"
         >
           <video class="w-full h-full object-cover" controls preload="none">
-            <source
-              src="assets/img/reportagemnofinal.mp4"
-              type="video/mp4"
-            />
+            <source src="assets/img/reportagemnofinal.mp4" type="video/mp4" />
           </video>
         </div>
       </section>
 
-      <!-- Contato -->
+      <!-- Localização -->
 
-      <section
-        id="contato"
-        class="py-20 px-6 bg-gradient-to-br from-blue-50 to-white"
-      >
-        <div class="max-w-5xl mx-auto">
-          <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-black">
-              Redes <span class="text-blue-700">Sociais</span>
+      <section id="localizacao" class="bg-white py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-2 text-black">
+              Localização
             </h2>
-            <p class="text-lg text-black max-w-3xl mx-auto leading-relaxed">
-              Para agendar ou tirar dúvidas, fale comigo pelo Instagram.<br />
-              Se quiser um atendimento mais seguro e personalizado, preencha a
-              <strong>FICHA DE ANAMNESE</strong>.
-            </p>
+            <p class="text-lg text-gray-700">Venha visitar nosso espaço</p>
           </div>
-          <div class="grid md:grid-cols-1 gap-8 place-items-center">
-            <div class="card hover-lift group text-center max-w-sm w-full">
-              <div
-                class="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-pink-200 transition-colors"
-              >
-                <i class="fab fa-instagram text-3xl text-pink-600"></i>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+            <div class="space-y-4">
+              <div class="flex gap-4 bg-gray-50 rounded-2xl p-4 shadow-sm">
+                <div
+                  class="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-location-dot text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-black">Endereço</h4>
+                  <p class="text-sm text-gray-700">
+                    R. Vinte e Nove de Julho, 39 - Centro, Viamão - RS
+                  </p>
+                </div>
               </div>
-              <a
-                href="https://www.instagram.com/corteazultea"
-                target="_blank"
-                rel="noopener"
-                class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+
+              <div class="flex gap-4 bg-gray-50 rounded-2xl p-4 shadow-sm">
+                <div
+                  class="w-9 h-9 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-clock text-green-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-black">
+                    Horário de Atendimento
+                  </h4>
+                  <p class="text-sm text-gray-700">Conforme Agendamento</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 bg-gray-50 rounded-2xl p-4 shadow-sm">
+                <div
+                  class="w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-heart text-purple-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-black">Especialidade</h4>
+                  <p class="text-sm text-gray-700">Crianças Autistas</p>
+                </div>
+              </div>
+
+              <!-- Botões de rota -->
+              <div class="pt-4">
+                <p class="text-sm font-semibold text-gray-800 mb-3">
+                  Como chegar
+                </p>
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center sm:gap-4 gap-3"
+                >
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Rua+Vinte+e+Nove+de+Julho,+39,+Centro,+Viamão,+RS"
+                    target="_blank"
+                    rel="noopener"
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2.5 px-5 rounded-lg shadow-md transition-colors"
+                  >
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Abrir no Google Maps</span>
+                  </a>
+                  <a
+                    href="https://waze.com/ul?q=Rua%20Vinte%20e%20Nove%20de%20Julho%2039%20Viamão%20RS"
+                    target="_blank"
+                    rel="noopener"
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold py-2.5 px-5 rounded-lg shadow-md transition-colors"
+                  >
+                    <i class="fas fa-car"></i>
+                    <span>Abrir no Waze</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coluna direita: mapa do Google -->
+            <div>
+              <div
+                class="w-full h-72 md:h-[480px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg border border-gray-200"
               >
-                <i class="fab fa-instagram mr-2"></i> Acessar Instagram
-              </a>
+                <iframe
+                  title="Mapa - CorteAzulTea"
+                  src="https://www.google.com/maps?q=Rua%20Vinte%20e%20Nove%20de%20Julho%2C%2039%20-%20Centro%2C%20Viam%C3%A3o%20-%20RS&amp;output=embed"
+                  class="w-full h-full border-0"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
-          <!-- Localização e informações omitidas por brevidade -->
         </div>
       </section>
     </main>
@@ -819,11 +1061,6 @@
         </p>
       </div>
     </footer>
-    <a
-      href="https://wa.me/5551986604404"
-      class="floating-whatsapp"
-      aria-label="Entrar em contato por WhatsApp"
-    ></a>
     <script src="assets/js/script.js" defer></script>
     <script src="assets/js/depoimentos.js" defer></script>
     <script

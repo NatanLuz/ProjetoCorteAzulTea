@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sections.forEach((sec) => sectionObserver.observe(sec));
 
-  // Garantir lazy-loading em imagens padrão
+  // Garantir lazy-loading
   document.querySelectorAll("img").forEach((img) => {
     if (!img.hasAttribute("loading")) {
       img.setAttribute("loading", "lazy");
@@ -174,7 +174,7 @@ const counterObserver = new IntersectionObserver(
   { threshold: 0.5 }
 );
 
-// Desenvolvendo o Formulário de contato
+// Desenvolvendo o formulário de contato
 const contactForm = document.querySelector("#contact-form");
 if (contactForm) {
   contactForm.addEventListener("submit", (e) => {

@@ -8,7 +8,7 @@ body {
   line-height: 1.6;
 }
 
-/* Skip link (visível apenas ao focar) */
+/* Skip link  */
 .skip-link {
   position: fixed;
   top: 8px;
@@ -112,29 +112,18 @@ video {
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+/* Grades de avaliações (depoimentos) */
 .avaliacao-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 0.75rem;
   transition: transform 0.3s ease;
 }
 
 .avaliacao-card:hover img {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
-/* Botão flutuante do WhatsApp */
-.floating-whatsapp {
-  @apply fixed bottom-6 right-6 bg-blue-700 hover:bg-blue-800 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg text-2xl z-50 transition-all duration-300;
-  background-image: url("../img/whatsapp.svg");
-  background-size: 24px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.floating-whatsapp:hover {
-  @apply transform scale-110 shadow-xl;
+/* Ajuste específico para o grid de depoimentos */
+#depoimentos-carousel .avaliacao-card video {
+  border-radius: 0.75rem;
 }
 
 /* Video container */
@@ -244,11 +233,6 @@ video {
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;
-  }
-
-  .floating-whatsapp {
-    @apply w-12 h-12;
-    background-size: 20px;
   }
 }
 
