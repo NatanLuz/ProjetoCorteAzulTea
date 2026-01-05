@@ -2,8 +2,6 @@
 
 Desenvolvi o Site institucional do  Projeto **CorteAzulTea**, um serviço do Jonathan Rodrigues especializado em cortes de cabelo para crianças com Transtorno do Espectro Autista (T.E.A), com foco em atendimento humanizado, ambiente acolhedor e comunicação clara com as famílias.
 
-[![corteazultea.png](https://img.shields.io/badge/CorteAzulTea-Site%20Institucional-blue)](https://www.instagram.com/corteazultea)
-
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
