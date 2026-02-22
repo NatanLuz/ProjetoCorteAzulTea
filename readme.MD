@@ -137,13 +137,11 @@ Principais tecnologias e ferramentas utilizadas neste projeto:
 
 ---
 
-## 👷 Autores
+## 👷 Autor
 
+Natan Da Luz
 
-- **Natan Da Luz** — Desenvolvedor do site.
-
-GitHub do desenvolvedor: https://github.com/NatanLuz  
-LinkedIn do desenvolvedor: https://www.linkedin.com/in/natan-da-luz
+LinkedIn: https://www.linkedin.com/in/natan-da-luz
 
 ---
 
