@@ -9,7 +9,7 @@ Desenvolvi o Site institucional do  Projeto **CorteAzulTea**, um serviço do Jon
 
 ---
 
-## 🔥 Introdução
+## Introdução
 
 O **CorteAzulTea** é um site responsivo pensado para apresentar, de forma clara e acolhedora, o trabalho do barbeiro especializado em crianças autistas.
 
