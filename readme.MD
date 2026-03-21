@@ -1,6 +1,6 @@
 # CorteAzulTea
 
-Desenvolvi o Site institucional do  Projeto **CorteAzulTea**, um serviço do Jonathan Rodrigues especializado em cortes de cabelo para crianças com Transtorno do Espectro Autista (T.E.A), com foco em atendimento humanizado, ambiente acolhedor e comunicação clara com as famílias.
+Desenvolvi o Site institucional do Projeto **CorteAzulTea**, um serviço do Jonathan Rodrigues especializado em cortes de cabelo para crianças com Transtorno do Espectro Autista (T.E.A), com foco em atendimento humanizado, ambiente acolhedor e comunicação clara com as famílias.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
@@ -112,7 +112,7 @@ serve .
 
 ---
 
-## 🛠️ Executando os testes.
+## 🛠️ Executando os testes
 
 Algumas formas de validar o funcionamento manualmente:
 
@@ -141,28 +141,14 @@ Principais tecnologias e ferramentas utilizadas neste projeto:
 
 Natan Da Luz
 
-LinkedIn: https://www.linkedin.com/in/natan-da-luz
+LinkedIn: <https://www.linkedin.com/in/natan-da-luz>
 
 ---
 
 ## 📄 Licença
 
-Este projeto está sob a licença **MIT**.  
-Consulte o arquivo `LICENSE.md` para mais detalhes.
+Este projeto está sob a licença **MIT**.
 
 ---
 
-## 💭 FAQ - Perguntas frequentes
-
-**1. O site possui área administrativa ou login?**  
-Não. O objetivo atual é ser um site institucional informativo, focado em apresentar o serviço e facilitar o contato.
-
-**2. Preciso de algum back-end para rodar o projeto?**  
-Não. Basta um servidor estático simples apontando para a pasta `public`.
-
-**3. É possível adaptar o layout para outra barbearia/clínica?**  
-Sim. Todo o conteúdo está organizado em seções no `index.html`, podendo ser adaptado com textos, imagens e cores de outra marca.
-
----
-
-Para suporte ou dúvidas sobre o site e falar sobre a parte técnica do projeto, entre em contato comigo pelo LinkedIn: https://www.linkedin.com/in/natan-da-luz
+Para suporte ou dúvidas sobre o site e falar sobre a parte técnica do projeto, entre em contato comigo pelo LinkedIn: <https://www.linkedin.com/in/natan-da-luz>

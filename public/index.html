@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -20,7 +20,7 @@
       property="og:description"
       content="Atendimento especializado e humanizado para crianças autistas em Viamão/RS"
     />
-    <meta property="og:image" content="assets/img/capaprojeto.png" />
+    <meta property="og:image" content="assets/img/capaprojeto.webp" />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#3b82f6" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,6 +28,12 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/img/capaprojeto.webp"
+      type="image/webp"
     />
     <script>
       // Configuração do Tailwind
@@ -59,7 +65,7 @@
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="apple-touch-icon" href="assets/img/capaprojeto.png" />
+    <link rel="apple-touch-icon" href="assets/img/capaprojeto.webp" />
     <link rel="manifest" href="manifest.json" />
     <title>CorteAzulTea - Barbeiro T.E.A</title>
   </head>
@@ -67,6 +73,7 @@
     <a href="#conteudo" class="skip-link">Pular para o conteúdo principal</a>
 
     <!-- Navegação -->
+
     <nav
       class="fixed top-0 w-full bg-gray-50/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300"
       id="navbar"
@@ -97,6 +104,8 @@
               src="assets/img/instagram.svg"
               alt="Instagram"
               class="h-6 w-6"
+              loading="eager"
+              decoding="async"
             />
           </a>
         </div>
@@ -155,14 +164,20 @@
         class="hero relative min-h-screen flex items-center justify-center text-white text-center pt-20"
       >
         <div
-          class="absolute inset-0 bg-cover bg-center bg-fixed"
-          style="background-image: url('assets/img/capaprojeto.png')"
+          class="hero-cover absolute inset-0 bg-cover bg-center bg-fixed"
         ></div>
         <div
           class="absolute inset-0 bg-gradient-to-b from-blue-800/80 via-blue-600/60 to-white/90"
         ></div>
         <div class="relative z-10 max-w-4xl px-6 mx-auto text-center">
           <div class="animate-fadeInUp">
+            <div class="mb-6">
+              <span
+                class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-full"
+              >
+                <i class="fas fa-location-dot"></i> Viamão - Centro
+              </span>
+            </div>
             <h1
               class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
             >
@@ -193,6 +208,8 @@
                   src="assets/img/instagram.svg"
                   alt="Instagram"
                   class="h-6 w-6"
+                  loading="eager"
+                  decoding="async"
                 />
                 <span>Instagram</span>
               </a>
@@ -237,8 +254,15 @@
         <div
           class="relative w-full max-w-3xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video mb-12"
         >
-          <video class="w-full h-full object-contain" controls>
-            <source src="assets/img/corteazul1.mp4" type="video/mp4" />
+          <video
+            class="w-full h-full object-contain"
+            controls
+            preload="metadata"
+          >
+            <source
+              src="assets/img/Corteazulapresentacao.mp4"
+              type="video/mp4"
+            />
           </video>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
@@ -290,22 +314,6 @@
               </p>
             </div>
           </div>
-          <div class="card hover-lift group">
-            <div class="text-center">
-              <div
-                class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-200 transition-colors"
-              >
-                <span class="text-2xl">🎓</span>
-              </div>
-              <h3 class="text-xl font-semibold mb-3 text-black">
-                Formação Contínua
-              </h3>
-              <p class="text-black">
-                Cursando Bacharelado em Terapia Ocupacional para se especializar
-                no atendimento de crianças autistas.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -313,7 +321,7 @@
 
       <section
         id="diferenciais"
-        class="bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-6"
+        class="cv-auto bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-6"
       >
         <div class="max-w-6xl mx-auto text-center">
           <div class="animate-fadeInUp">
@@ -390,7 +398,7 @@
 
       <section
         id="precos"
-        class="bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-6"
+        class="cv-auto bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-6"
       >
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
@@ -448,6 +456,37 @@
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+
+          <div class="max-w-4xl mx-auto mb-10">
+            <div
+              class="bg-gradient-to-r from-blue-700 to-blue-800 text-white rounded-2xl shadow-xl p-6 md:p-8 border border-blue-500"
+            >
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+              >
+                <div>
+                  <p class="text-sm uppercase tracking-wide text-blue-100 mb-1">
+                    Regra de Agendamento
+                  </p>
+                  <h3 class="text-2xl md:text-3xl font-bold leading-tight">
+                    Sinal de 50% via PIX obrigatório para agendamento
+                  </h3>
+                </div>
+                <div class="bg-white text-blue-800 rounded-xl px-5 py-4 shadow-lg">
+                  <p class="text-xs font-semibold uppercase tracking-wide mb-1">
+                    PIX
+                  </p>
+                  <p class="text-2xl md:text-3xl font-extrabold tracking-wide">
+                    51986604404
+                  </p>
+                </div>
+              </div>
+              <p class="mt-4 text-blue-100 leading-relaxed">
+                O horário só é reservado após envio do comprovante via WhatsApp.
+                Sem pagamento, não há agendamento confirmado.
+              </p>
             </div>
           </div>
 
@@ -511,6 +550,10 @@
                   <i class="fab fa-whatsapp mr-2"></i>
                   Agendar Corte Kids
                 </a>
+                <p class="mt-3 text-sm font-semibold text-blue-800 text-center">
+                  ⚠️ Agendamento confirmado apenas mediante pagamento de 50% via
+                  PIX.
+                </p>
               </div>
             </div>
 
@@ -584,6 +627,10 @@
                   <i class="fab fa-whatsapp mr-2"></i>
                   Agendar Corte Lúdico
                 </a>
+                <p class="mt-3 text-sm font-semibold text-blue-800 text-center">
+                  ⚠️ Agendamento confirmado apenas mediante pagamento de 50% via
+                  PIX.
+                </p>
               </div>
             </div>
 
@@ -649,11 +696,15 @@
                   href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar Corte TEA Especial para R$ 85"
                   target="_blank"
                   rel="noopener"
-                  class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duração-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center"
+                  class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center"
                 >
                   <i class="fab fa-whatsapp mr-2"></i>
                   Agendar Corte TEA Especial
                 </a>
+                <p class="mt-3 text-sm font-semibold text-blue-800 text-center">
+                  ⚠️ Agendamento confirmado apenas mediante pagamento de 50% via
+                  PIX.
+                </p>
               </div>
             </div>
           </div>
@@ -788,17 +839,61 @@
         </div>
       </section>
 
+      <section class="cv-auto bg-blue-50 py-12 px-6">
+        <div
+          class="max-w-5xl mx-auto bg-white border border-blue-100 rounded-2xl shadow-sm p-6 md:p-8 text-left"
+        >
+          <h3 class="text-2xl font-bold text-blue-800 mb-4">
+            Agendamento e Confirmação
+          </h3>
+          <p class="text-black leading-relaxed mb-6">
+            Para garantir organização e qualidade no atendimento, os horários
+            são reservados somente após confirmação do sinal.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-4 mb-6">
+            <div class="rounded-xl bg-blue-50 border border-blue-100 p-4">
+              <h4 class="text-lg font-semibold text-blue-700 mb-2">
+                Como confirmar seu horário
+              </h4>
+              <ul class="list-disc pl-5 text-black space-y-1 leading-relaxed text-sm">
+                <li>Escolha o serviço e o melhor horário.</li>
+                <li>Realize o pagamento de 50% via PIX.</li>
+                <li>Envie o comprovante no WhatsApp.</li>
+              </ul>
+            </div>
+            <div class="rounded-xl bg-orange-50 border border-orange-100 p-4">
+              <h4 class="text-lg font-semibold text-orange-700 mb-2">
+                Regras importantes
+              </h4>
+              <ul class="list-disc pl-5 text-black space-y-1 leading-relaxed text-sm">
+                <li>Sem pagamento, não há reserva de horário.</li>
+                <li>Sem comprovante, o agendamento não é confirmado.</li>
+                <li>O valor restante é pago no dia do atendimento.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="rounded-xl border border-blue-200 bg-blue-100/60 p-4 text-blue-900 font-semibold"
+          >
+            Confirmação do atendimento somente após sinal de 50% via PIX e envio
+            do comprovante no WhatsApp.
+          </div>
+        </div>
+      </section>
+
       <!-- Parte de como funciona  -->
 
       <section
         id="video-atendimento"
-        class="py-16 px-6 max-w-6xl mx-auto text-center"
+        class="cv-auto py-16 px-6 max-w-6xl mx-auto text-center"
       >
         <h2 class="text-3xl font-bold mb-6">Como funciona o Atendimento ?</h2>
         <div
           class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video"
         >
-          <video class="w-full h-full object-cover" controls preload="metadata">
+          <video class="w-full h-full object-cover" controls preload="none">
             <source
               src="assets/img/Comofuncionaoatendimento.mp4"
               type="video/mp4"
@@ -808,13 +903,13 @@
       </section>
       <section
         id="video-atendimento-podcast"
-        class="py-16 px-6 max-w-6xl mx-auto text-center"
+        class="cv-auto py-16 px-6 max-w-6xl mx-auto text-center"
       >
         <h2 class="text-3xl font-bold mb-6">Detalhes Do Atendimento</h2>
         <div
           class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video"
         >
-          <video class="w-full h-full object-cover" controls preload="metadata">
+          <video class="w-full h-full object-cover" controls preload="none">
             <source
               src="assets/img/comofuncionaatendimentopodcast.mp4"
               type="video/mp4"
@@ -825,14 +920,14 @@
 
       <!-- Notícias -->
 
-      <section id="noticias" class="py-16 px-6 max-w-6xl mx-auto">
+      <section id="noticias" class="cv-auto py-16 px-6 max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold mb-10 text-center">
           Notícias & Entrevistas
         </h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
             <img
-              src="assets/img/Noticia.PNG"
+              src="assets/img/Noticia.webp"
               alt="Notícia Giro de Viamão"
               class="w-full h-48 object-cover"
               loading="lazy"
@@ -858,7 +953,7 @@
           </div>
           <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
             <img
-              src="assets/img/noticiag1.jpg"
+              src="assets/img/noticiag1.webp"
               alt="Pesquisa Google"
               class="w-full h-48 object-cover"
               loading="lazy"
@@ -903,7 +998,7 @@
 
       <section
         id="depoimentos"
-        class="bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-6"
+        class="cv-auto bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-6"
       >
         <div class="max-w-6xl mx-auto text-center">
           <div class="animate-fadeInUp">
@@ -914,7 +1009,58 @@
               Veja o que as famílias dizem após o atendimento especializado
             </p>
           </div>
-          <div id="depoimentos-carousel" class="mb-12"></div>
+          <div class="mb-12 depoimentos-legiveis">
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto mb-10"
+            >
+              <img
+                src="assets/img/avaliacao008.jpg"
+                alt="Avaliação 008"
+                class="w-full h-auto object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="assets/img/avaliacao003.jpg"
+                alt="Avaliação 003"
+                class="w-full h-auto object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="assets/img/avaliacaotea.jpg"
+                alt="Avaliação TEA"
+                class="w-full h-auto object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="assets/img/avaliacaotea1.jpg"
+                alt="Avaliação TEA 1"
+                class="w-full h-auto object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="assets/img/avaliacaotea2.jpg"
+                alt="Avaliação TEA 2"
+                class="w-full h-auto object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div
+              class="max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video"
+            >
+              <video class="w-full h-full object-cover" controls preload="none">
+                <source
+                  src="assets/img/Depoimentoemvideo.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
           <div
             class="bg-gray-50/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg max-w-4xl mx-auto"
           >
@@ -930,7 +1076,10 @@
 
       <!-- Reportagem -->
 
-      <section id="reportagem" class="bg-gray-100 py-16 px-6 text-center">
+      <section
+        id="reportagem"
+        class="cv-auto bg-gray-100 py-16 px-6 text-center"
+      >
         <h2 class="text-3xl font-bold mb-6">Reportagem Do Jornal do Almoço</h2>
         <div
           class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg aspect-video"
@@ -943,13 +1092,20 @@
 
       <!-- Localização -->
 
-      <section id="localizacao" class="bg-white py-20 px-6">
+      <section id="localizacao" class="cv-auto bg-white py-20 px-6">
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-10">
             <h2 class="text-3xl md:text-4xl font-bold mb-2 text-black">
               Localização
             </h2>
             <p class="text-lg text-gray-700">Venha visitar nosso espaço</p>
+            <div class="mt-4">
+              <span
+                class="inline-flex items-center gap-2 bg-blue-100 text-blue-800 border border-blue-200 px-4 py-2 rounded-full font-semibold"
+              >
+                <i class="fas fa-location-dot"></i> Viamão - Centro
+              </span>
+            </div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <div class="space-y-4">
@@ -1033,7 +1189,7 @@
                   src="https://www.google.com/maps?q=Rua%20Vinte%20e%20Nove%20de%20Julho%2C%2039%20-%20Centro%2C%20Viam%C3%A3o%20-%20RS&amp;output=embed"
                   class="w-full h-full border-0"
                   loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
+                  referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen
                 ></iframe>
               </div>
@@ -1054,14 +1210,13 @@
             href="https://www.github.com/NatanLuz"
             target="_blank"
             rel="noopener"
-            class="text-suede hover:opacity-80"
+            class="text-blue-700 hover:opacity-80"
             >Natan Da Luz</a
           >
         </p>
       </div>
     </footer>
     <script src="assets/js/script.js" defer></script>
-    <script src="assets/js/depoimentos.js" defer></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
       defer

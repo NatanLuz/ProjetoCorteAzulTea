@@ -8,6 +8,15 @@ body {
   line-height: 1.6;
 }
 
+.hero-cover {
+  background-image: url("../img/capaprojeto.webp");
+}
+
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 600px;
+}
+
 /* Skip link  */
 .skip-link {
   position: fixed;
@@ -82,7 +91,8 @@ video {
   max-width: 100%;
   height: auto;
   border-radius: 0.75rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
@@ -91,7 +101,8 @@ video {
   width: 100%;
   overflow: hidden;
   border-radius: 0.75rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
@@ -103,12 +114,15 @@ video {
 
 /* Configurações para imagens na parte de avaliações */
 .avaliacao-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .avaliacao-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
@@ -121,9 +135,19 @@ video {
   transform: scale(1.02);
 }
 
-/* Ajuste específico para o grid de depoimentos */
-#depoimentos-carousel .avaliacao-card video {
-  border-radius: 0.75rem;
+/* Depoimentos sem moldura/efeitos */
+.depoimentos-legiveis img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.depoimentos-legiveis video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Video container */

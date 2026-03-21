@@ -41,21 +41,6 @@ if (mobileMenuBtn && mobileMenu) {
 
 // Navbar scroll com efeito
 const navbar = document.getElementById("navbar");
-let lastScrollTop = 0;
-
-window.addEventListener("scroll", () => {
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (scrollTop > 100) {
-    navbar.classList.add("bg-white/95", "shadow-md");
-    navbar.classList.remove("bg-white/95", "shadow-sm");
-  } else {
-    navbar.classList.remove("bg-white/95", "shadow-md");
-    navbar.classList.add("bg-white/95", "shadow-sm");
-  }
-
-  lastScrollTop = scrollTop;
-});
 
 // Intersection Observer para as animações de entrada do site
 const observerOptions = {
@@ -105,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         highlightActive(visible.target.id);
       }
     },
-    { threshold: [0.3, 0.6, 0.8] }
+    { threshold: [0.3, 0.6, 0.8] },
   );
 
   sections.forEach((sec) => sectionObserver.observe(sec));
@@ -171,7 +156,7 @@ const counterObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.5 }
+  { threshold: 0.5 },
 );
 
 // Desenvolvendo o formulário de contato
@@ -208,7 +193,21 @@ backToTopBtn.setAttribute("aria-label", "Voltar ao topo");
 
 document.body.appendChild(backToTopBtn);
 
-window.addEventListener("scroll", () => {
+let scrollTicking = false;
+
+function handleScrollEffects() {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (navbar) {
+    if (scrollTop > 100) {
+      navbar.classList.add("bg-white/95", "shadow-md");
+      navbar.classList.remove("bg-gray-50/95", "shadow-sm");
+    } else {
+      navbar.classList.remove("bg-white/95", "shadow-md");
+      navbar.classList.add("bg-gray-50/95", "shadow-sm");
+    }
+  }
+
   if (window.pageYOffset > 300) {
     backToTopBtn.classList.remove("opacity-0", "pointer-events-none");
     backToTopBtn.classList.add("opacity-100");
@@ -216,7 +215,22 @@ window.addEventListener("scroll", () => {
     backToTopBtn.classList.add("opacity-0", "pointer-events-none");
     backToTopBtn.classList.remove("opacity-100");
   }
-});
+}
+
+window.addEventListener(
+  "scroll",
+  () => {
+    if (scrollTicking) return;
+    scrollTicking = true;
+    requestAnimationFrame(() => {
+      handleScrollEffects();
+      scrollTicking = false;
+    });
+  },
+  { passive: true },
+);
+
+handleScrollEffects();
 
 backToTopBtn.addEventListener("click", () => {
   window.scrollTo({
@@ -260,21 +274,3 @@ document.querySelectorAll("[data-tooltip]").forEach((element) => {
     }
   });
 });
-
-// Funçao Debounce que otimiza performance
-function debounce(func, wait) {
-  let timeout;
-  return function executedFunction(...args) {
-    const later = () => {
-      clearTimeout(timeout);
-      func(...args);
-    };
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-  };
-}
-
-// Aplicar debounce ao scrollar
-const debouncedScroll = debounce(() => {}, 16);
-
-window.addEventListener("scroll", debouncedScroll);
