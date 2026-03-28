@@ -128,6 +128,8 @@ Algumas formas de validar o funcionamento manualmente:
 
 Principais tecnologias e ferramentas utilizadas neste projeto:
 
+## FRONTEND
+
 - **HTML5**
 - **CSS3**
 - **Tailwind CSS** (via CDN)
