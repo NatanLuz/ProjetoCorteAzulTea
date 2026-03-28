@@ -143,8 +143,8 @@ Principais tecnologias e ferramentas utilizadas neste projeto:
 
 Natan Da Luz
 
-LinkedIn: <https://www.linkedin.com/in/natan-da-luz>
-
+Meu LinkedIn: <https://www.linkedin.com/in/natan-da-luz>
+Meu E-mail: natandaluz01@gmail.com
 ---
 
 ## 📄 Licença
