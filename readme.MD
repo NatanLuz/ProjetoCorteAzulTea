@@ -165,8 +165,10 @@ Checklist funcional:
 ## 👤 Autor
 
 Natan Da Luz
-Desenvolvedor de Software
+
 📧 [natandaluz01@gmail.com](mailto:natandaluz01@gmail.com)
+
+
 🔗 https://www.linkedin.com/in/natan-da-luz
 
 ---
