@@ -555,16 +555,6 @@
                   </p>
                 </div>
 
-                <a
-                  aria-label="Agendar Corte Kids"
-                  href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar um Corte Kids para R$ 45"
-                  target="_blank"
-                  rel="noopener"
-                  class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center"
-                >
-                  <i class="fab fa-whatsapp mr-2"></i>
-                  Agendar Corte Kids
-                </a>
                 <p class="mt-3 text-sm font-semibold text-blue-800 text-center">
                   ⚠️ Agendamento confirmado apenas mediante pagamento de 50% via
                   PIX.
@@ -632,16 +622,6 @@
                   </p>
                 </div>
 
-                <a
-                  aria-label="Agendar Corte Lúdico"
-                  href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar Corte Lúdico para R$ 65"
-                  target="_blank"
-                  rel="noopener"
-                  class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center"
-                >
-                  <i class="fab fa-whatsapp mr-2"></i>
-                  Agendar Corte Lúdico
-                </a>
                 <p class="mt-3 text-sm font-semibold text-blue-800 text-center">
                   ⚠️ Agendamento confirmado apenas mediante pagamento de 50% via
                   PIX.
@@ -706,16 +686,6 @@
                   </p>
                 </div>
 
-                <a
-                  aria-label="Agendar Corte TEA Especial"
-                  href="https://wa.me/5551986604404?text=Olá! Gostaria de agendar Corte TEA Especial para R$ 85"
-                  target="_blank"
-                  rel="noopener"
-                  class="cta-button bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center w-full justify-center"
-                >
-                  <i class="fab fa-whatsapp mr-2"></i>
-                  Agendar Corte TEA Especial
-                </a>
                 <p class="mt-3 text-sm font-semibold text-blue-800 text-center">
                   ⚠️ Agendamento confirmado apenas mediante pagamento de 50% via
                   PIX.
@@ -747,9 +717,7 @@
                 COM MAIS SEGURO E EFICAZ!
               </p>
               <a
-                href="https://forms.gle/u8yAf4K8eaDSxFns9"
-                target="_blank"
-                rel="noopener"
+                href="#form-anamnese-tea"
                 class="cta-button bg-white hover:bg-gray-100 text-blue-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center"
               >
                 <i class="fas fa-file-alt mr-2"></i>
@@ -902,6 +870,501 @@
         </div>
       </section>
 
+      <!-- Formulário de Anamnese Multi-etapas -->
+
+      <section
+        id="form-anamnese-tea"
+        class="cv-auto py-20 px-6 bg-white flex items-center justify-center"
+      >
+        <div
+          class="w-full max-w-3xl bg-gray-50 rounded-2xl shadow-xl p-6 md:p-10"
+        >
+          <div class="mb-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-700 mb-2">
+              Ficha de Anamnese – CorteAzul TEA
+            </h2>
+            <p class="text-sm md:text-base text-gray-600">
+              Preencha com atenção as informações da criança para um atendimento
+              personalizado e acolhedor.
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <div class="flex items-center justify-between mb-2 text-sm">
+              <span id="stepLabel" class="font-semibold text-blue-700">
+                Etapa 1 de 5
+              </span>
+              <span id="stepName" class="text-gray-500">Dados básicos</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div
+                id="progressBar"
+                class="bg-blue-600 h-2 rounded-full transition-all duration-300"
+                style="width: 20%"
+              ></div>
+            </div>
+          </div>
+
+          <form id="anamneseForm" class="space-y-6">
+            <!-- Etapa 1 -->
+            <div class="form-step" data-step="1">
+              <h3 class="text-lg font-semibold mb-4 text-gray-800">
+                Etapa 1 – Dados básicos
+              </h3>
+              <div class="mb-4">
+                <label for="serviceType" class="block text-sm font-medium text-gray-700 mb-1">Serviço desejado *</label>
+                <select id="serviceType" class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                  <option value="">Selecione o serviço</option>
+                  <option value="Corte Kids — R$ 45">Corte Kids — R$ 45</option>
+                  <option value="Corte Lúdico — R$ 65">Corte Lúdico — R$ 65</option>
+                  <option value="Corte TEA Especial — R$ 85">Corte TEA Especial — R$ 85</option>
+                </select>
+              </div>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    for="childName"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Nome da criança *</label
+                  >
+                  <input
+                    type="text"
+                    id="childName"
+                    class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="childAge"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Idade *</label
+                  >
+                  <input
+                    type="number"
+                    id="childAge"
+                    min="0"
+                    class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="guardianName"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Nome do responsável *</label
+                  >
+                  <input
+                    type="text"
+                    id="guardianName"
+                    class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Telefone (WhatsApp) *</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="(51) 98660-4404"
+                    class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                  />
+                </div>
+                <div class="md:col-span-2 grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      for="desiredDate"
+                      class="block text-sm font-medium text-gray-700 mb-1"
+                      >Data desejada *</label
+                    >
+                    <input
+                      type="text"
+                      id="desiredDate"
+                      class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="dd/mm/aaaa"
+                      pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$"
+                      autocomplete="off"
+                      inputmode="numeric"
+                      required
+                      onfocus="(this.type='date')"
+                      onblur="if(this.value===''){this.type='text'}"
+                    />
+                    <small class="text-gray-500">Clique para abrir o calendário ou digite no formato <b>dd/mm/aaaa</b>.</small>
+                  </div>
+                  <div>
+                    <label
+                      for="desiredTime"
+                      class="block text-sm font-medium text-gray-700 mb-1"
+                      >Horário desejado *</label
+                    >
+                    <input
+                      type="time"
+                      id="desiredTime"
+                      class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Etapa 2 -->
+            <div class="form-step hidden" data-step="2">
+              <h3 class="text-lg font-semibold mb-4 text-gray-800">
+                Etapa 2 – Nível de suporte
+              </h3>
+              <p class="text-sm text-gray-600 mb-3">
+                Selecione o nível de suporte necessário para a criança (1, 2 ou 3):
+              </p>
+              <div class="space-y-2">
+                <label class="inline-flex items-center">
+                  <input
+                    type="radio"
+                    name="supportLevel"
+                    value="1"
+                    class="mr-2 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="text-sm text-gray-700">1</span>
+                </label>
+                <br />
+                <label class="inline-flex items-center">
+                  <input
+                    type="radio"
+                    name="supportLevel"
+                    value="2"
+                    class="mr-2 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="text-sm text-gray-700">2</span>
+                </label>
+                <br />
+                <label class="inline-flex items-center">
+                  <input
+                    type="radio"
+                    name="supportLevel"
+                    value="3"
+                    class="mr-2 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="text-sm text-gray-700">3</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Etapa 3 -->
+            <div class="form-step hidden" data-step="3">
+              <h3 class="text-lg font-semibold mb-4 text-gray-800">
+                Etapa 3 – Sensibilidades
+              </h3>
+
+              <div class="mb-4">
+                <p class="text-sm font-medium text-gray-700 mb-1">
+                  A criança possui sensibilidades sensoriais? (água, talco,
+                  máquina, toque, etc) *
+                </p>
+                <div class="space-x-4 text-sm">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="hasSensitivities"
+                      value="Sim"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Sim</span>
+                  </label>
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="hasSensitivities"
+                      value="Não"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Não</span>
+                  </label>
+                </div>
+                <textarea
+                  id="sensitivitiesDescription"
+                  class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="3"
+                  placeholder="Descreva as sensibilidades (água, talco, máquina, toque, barulhos, etc)"
+                ></textarea>
+              </div>
+
+              <div class="mb-4">
+                <p class="text-sm font-medium text-gray-700 mb-1">
+                  Já teve trauma com secador?
+                </p>
+                <div class="space-x-4 text-sm">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="dryerTrauma"
+                      value="Sim"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Sim</span>
+                  </label>
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="dryerTrauma"
+                      value="Não"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Não</span>
+                  </label>
+                </div>
+                <textarea
+                  id="dryerTraumaDescription"
+                  class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="2"
+                  placeholder="Se sim, descreva brevemente como foi."
+                ></textarea>
+              </div>
+
+              <div class="mb-2">
+                <p class="text-sm font-medium text-gray-700 mb-1">
+                  Já teve trauma com corte de cabelo?
+                </p>
+                <div class="space-x-4 text-sm">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="haircutTrauma"
+                      value="Sim"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Sim</span>
+                  </label>
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="haircutTrauma"
+                      value="Não"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Não</span>
+                  </label>
+                </div>
+                <textarea
+                  id="haircutTraumaDescription"
+                  class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="2"
+                  placeholder="Se sim, conte um pouco sobre essa experiência."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Etapa 4 -->
+            <div class="form-step hidden" data-step="4">
+              <h3 class="text-lg font-semibold mb-4 text-gray-800">
+                Etapa 4 – Informações adicionais
+              </h3>
+
+              <div class="mb-4">
+                <p class="text-sm font-medium text-gray-700 mb-1">
+                  A criança possui hiperfoco em algo específico?
+                </p>
+                <div class="space-x-4 text-sm">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="hasHyperfocus"
+                      value="Sim"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Sim</span>
+                  </label>
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="hasHyperfocus"
+                      value="Não"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Não</span>
+                  </label>
+                </div>
+                <textarea
+                  id="hyperfocusDescription"
+                  class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="2"
+                  placeholder="Se sim, descreva o hiperfoco (personagens, brinquedos, temas, etc)."
+                ></textarea>
+              </div>
+
+              <div>
+                <label
+                  for="therapyMedication"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Faz terapia ou uso de medicação? Se sim, descreva.</label
+                >
+                <textarea
+                  id="therapyMedication"
+                  class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="3"
+                  placeholder="Ex.: Terapia ABA, fono, psicólogo, medicação, etc."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Etapa 5 -->
+            <div class="form-step hidden" data-step="5">
+              <h3 class="text-lg font-semibold mb-4 text-gray-800">
+                Etapa 5 – Finalização
+              </h3>
+
+              <div class="mb-4">
+                <p class="text-sm font-medium text-gray-700 mb-1">
+                  Local do atendimento *
+                </p>
+                <div class="space-x-4 text-sm">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="serviceLocation"
+                      value="Casa"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Em casa (domicílio)</span>
+                  </label>
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="serviceLocation"
+                      value="Ponto de encontro"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Ponto de encontro / Barbearia</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label
+                  for="fullAddress"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Endereço completo *</label
+                >
+                <textarea
+                  id="fullAddress"
+                  class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="3"
+                  placeholder="Rua, número, bairro, cidade, ponto de referência..."
+                ></textarea>
+              </div>
+
+              <div class="mb-4">
+                <label
+                  for="desiredHaircut"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Corte desejado *</label
+                >
+                <textarea
+                  id="desiredHaircut"
+                  class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="2"
+                  placeholder="Descreva o tipo de corte ou referência."
+                ></textarea>
+              </div>
+
+              <div class="mb-4">
+                <p class="text-sm font-medium text-gray-700 mb-1">
+                  Autoriza o uso de imagem (fotos/vídeos) da criança para fins
+                  institucionais / redes sociais?
+                </p>
+                <div class="space-x-4 text-sm">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="imageAuthorization"
+                      value="Sim"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Sim</span>
+                  </label>
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="imageAuthorization"
+                      value="Não"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Não</span>
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for="howFound"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Como conheceu o serviço? *</label
+                >
+                <select
+                  id="howFound"
+                  class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value="">Selecione uma opção</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="Indicação de amigo/família">
+                    Indicação de amigo/família
+                  </option>
+                  <option value="Google">Pesquisa no Google</option>
+                  <option value="Notícia/Reportagem">
+                    Notícia / Reportagem
+                  </option>
+                  <option value="Outros">Outros</option>
+                </select>
+              </div>
+            </div>
+
+            <p
+              id="errorMessage"
+              class="text-sm text-red-600 font-medium hidden mt-2"
+            >
+              Por favor, preencha todos os campos obrigatórios desta etapa.
+            </p>
+
+            <div
+              class="mt-6 flex items-center justify-between border-t pt-4 gap-4"
+            >
+              <button
+                type="button"
+                id="prevStep"
+                class="px-4 py-2 rounded-full border border-gray-300 text-sm font-semibold text-gray-700 hover:bg-gray-100 disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                Voltar
+              </button>
+              <div class="flex gap-3">
+                <button
+                  type="button"
+                  id="nextStep"
+                  class="px-5 py-2 rounded-full bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  Próximo
+                </button>
+                <button
+                  type="submit"
+                  id="submitForm"
+                  class="px-5 py-2 rounded-full bg-green-600 text-white text-sm font-semibold hover:bg-green-700 hidden"
+                >
+                  Enviar pelo WhatsApp
+                </button>
+              </div>
+            </div>
+              <div class="mt-8">
+                <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-900 p-4 rounded-lg text-center text-base font-bold">
+                  Atenção: É <span class="underline">obrigatório preencher as 5 etapas</span> da ficha para prosseguir com o agendamento.
+                </div>
+              </div>
+          </form>
+        </div>
+      </section>
+
       <!-- Parte de como funciona  -->
 
       <section
@@ -942,16 +1405,6 @@
       <section id="noticias" class="cv-auto py-16 px-6 max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold mb-10 text-center">
           Notícias & Entrevistas
-        </h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
-            <img
-              src="assets/img/Noticia.webp"
-              alt="Notícia Giro de Viamão"
-              class="w-full h-48 object-cover"
-              loading="lazy"
-              decoding="async"
-            />
             <div class="p-4">
               <h3 class="font-bold mb-2">
                 Barbeiro de Viamão desenvolve PROJETO inclusivo
@@ -981,16 +1434,6 @@
             <div class="p-4">
               <h3 class="font-bold mb-2">
                 Barbeiro para Crianças Autistas T.E.A
-              </h3>
-              <p class="text-gray-600 text-sm mb-3">
-                Pai de Davi e Theo, ambos diagnosticados com Transtorno do
-                Espectro Autista (TEA)
-              </p>
-              <a
-                href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2025/08/10/pai-atipico-barbeiro-cria-espaco-para-atender-criancas-autistas-inspirado-nos-proprios-filhos.ghtml"
-                target="_blank"
-                rel="noopener"
-                class="text-blue-600 font-semibold hover:underline text-sm"
                 >Ler na íntegra</a
               >
               <p class="text-xs text-gray-400 mt-2">Fonte: G1 Globo</p>
@@ -1024,46 +1467,39 @@
             <h2 class="text-4xl md:text-5xl font-bold mb-4 text-black">
               Depoimentos e <span class="text-blue-700">Avaliações</span>
             </h2>
-            <p class="text-lg text-black mb-12 max-w-3xl mx-auto">
-              Veja o que as famílias dizem após o atendimento especializado
-            </p>
-          </div>
-          <div class="mb-12 depoimentos-legiveis">
-            <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto mb-10"
-            >
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <img
                 src="assets/img/avaliacao008.jpg"
                 alt="Avaliação 008"
-                class="w-full h-auto object-contain"
+                class="w-full h-auto object-contain rounded-xl shadow"
                 loading="lazy"
                 decoding="async"
               />
               <img
                 src="assets/img/avaliacao003.jpg"
                 alt="Avaliação 003"
-                class="w-full h-auto object-contain"
+                class="w-full h-auto object-contain rounded-xl shadow"
                 loading="lazy"
                 decoding="async"
               />
               <img
                 src="assets/img/avaliacaotea.jpg"
                 alt="Avaliação TEA"
-                class="w-full h-auto object-contain"
+                class="w-full h-auto object-contain rounded-xl shadow"
                 loading="lazy"
                 decoding="async"
               />
               <img
                 src="assets/img/avaliacaotea1.jpg"
                 alt="Avaliação TEA 1"
-                class="w-full h-auto object-contain"
+                class="w-full h-auto object-contain rounded-xl shadow"
                 loading="lazy"
                 decoding="async"
               />
               <img
                 src="assets/img/avaliacaotea2.jpg"
                 alt="Avaliação TEA 2"
-                class="w-full h-auto object-contain"
+                class="w-full h-auto object-contain rounded-xl shadow"
                 loading="lazy"
                 decoding="async"
               />

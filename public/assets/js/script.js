@@ -3,7 +3,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
-      const offsetTop = target.offsetTop - 80; 
+      const offsetTop = target.offsetTop - 80;
       window.scrollTo({
         top: offsetTop,
         behavior: "smooth",
@@ -274,3 +274,369 @@ document.querySelectorAll("[data-tooltip]").forEach((element) => {
     }
   });
 });
+
+// Formulário de Anamnese Multi-etapas
+(function () {
+  const totalSteps = 5;
+  let currentStep = 1;
+
+  const form = document.getElementById("anamneseForm");
+  if (!form) return;
+
+  const stepLabel = document.getElementById("stepLabel");
+  const stepName = document.getElementById("stepName");
+  const progressBar = document.getElementById("progressBar");
+  const errorMessage = document.getElementById("errorMessage");
+
+  const prevBtn = document.getElementById("prevStep");
+  const nextBtn = document.getElementById("nextStep");
+  const submitBtn = document.getElementById("submitForm");
+
+  const stepTitles = {
+    1: "Dados básicos",
+    2: "Nível de suporte",
+    3: "Sensibilidades",
+    4: "Informações adicionais",
+    5: "Finalização",
+  };
+
+  function validateCurrentStep() {
+    if (errorMessage) errorMessage.classList.add("hidden");
+
+    // Etapa 1: facilitar preenchimento e aceitar formatos flexíveis
+    if (currentStep === 1) {
+      const requiredIds = [
+        "serviceType",
+        "childName",
+        "childAge",
+        "guardianName",
+        "phone",
+        "desiredDate",
+        "desiredTime",
+      ];
+      for (const id of requiredIds) {
+        const el = document.getElementById(id);
+        if (!el || !el.value || el.value.trim() === "") {
+          if (errorMessage)
+            errorMessage.textContent =
+              "Por favor, preencha todos os campos obrigatórios desta etapa.";
+          return false;
+        }
+      }
+      // Validação flexível para data
+      const dateVal = document.getElementById("desiredDate").value.trim();
+      if (
+        !/^\d{1,2}[\/\-]?\d{1,2}[\/\-]?\d{2,4}$|^\d{4}-\d{2}-\d{2}$/.test(
+          dateVal,
+        )
+      ) {
+        if (errorMessage)
+          errorMessage.textContent =
+            "Digite a data no formato dia/mês/ano (ex: 29/03/2026).";
+        return false;
+      }
+      // Validação flexível para hora
+      const timeVal = document.getElementById("desiredTime").value.trim();
+      if (!/^\d{1,2}:?\d{2}$/.test(timeVal)) {
+        if (errorMessage)
+          errorMessage.textContent =
+            "Digite o horário no formato hh:mm (ex: 13:30).";
+        return false;
+      }
+      // Validação flexível para telefone
+      const phoneVal = document
+        .getElementById("phone")
+        .value.replace(/\D/g, "");
+      if (phoneVal.length < 10 || phoneVal.length > 11) {
+        if (errorMessage)
+          errorMessage.textContent = "Digite um telefone válido com DDD.";
+        return false;
+      }
+    }
+
+    if (currentStep === 2) {
+      const supportLevel = document.querySelector(
+        'input[name="supportLevel"]:checked',
+      );
+      if (!supportLevel) {
+        if (errorMessage)
+          errorMessage.textContent = "Selecione o nível de suporte.";
+        return false;
+      }
+    }
+
+    if (currentStep === 5) {
+      const serviceLocation = document.querySelector(
+        'input[name="serviceLocation"]:checked',
+      );
+      const fullAddress = document.getElementById("fullAddress");
+      const desiredHaircut = document.getElementById("desiredHaircut");
+      const howFound = document.getElementById("howFound");
+      if (!serviceLocation) {
+        if (errorMessage)
+          errorMessage.textContent = "Selecione o local do atendimento.";
+        return false;
+      }
+      if (!fullAddress || !fullAddress.value.trim()) {
+        if (errorMessage)
+          errorMessage.textContent = "Preencha o endereço completo.";
+        return false;
+      }
+      if (!desiredHaircut || !desiredHaircut.value.trim()) {
+        if (errorMessage)
+          errorMessage.textContent = "Descreva o corte desejado.";
+        return false;
+      }
+      if (!howFound || !howFound.value) {
+        if (errorMessage)
+          errorMessage.textContent = "Informe como conheceu o serviço.";
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  function updateStepUI() {
+    const steps = document.querySelectorAll(".form-step");
+    steps.forEach((step) => {
+      const stepNumber = parseInt(step.getAttribute("data-step"), 10);
+      if (stepNumber === currentStep) {
+        step.classList.remove("hidden");
+      } else {
+        step.classList.add("hidden");
+      }
+    });
+
+    if (stepLabel) {
+      stepLabel.textContent = `Etapa ${currentStep} de ${totalSteps}`;
+    }
+    if (stepName) {
+      stepName.textContent = stepTitles[currentStep] || "";
+    }
+    if (progressBar) {
+      const progressPercent = (currentStep / totalSteps) * 100;
+      progressBar.style.width = `${progressPercent}%`;
+    }
+
+    if (prevBtn) prevBtn.disabled = currentStep === 1;
+    if (currentStep === totalSteps) {
+      if (nextBtn) nextBtn.classList.add("hidden");
+      if (submitBtn) submitBtn.classList.remove("hidden");
+    } else {
+      if (nextBtn) nextBtn.classList.remove("hidden");
+      if (submitBtn) submitBtn.classList.add("hidden");
+    }
+
+    if (errorMessage) errorMessage.classList.add("hidden");
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+      if (currentStep > 1) {
+        currentStep -= 1;
+        updateStepUI();
+      }
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      if (!validateCurrentStep()) {
+        if (errorMessage) errorMessage.classList.remove("hidden");
+        return;
+      }
+      if (currentStep < totalSteps) {
+        currentStep += 1;
+        updateStepUI();
+      }
+    });
+  }
+
+  // Máscara para telefone (formato brasileiro, mas permite digitação livre)
+  const phoneInput = document.getElementById("phone");
+  if (phoneInput) {
+    phoneInput.addEventListener("blur", function () {
+      let v = this.value.replace(/\D/g, "");
+      if (v.length === 11) {
+        this.value = `(${v.slice(0, 2)}) ${v.slice(2, 7)}-${v.slice(7)}`;
+      } else if (v.length === 10) {
+        this.value = `(${v.slice(0, 2)}) ${v.slice(2, 6)}-${v.slice(6)}`;
+      }
+    });
+  }
+
+  // Melhor UX para data: não apaga o valor digitado, só valida no submit
+  const dateInput = document.getElementById("desiredDate");
+  if (dateInput) {
+    dateInput.placeholder = "dd/mm/aaaa";
+    // Não faz mais formatação automática, só valida no submit
+    dateInput.addEventListener("input", function () {
+      this.classList.remove("border-red-500");
+      this.setCustomValidity("");
+    });
+  }
+  const timeInput = document.getElementById("desiredTime");
+  if (timeInput) {
+    timeInput.placeholder = "hh:mm";
+    timeInput.addEventListener("blur", function () {
+      let v = this.value.replace(/\D/g, "");
+      if (v.length === 4) {
+        this.value = `${v.slice(0, 2)}:${v.slice(2)}`;
+      }
+    });
+  }
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if (!validateCurrentStep()) {
+      if (errorMessage) errorMessage.classList.remove("hidden");
+      return;
+    }
+
+    const getVal = (id) => {
+      const el = document.getElementById(id);
+      return el && el.value ? el.value.trim() : "";
+    };
+
+    const serviceType = getVal("serviceType");
+    const childName = getVal("childName");
+    const childAge = getVal("childAge");
+    const guardianName = getVal("guardianName");
+    let phone = getVal("phone");
+    let desiredDate = getVal("desiredDate");
+    let desiredTime = getVal("desiredTime");
+
+    // Corrigir data para dd/mm/aaaa só no envio, se possível
+    if (/^\d{4}-\d{2}-\d{2}$/.test(desiredDate)) {
+      const [yyyy, mm, dd] = desiredDate.split("-");
+      desiredDate = `${dd}/${mm}/${yyyy}`;
+    } else if (/^\d{8}$/.test(desiredDate)) {
+      desiredDate = `${desiredDate.slice(0, 2)}/${desiredDate.slice(2, 4)}/${desiredDate.slice(4)}`;
+    } else if (/^\d{6}$/.test(desiredDate)) {
+      desiredDate = `${desiredDate.slice(0, 2)}/${desiredDate.slice(2, 4)}/20${desiredDate.slice(4)}`;
+    }
+
+    // Corrigir telefone para formato nacional simples
+    phone = phone.replace(/\D/g, "");
+    if (phone.length === 11) {
+      phone = `(${phone.slice(0, 2)}) ${phone.slice(2, 7)}-${phone.slice(7)}`;
+    } else if (phone.length === 10) {
+      phone = `(${phone.slice(0, 2)}) ${phone.slice(2, 6)}-${phone.slice(6)}`;
+    }
+
+    // Corrigir hora para hh:mm
+    if (/^\d{4}$/.test(desiredTime)) {
+      desiredTime = `${desiredTime.slice(0, 2)}:${desiredTime.slice(2)}`;
+    }
+
+    const supportLevelEl = document.querySelector(
+      'input[name="supportLevel"]:checked',
+    );
+    const supportLevel = supportLevelEl
+      ? supportLevelEl.value
+      : "Não informado";
+
+    const hasSensitivitiesEl = document.querySelector(
+      'input[name="hasSensitivities"]:checked',
+    );
+    const hasSensitivities = hasSensitivitiesEl
+      ? hasSensitivitiesEl.value
+      : "Não informado";
+    const sensitivitiesDescription =
+      getVal("sensitivitiesDescription") || "Sem descrição";
+
+    const dryerTraumaEl = document.querySelector(
+      'input[name="dryerTrauma"]:checked',
+    );
+    const dryerTrauma = dryerTraumaEl ? dryerTraumaEl.value : "Não informado";
+    const dryerTraumaDescription =
+      getVal("dryerTraumaDescription") || "Sem descrição";
+
+    const haircutTraumaEl = document.querySelector(
+      'input[name="haircutTrauma"]:checked',
+    );
+    const haircutTrauma = haircutTraumaEl
+      ? haircutTraumaEl.value
+      : "Não informado";
+    const haircutTraumaDescription =
+      getVal("haircutTraumaDescription") || "Sem descrição";
+
+    const hasHyperfocusEl = document.querySelector(
+      'input[name="hasHyperfocus"]:checked',
+    );
+    const hasHyperfocus = hasHyperfocusEl
+      ? hasHyperfocusEl.value
+      : "Não informado";
+    const hyperfocusDescription =
+      getVal("hyperfocusDescription") || "Sem descrição";
+
+    const therapyMedication = getVal("therapyMedication") || "Não informado";
+
+    const serviceLocationEl = document.querySelector(
+      'input[name="serviceLocation"]:checked',
+    );
+    const serviceLocation = serviceLocationEl
+      ? serviceLocationEl.value
+      : "Não informado";
+
+    const fullAddress = getVal("fullAddress") || "Não informado";
+    const desiredHaircut = getVal("desiredHaircut") || "Não informado";
+
+    const imageAuthorizationEl = document.querySelector(
+      'input[name="imageAuthorization"]:checked',
+    );
+    const imageAuthorization = imageAuthorizationEl
+      ? imageAuthorizationEl.value
+      : "Não informado";
+
+    const howFound = getVal("howFound") || "Não informado";
+
+    let message = "";
+    message += "FICHA DE ANAMNESE - CORTEAZUL TEA\n";
+    message += "--------------------------------\n";
+    message += `Serviço: ${serviceType}\n`;
+    message += `Nome da criança: ${childName}\n`;
+    message += `Idade: ${childAge}\n`;
+    message += `Nome do responsável: ${guardianName}\n`;
+    message += `Telefone (WhatsApp): ${phone}\n`;
+    message += `Data desejada: ${desiredDate}\n`;
+    message += `Horário desejado: ${desiredTime}\n\n`;
+
+    message += "NÍVEL DE SUPORTE\n";
+    message += `- Nível: ${supportLevel}\n\n`;
+
+    message += "SENSIBILIDADES\n";
+    message += `- Possui sensibilidades: ${hasSensitivities}\n`;
+    message += `- Descrição sensibilidades: ${sensitivitiesDescription}\n`;
+    message += `- Trauma com secador: ${dryerTrauma}\n`;
+    message += `- Descrição secador: ${dryerTraumaDescription}\n`;
+    message += `- Trauma com corte de cabelo: ${haircutTrauma}\n`;
+    message += `- Descrição corte: ${haircutTraumaDescription}\n\n`;
+
+    message += "INFORMAÇÕES ADICIONAIS\n";
+    message += `- Possui hiperfoco: ${hasHyperfocus}\n`;
+    message += `- Descrição hiperfoco: ${hyperfocusDescription}\n`;
+    message += `- Terapia / Medicação: ${therapyMedication}\n\n`;
+
+    message += "FINALIZAÇÃO\n";
+    message += `- Local do atendimento: ${serviceLocation}\n`;
+    message += `- Endereço completo: ${fullAddress}\n`;
+    message += `- Corte desejado: ${desiredHaircut}\n`;
+    message += `- Autorização de uso de imagem: ${imageAuthorization}\n`;
+    message += `- Como conheceu o serviço: ${howFound}\n`;
+
+    // Corrigir bug de substituição de letras por asterisco (caso algum plugin ou navegador altere)
+    // Remove qualquer asterisco isolado em palavras
+    message = message.replace(/\*+/g, "");
+
+    const phoneNumber = "5551986604404";
+    const waUrl =
+      "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+
+    window.location.href = waUrl;
+  });
+
+  updateStepUI();
+})();
