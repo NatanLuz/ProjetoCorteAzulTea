@@ -239,7 +239,7 @@ backToTopBtn.addEventListener("click", () => {
   });
 });
 
-// configurando o preloader
+// configurando o preloader do projeto para melhorar a experiência do usuário durante o carregamento inicial do site, especialmente em conexões mais lentas ou dispositivos móveis. O preloader é uma tela de carregamento que aparece enquanto os recursos do site estão sendo carregados, proporcionando uma transição suave e evitando que os usuários vejam um layout quebrado ou elementos desorganizados.
 window.addEventListener("load", () => {
   const preloader = document.querySelector(".preloader");
   if (preloader) {

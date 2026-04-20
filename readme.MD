@@ -150,15 +150,15 @@ Checklist funcional:
 
 ### Home
 
-![Home](public/assets/img/homecorteazultea.png)
+![Home](homecorteazultea.PNG)
 
 ### Serviços
 
-![Serviços](public/assets/img/serviçoscorteazultea.png)
+![Serviços](servicoscorteazultea.PNG)
 
 ### Contato
 
-![Contato](public/assets/img/contatocorteazultea.png)
+![Contato](contatocorteazultea.PNG)
 
 ---
 
