@@ -146,7 +146,7 @@ Checklist funcional:
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots do Projeto
 
 ### Home
 
@@ -160,6 +160,10 @@ Checklist funcional:
 
 ![Contato](contatocorteazultea.PNG)
 
+### Ficha de Anamnese
+
+![Ficha de Anamnese](FichaAnamnese.PNG)
+
 ---
 
 ## 👤 Autor
@@ -167,7 +171,6 @@ Checklist funcional:
 Natan Da Luz
 
 📧 [natandaluz01@gmail.com](mailto:natandaluz01@gmail.com)
-
 
 🔗 https://www.linkedin.com/in/natan-da-luz
 

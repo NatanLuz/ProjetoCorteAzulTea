@@ -144,7 +144,7 @@ function animateCounter(element, target, duration = 2000) {
   }, 16);
 }
 
-// Aplicar contadores quando elementos ficarem visíveis
+// Aplicar contadores quando os elementos ficarem visíveis
 const counterObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -183,7 +183,7 @@ if (contactForm) {
   });
 }
 
-// botao de voltar ao topo
+// botao para voltar ao topo
 
 const backToTopBtn = document.createElement("button");
 backToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
@@ -275,7 +275,7 @@ document.querySelectorAll("[data-tooltip]").forEach((element) => {
   });
 });
 
-// Formulário de Anamnese Multi-etapas
+// Formulário de Anamnese Multi-etapas já incluido no site
 (function () {
   const totalSteps = 5;
   let currentStep = 1;
@@ -466,7 +466,7 @@ document.querySelectorAll("[data-tooltip]").forEach((element) => {
     });
   }
 
-  // Melhor UX para data: não apaga o valor digitado, só valida no submit
+  // Melhor UX para data: não apaga o valor digitado, só valida no submit e aceita formatos flexíveis
   const dateInput = document.getElementById("desiredDate");
   if (dateInput) {
     dateInput.placeholder = "dd/mm/aaaa";
