@@ -100,39 +100,6 @@ ProjetoCorteAzulTea/
 
 ---
 
-## 🚀 Instalação
-
-### Pré-requisitos
-
-- Navegador moderno (Chrome, Edge, Firefox)
-- (Opcional) Git
-
-### Passos
-
-```bash
-git clone https://github.com/NatanLuz/ProjetoCorteAzulTea.git
-cd ProjetoCorteAzulTea/public
-```
-
----
-
-## ▶️ Execução
-
-**Opção 1 — Python**
-
-```bash
-python -m http.server 8080
-```
-
-Acesse: http://localhost:8080
-
-**Opção 2 — Live Server (VS Code)**
-
-- Abrir `index.html`
-- Clicar em **Open with Live Server**
-
----
-
 ## 🧪 Testes Rápidos
 
 Checklist funcional:
