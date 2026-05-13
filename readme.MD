@@ -9,7 +9,7 @@ Aplicação web estática responsiva desenvolvida para o projeto **CorteAzulTea*
 
 ---
 
-## Proposta
+## Proposta do projeto
 
 Desenvolver uma plataforma WEB institucional moderna e acessível para fortalecer a presença digital do barbeiro Jonathan, comunicar seus serviços com clareza e facilitar o contato com novos clientes. O projeto também teve como objetivo melhorar a gestão dos atendimentos, permitindo maior organização de horários, redução na perda de clientes e otimização do fluxo de agendamentos. Com a utilização da plataforma, Jonathan conseguiu ampliar seu alcance digital, atrair novos clientes e aumentar sua capacidade de atendimento, tornando o processo mais profissional, organizado e eficiente.
 
