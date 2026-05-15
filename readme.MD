@@ -26,7 +26,7 @@ Acrescentado no projeto, a lista de anamnese, facilitando o preenchimento no pr�
 
 ## ⚙️ Funcionalidades
 
-## Interface e UX
+## Interface & UX
 
 - Layout responsivo (mobile-first)
 - Navegação por seções com rolagem suave
