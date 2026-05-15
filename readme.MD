@@ -84,7 +84,7 @@ ProjetoCorteAzulTea/
 
 ## 🔐 Segurança
 
-- Aplicação estática (sem backend)
+- Site estático (não contém backend)
 - Ausência de manipulação de dados sensíveis
 - Integrações externas controladas (maps e redes sociais)
 - Baixa superfície de ataque
@@ -129,7 +129,7 @@ Checklist funcional:
 
 ![Contato](contatocorteazultea.PNG)
 
-### Ficha de Anamnese
+### Ficha de Anamnese (ACRESCENTADA)
 
 ![Ficha de Anamnese](FichaAnamnese.PNG)
 
