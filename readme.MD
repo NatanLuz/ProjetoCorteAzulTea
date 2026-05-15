@@ -62,7 +62,7 @@ Separação entre estrutura, estilo e comportamento:
 - **CSS / Tailwind** → layout responsivo e estilização
 - **JavaScript** → interatividade e carregamento dinâmico
 
-**Estrutura do projeto:**
+**Estrutura do Projeto:**
 
 ```bash
 ProjetoCorteAzulTea/
