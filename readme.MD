@@ -84,7 +84,7 @@ ProjetoCorteAzulTea/
 
 ## 🔐 Segurança
 
-- Site estático (não contém backend)
+- Site estático (Sem Backend)
 - Integrações externas controladas (maps e redes sociais
 
 ---
@@ -93,10 +93,8 @@ ProjetoCorteAzulTea/
 
 - HTML5 semântico
 - CSS3
-- Tailwind CSS (via CDN)
-- JavaScript (Vanilla JS)
-- Font Awesome
-- Integrações com Google Maps e Waze
+- Tailwind CSS
+- JavaScript
 
 ---
 
