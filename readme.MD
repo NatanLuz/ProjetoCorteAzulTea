@@ -1,4 +1,4 @@
-# CorteAzulTea — Website Institucional Responsivo
+# CorteAzulTea — Website Institucional
 
 Aplicação web estática responsiva desenvolvida para o projeto **CorteAzulTea**, serviço de Jonathan Rodrigues especializado em cortes de cabelo para crianças com Transtorno do Espectro Autista (TEA), com foco em atendimento humanizado, ambiente acolhedor e comunicação clara com as famílias.
 
