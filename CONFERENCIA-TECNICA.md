@@ -22,7 +22,3 @@ Após a validação realizada, não foi identificado erro funcional no fluxo da 
 ## Conclusão técnica
 
 Com base na conferência executada, o sistema encontra-se consistente no cenário testado. Não houve reprodução do problema relatado durante a verificação.
-
-## Observação
-
-Caso o comportamento volte a ser reportado por usuárias, recomenda-se solicitar evidências como print, vídeo, modelo do dispositivo, navegador utilizado e etapa exata em que ocorreu a falha para uma análise mais precisa.
