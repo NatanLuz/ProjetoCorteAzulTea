@@ -85,9 +85,7 @@ ProjetoCorteAzulTea/
 ## 🔐 Segurança
 
 - Site estático (não contém backend)
-- Ausência de manipulação de dados sensíveis
-- Integrações externas controladas (maps e redes sociais)
-- Baixa superfície de ataque
+- Integrações externas controladas (maps e redes sociais
 
 ---
 
