@@ -85,7 +85,7 @@ body {
   @apply inline-flex items-center justify-center transition-all duration-300;
 }
 
-/* Configurações para vídeos */
+/* Configuração de css para vídeos do site */
 video {
   display: block;
   max-width: 100%;
