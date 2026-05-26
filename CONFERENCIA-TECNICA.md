@@ -2,7 +2,7 @@
 
 Data da verificação: 19/05/2026
 
-## Objetivo
+## Objetivo desta conferência
 
 Registrar a conferência técnica realizada no site do projeto CorteAzulTea após relato de dificuldade no preenchimento da ficha de anamnese.
 
