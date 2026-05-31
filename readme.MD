@@ -143,4 +143,4 @@ Natan Da Luz
 
 ## 📄 Licença
 
-Este projeto está sob a licença **MIT**.
+Este projeto está sob a licença **MIT**, todos os direitos reservados ao Jonathan.
