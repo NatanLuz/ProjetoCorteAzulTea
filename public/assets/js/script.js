@@ -602,7 +602,7 @@ document.querySelectorAll("[data-tooltip]").forEach((element) => {
     message += `Nome do responsável: ${guardianName}\n`;
     message += `Telefone (WhatsApp): ${phone}\n`;
     message += `Data desejada: ${desiredDate}\n`;
-    message += `Horário desejado: ${desiredTime}\n\n`;
+    message += `Horário de preferência: ${desiredTime}\n\n`;
 
     message += "NÍVEL DE SUPORTE\n";
     message += `- Nível: ${supportLevel}\n\n`;
