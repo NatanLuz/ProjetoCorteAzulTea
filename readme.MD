@@ -17,7 +17,7 @@ Aplicação web estática responsiva desenvolvida para **Jonathan Rodrigues** �
 ### Contato
 ![Contato](contatocorteazultea.PNG)
 
-### Ficha de Anamnese (DIFERENCIAL)
+### Ficha de Anamnese (Feita Recentemente)
 ![Ficha de Anamnese](FichaAnamnese.PNG)
 
 ---
