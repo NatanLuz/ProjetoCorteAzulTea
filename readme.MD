@@ -233,7 +233,7 @@ Aplicação web estática responsiva desenvolvida para o projeto **CorteAzulTea*
 
 ---
 
-## Objetivo do projeto
+## Objetivo do Projeto
 
 Desenvolver uma plataforma WEB institucional moderna e acessível para fortalecer a presença digital do barbeiro Jonathan, comunicar seus serviços com clareza e facilitar o contato com novos clientes. O projeto também teve como objetivo melhorar a gestão dos atendimentos, permitindo maior organização de horários, redução na perda de clientes e otimização do fluxo de agendamentos. Com a utilização da plataforma, Jonathan conseguiu ampliar seu alcance digital, atrair novos clientes e aumentar sua capacidade de atendimento, tornando o processo mais profissional, organizado e eficiente.
 
@@ -324,10 +324,8 @@ ProjetoCorteAzulTea/
 
 ## 🔐 Segurança
 
-- Site estático (não contém backend)
-- Ausência de manipulação de dados sensíveis
-- Integrações externas controladas (maps e redes sociais)
-- Baixa superfície de ataque
+- Site estático (Sem Backend)
+- Integrações externas controladas (maps e redes sociais
 
 ---
 
@@ -335,10 +333,8 @@ ProjetoCorteAzulTea/
 
 - HTML5 semântico
 - CSS3
-- Tailwind CSS (via CDN)
-- JavaScript (Vanilla JS)
-- Font Awesome
-- Integrações com Google Maps e Waze
+- Tailwind CSS
+- JavaScript
 
 ---
 
@@ -387,4 +383,4 @@ Natan Da Luz
 
 ## 📄 Licença
 
-Este projeto está sob a licença **MIT**.
+Este projeto está sob a licença **MIT**, todos os direitos reservados ao Jonathan.
