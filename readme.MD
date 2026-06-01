@@ -4,10 +4,6 @@ Aplicação web estática responsiva desenvolvida para **Jonathan Rodrigues** �
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![MIT](https://img.shields.io/badge/License-MIT-green)
 
-- **Tipo:** Site estático (frontend)
-- **Desenvolvedor:** Natan Da Luz
-- **Cliente:** Jonathan Rodrigues
-
 ---
 
 ## 📸 Screenshots do Projeto
