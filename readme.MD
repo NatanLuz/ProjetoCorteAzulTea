@@ -24,7 +24,7 @@ Aplicação web estática responsiva desenvolvida para **Jonathan Rodrigues** �
 
 ## Objetivo do Projeto
 
-Desenvolver uma plataforma web institucional moderna e acessível para fortalecer a presença digital do barbeiro Jonathan, comunicar seus serviços com clareza e facilitar o contato com novos clientes. O projeto também teve como objetivo melhorar a gestão dos atendimentos, permitindo maior organização de horários, redução na perda de clientes e otimização do fluxo de agendamentos.
+Foi desenvolver uma plataforma web institucional moderna e acessível para fortalecer a presença digital do barbeiro Jonathan, comunicar seus serviços com clareza e facilitar o contato com novos clientes. O projeto também teve como objetivo melhorar a gestão dos atendimentos, permitindo maior organização de horários, redução na perda de clientes e otimização do fluxo de agendamentos.
 
 Acrescentado no projeto: ficha de anamnese integrada, facilitando o preenchimento direto no site ao invés do Google Docs.
 
