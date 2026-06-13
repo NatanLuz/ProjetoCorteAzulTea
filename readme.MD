@@ -6,18 +6,18 @@ Aplicação web estática responsiva desenvolvida para **Jonathan Rodrigues** �
 
 ---
 
-## 📸 Screenshots do Projeto
+## 📸 Screenshots 
 
-### Home
+## Home
 ![Home](homecorteazultea.PNG)
 
-### Serviços
+## Serviços
 ![Serviços](servicoscorteazultea.PNG)
 
-### Contato
+## Contato
 ![Contato](contatocorteazultea.PNG)
 
-### Ficha de Anamnese (Feita Recentemente)
+## Ficha de Anamnese (Feita Recentemente)
 ![Ficha de Anamnese](FichaAnamnese.PNG)
 
 ---
