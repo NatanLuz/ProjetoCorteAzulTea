@@ -6,7 +6,7 @@ Aplicação web estática responsiva desenvolvida para **Jonathan Rodrigues** �
 
 ---
 
-## 📸 Screenshots 
+## 📸 Screenshots Do Projeto
 
 ## Home
 ![Home](homecorteazultea.PNG)
