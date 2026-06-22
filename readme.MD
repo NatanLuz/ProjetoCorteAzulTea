@@ -105,9 +105,9 @@ ProjetoCorteAzulTea/
 
 ## 🔐 Segurança e Privacidade
 
-- Site estático: sem backend público, reduz superfície de ataque
 - Integrações externas restritas e controladas (Google Maps, redes sociais)
-- Recomenda-se exibir aviso de privacidade e consentimento no formulário de anamnese
+
+- Recomenda-se exibir aviso de privacidade e consentimento no formulário de anamnese(preenchido pelo próprio cliente na hora que preenche a ficha)
 
 ---
 
