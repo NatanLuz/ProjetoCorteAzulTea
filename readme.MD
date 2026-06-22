@@ -1,6 +1,6 @@
 ## CorteAzulTea — Website Institucional
 
-Aplicação web estática responsiva desenvolvida para **Jonathan Rodrigues** barbeiro especializado em atendimento infantil para crianças com Transtorno do Espectro Autista (TEA). Foco em atendimento humanizado, comunicação clara com famílias e otimização do fluxo de agendamentos.
+Aplicação web estática responsiva desenvolvida para **Jonathan Rodrigues** barbeiro especializado em atendimento infantil para crianças com Transtorno do Espectro Autista (T.E.A). Foco em atendimento humanizado, comunicação clara com famílias e otimização do fluxo de agendamentos.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![MIT](https://img.shields.io/badge/License-MIT-green)
 
@@ -9,15 +9,19 @@ Aplicação web estática responsiva desenvolvida para **Jonathan Rodrigues** ba
 ## 📸 Screenshots Do Projeto
 
 ## Home
+
 ![Home](homecorteazultea.PNG)
 
 ## Serviços
+
 ![Serviços](servicoscorteazultea.PNG)
 
 ## Contato
+
 ![Contato](contatocorteazultea.PNG)
 
-## Ficha de Anamnese (Feita Recentemente)
+## Ficha de Anamnese (Atualização mais recente)
+
 ![Ficha de Anamnese](FichaAnamnese.PNG)
 
 ---
@@ -60,6 +64,7 @@ Acrescentado no projeto: ficha de anamnese integrada, facilitando o preenchiment
 ## Localização e Contato
 
 - Integração com Google Maps e rotas via Waze
+
 - Links diretos para WhatsApp e Instagram
 
 ---
@@ -67,7 +72,7 @@ Acrescentado no projeto: ficha de anamnese integrada, facilitando o preenchiment
 ## 🧰 Stack Tecnológica
 
 - HTML5 
-- CSS3 & Tailwind CSS
+- CSS3/Tailwind CSS
 - JavaScript
 
 ---
@@ -101,8 +106,11 @@ ProjetoCorteAzulTea/
 ## 📱 Responsividade & UX
 
 - Abordagem mobile-first com breakpoints em 360px / 768px / 1024px
+
 - Botões com área de toque adequada e contraste legível
+
 - Fluxo primário: apresentação → serviços → ficha de anamnese → contato
+
 - Depoimentos e mídias carregados assíncronamente para manter performance
 
 ---
@@ -111,7 +119,7 @@ ProjetoCorteAzulTea/
 
 - Integrações externas restritas e controladas (Google Maps, redes sociais)
 
-- Recomenda-se exibir aviso de privacidade e consentimento no formulário de anamnese(preenchido pelo próprio cliente na hora que preenche a ficha)
+- Recomenda-se exibir aviso de privacidade e consentimento no formulário de anamnese(Quando preenchido pelo próprio cliente na hora que preenche a ficha)
 
 ---
 
@@ -119,7 +127,7 @@ ProjetoCorteAzulTea/
 
 - Adoção da ficha de anamnese reduziu trocas de mensagens prévias (feedback do cliente)
 - Maior clareza nas políticas e serviços, facilitando conversão em contato via WhatsApp
-- Site entregue para uso real com foco em operação local e atendimento humanizado
+- Site entregue para uso real com foco em operação local e atendimento mais humanizado.
 
 ---
 
@@ -161,7 +169,7 @@ Acessar: `http://localhost:8000`
 📧 [natandaluz01@gmail.com](mailto:natandaluz01@gmail.com)
 🔗 [linkedin.com/in/natan-da-luz](https://www.linkedin.com/in/natan-da-luz)
 
-**Cliente:** Jonathan Rodrigues — barbeiro especializado em atendimento infantil com TEA
+**Cliente:** Jonathan Rodrigues — barbeiro especializado em atendimento infantil.
 
 ---
 
