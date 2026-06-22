@@ -38,23 +38,27 @@ Acrescentado no projeto: ficha de anamnese integrada, facilitando o preenchiment
 
 ## ⚙️ Funcionalidades
 
-### Interface & UX
+## Interface & UX
+
 - Layout responsivo (mobile-first)
 - Navegação por seções com rolagem suave
 - Botão flutuante para contato rápido via WhatsApp
 
-### Conteúdo Institucional
+## Conteúdo Institucional
+
 - Seção de serviços e valores
 - Políticas de atendimento detalhadas
 - **Ficha de anamnese integrada** — coleta de preferências sensoriais, gatilhos e histórico
 - Informações sobre formas de pagamento
 
-### Conteúdo Dinâmico
+## Conteúdo Dinâmico
+
 - Depoimentos carregados dinamicamente via JavaScript
 - Seção de notícias e reportagem em vídeo
 - Integração com mídias externas
 
-### Localização e Contato
+## Localização e Contato
+
 - Integração com Google Maps e rotas via Waze
 - Links diretos para WhatsApp e Instagram
 
