@@ -103,7 +103,7 @@ ProjetoCorteAzulTea/
 
 ---
 
-## 📱 Responsividade & UX
+## 📱 Responsividade & UX Design
 
 - Abordagem mobile-first com breakpoints em 360px / 768px / 1024px
 
