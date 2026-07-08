@@ -2,6 +2,7 @@
 
 Aplicação web estática responsiva desenvolvida para **Jonathan Rodrigues** barbeiro especializado em atendimento infantil para crianças com Transtorno do Espectro Autista (T.E.A). Foco em atendimento humanizado, comunicação clara com famílias e otimização do fluxo de agendamentos.
 
+
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![MIT](https://img.shields.io/badge/License-MIT-green)
 
 ---
