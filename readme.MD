@@ -159,7 +159,7 @@ ProjetoCorteAzulTea/
 
 O CorteAzulTea é um website institucional desenvolvido para uso em produção pelo cliente Jonathan Rodrigues.
 
-Por ser uma aplicação web estática, o projeto pode ser hospedado na Vercel, Netlify, GitHub Pages ou em qualquer servidor compatível com arquivos estáticos.
+Acesse aqui o link do Projeto: https://projeto-corte-azul-tea.vercel.app/
 
 ## 👤 Autor
 
