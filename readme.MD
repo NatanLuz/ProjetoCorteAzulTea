@@ -1,92 +1,132 @@
-## CorteAzulTea — Website Institucional
+# CorteAzulTea — Website Institucional
 
-Aplicação web estática responsiva desenvolvida para **Jonathan Rodrigues** barbeiro especializado em atendimento infantil para crianças com Transtorno do Espectro Autista (T.E.A). Foco em atendimento humanizado, comunicação clara com famílias e otimização do fluxo de agendamentos.
-
+Aplicação web estática responsiva desenvolvida para **Jonathan Rodrigues**, barbeiro especializado em atendimento infantil para crianças com Transtorno do Espectro Autista (TEA). O projeto tem como foco o atendimento humanizado, a comunicação clara com as famílias e a otimização do fluxo de agendamentos.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![MIT](https://img.shields.io/badge/License-MIT-green)
 
----
+## 📖 Sobre o projeto
 
-## 📸 Screenshots Do Projeto
+O objetivo do projeto é oferecer uma plataforma web institucional moderna e acessível para fortalecer a presença digital do barbeiro Jonathan, comunicar seus serviços com clareza e facilitar o contato com novos clientes. A aplicação também busca melhorar a gestão dos atendimentos, permitindo maior organização de horários, redução na perda de clientes e otimização do fluxo de agendamentos.
 
-## Home
+O projeto recebeu uma ficha de anamnese integrada, que permite o preenchimento direto pelo site em substituição ao Google Docs.
+
+### Benefícios principais
+
+- comunicação clara sobre o atendimento especializado a crianças com TEA;
+- interface responsiva com foco em usabilidade;
+- facilidade de contato direto por WhatsApp e redes sociais;
+- apresentação estruturada de serviços, políticas e localização.
+
+### Responsividade e UX Design
+
+- abordagem mobile-first com breakpoints em 360px, 768px e 1024px;
+- botões com área de toque adequada e contraste legível;
+- fluxo primário: apresentação → serviços → ficha de anamnese → contato;
+- depoimentos e mídias carregados de forma assíncrona para preservar a performance.
+
+### Segurança e privacidade
+
+- integrações externas restritas e controladas, incluindo Google Maps e redes sociais;
+- recomenda-se exibir um aviso de privacidade e solicitar consentimento no formulário de anamnese quando ele for preenchido pelo próprio cliente.
+
+### Resultados e impacto
+
+- a adoção da ficha de anamnese reduziu as trocas de mensagens prévias, conforme feedback do cliente;
+- maior clareza nas políticas e nos serviços, facilitando a conversão em contatos pelo WhatsApp;
+- site entregue para uso real, com foco na operação local e em um atendimento mais humanizado.
+
+### Checklist de QA
+
+- validar a navegação entre seções em desktop e dispositivos móveis;
+- testar o menu responsivo e os links de âncora;
+- verificar o botão de WhatsApp em múltiplos dispositivos;
+- testar a integração com Google Maps e as rotas pelo Waze;
+- reproduzir vídeos e conteúdos externos;
+- validar os campos obrigatórios e o fluxo da ficha de anamnese.
+
+## ✨ Funcionalidades
+
+### Interface e UX
+
+- layout responsivo com abordagem mobile-first;
+- navegação por seções com rolagem suave;
+- botão flutuante para contato rápido pelo WhatsApp.
+
+### Conteúdo institucional
+
+- seção de serviços e valores;
+- políticas de atendimento detalhadas;
+- **ficha de anamnese integrada** para coleta de preferências sensoriais, gatilhos e histórico;
+- informações sobre formas de pagamento.
+
+### Conteúdo dinâmico
+
+- depoimentos carregados dinamicamente por JavaScript;
+- seção de notícias e reportagem em vídeo;
+- integração com mídias externas.
+
+### Localização e contato
+
+- integração com Google Maps e rotas pelo Waze;
+- links diretos para WhatsApp e Instagram.
+
+## 🖼️ Screenshots
+
+### Home
 
 ![Home](homecorteazultea.PNG)
 
-## Serviços
+### Serviços
 
 ![Serviços](servicoscorteazultea.PNG)
 
-## Contato
+### Contato
 
 ![Contato](contatocorteazultea.PNG)
 
-## Ficha de Anamnese (Atualização mais recente)
+### Ficha de Anamnese (Atualização mais recente)
 
 ![Ficha de Anamnese](FichaAnamnese.PNG)
 
----
+## 🚀 Tecnologias
 
-## Objetivo do Projeto
+- HTML5;
+- CSS3;
+- Tailwind CSS;
+- JavaScript.
 
-Desenvolver uma plataforma web institucional moderna e acessível para fortalecer a presença digital do barbeiro Jonathan, comunicar seus serviços com clareza e facilitar o contato com novos clientes. O projeto também teve como objetivo melhorar a gestão dos atendimentos, permitindo maior organização de horários, redução na perda de clientes e otimização do fluxo de agendamentos.
+### Arquitetura
 
-Acrescentado no projeto: ficha de anamnese integrada, facilitando o preenchimento direto no site ao invés do Google Docs.
+O projeto mantém a separação entre estrutura, estilo e comportamento:
 
-**Benefícios principais:**
-- Comunicação clara sobre atendimento especializado (TEA)
-- Interface responsiva com foco em usabilidade
-- Facilitação de contato direto (WhatsApp e redes sociais)
-- Apresentação estruturada de serviços, políticas e localização
+- **HTML:** estrutura semântica e conteúdo;
+- **CSS e Tailwind CSS:** layout responsivo e estilização;
+- **JavaScript:** interatividade e carregamento dinâmico.
 
----
+## ⚙️ Como executar
 
-## ⚙️ Funcionalidades
+### Abrir diretamente
 
-## Interface & UX
-
-- Layout responsivo (mobile-first)
-- Navegação por seções com rolagem suave
-- Botão flutuante para contato rápido via WhatsApp
-
-## Conteúdo Institucional
-
-- Seção de serviços e valores
-- Políticas de atendimento detalhadas
-- **Ficha de anamnese integrada** — coleta de preferências sensoriais, gatilhos e histórico
-- Informações sobre formas de pagamento
-
-## Conteúdo Dinâmico
-
-- Depoimentos carregados dinamicamente via JavaScript
-- Seção de notícias e reportagem em vídeo
-- Integração com mídias externas
-
-## Localização e Contato
-
-- Integração com Google Maps e rotas via Waze
-
-- Links diretos para WhatsApp e Instagram
-
----
-
-## 🧰 Stack Tecnológica
-
-- HTML5 
-- CSS3/Tailwind CSS
-- JavaScript
-
----
-
-## 🏗️ Arquitetura / Estrutura
-
-Separação entre estrutura, estilo e comportamento:
-
-- **HTML** → estrutura semântica e conteúdo
-- **CSS / Tailwind** → layout responsivo e estilização
-- **JavaScript** → interatividade e carregamento dinâmico
-
+```bash
+# Windows
+start public/index.html
 ```
+
+### Servir localmente
+
+```bash
+# Python 3 (porta 8000)
+python -m http.server --directory public 8000
+
+# Ou com Node.js
+npx http-server public -p 8000
+```
+
+Acesse `http://localhost:8000`.
+
+## 📂 Estrutura do projeto
+
+```text
 ProjetoCorteAzulTea/
 ├─ public/
 │  ├─ index.html
@@ -102,77 +142,38 @@ ProjetoCorteAzulTea/
 └─ README.md
 ```
 
----
+## 📌 Roadmap do Projeto
 
-## 📱 Responsividade & UX Design
+- painel administrativo para gerenciamento de conteúdo;
+- formulário de contato com envio por e-mail;
+- integração com sistema de agendamento online;
+- CMS para atualização de conteúdo;
+- otimização de SEO;
+- melhoria da acessibilidade em conformidade com as diretrizes WCAG;
+- internacionalização;
+- integração com Google Analytics;
+- otimização de performance;
+- versão PWA completa.
 
-- Abordagem mobile-first com breakpoints em 360px / 768px / 1024px
+## 🌐 Deploy
 
-- Botões com área de toque adequada e contraste legível
+O CorteAzulTea é um website institucional desenvolvido para uso em produção pelo cliente Jonathan Rodrigues.
 
-- Fluxo primário: apresentação → serviços → ficha de anamnese → contato
-
-- Depoimentos e mídias carregados assíncronamente para manter performance
-
----
-
-## 🔐 Segurança e Privacidade
-
-- Integrações externas restritas e controladas (Google Maps, redes sociais)
-
-- Recomenda-se exibir aviso de privacidade e consentimento no formulário de anamnese(Quando preenchido pelo próprio cliente na hora que preenche a ficha)
-
----
-
-## 📊 Resultados / Impacto
-
-- Adoção da ficha de anamnese reduziu trocas de mensagens prévias (feedback do cliente)
-- Maior clareza nas políticas e serviços, facilitando conversão em contato via WhatsApp
-- Site entregue para uso real com foco em operação local e atendimento mais humanizado.
-
----
-
-## 🧪 Checklist de QA
-
-- Validar navegação entre seções (desktop e mobile)
-- Testar menu responsivo e links de âncora
-- Verificar botão de WhatsApp em múltiplos dispositivos
-- Testar integração Google Maps e rotas (Waze)
-- Reproduzir vídeos e conteúdos externos
-- Validar campos obrigatórios e fluxo da ficha de anamnese
-
----
-
-## 🚀 Como Executar
-
-**Abrir diretamente:**
-```bash
-# Windows
-start public/index.html
-```
-
-**Servir localmente (recomendado):**
-```bash
-# Python 3 (porta 8000)
-python -m http.server --directory public 8000
-
-# Ou com Node.js
-npx http-server public -p 8000
-```
-
-Acessar: `http://localhost:8000`
-
----
+Por ser uma aplicação web estática, o projeto pode ser hospedado na Vercel, Netlify, GitHub Pages ou em qualquer servidor compatível com arquivos estáticos.
 
 ## 👤 Autor
 
 **Natan Da Luz**
-📧 [natandaluz01@gmail.com](mailto:natandaluz01@gmail.com)
-🔗 [linkedin.com/in/natan-da-luz](https://www.linkedin.com/in/natan-da-luz)
 
-**Cliente:** Jonathan Rodrigues — barbeiro especializado em atendimento infantil.
+- LinkedIn: [linkedin.com/in/natandaluz](https://www.linkedin.com/in/natandaluz/)
+- Portfólio: [portfolionatan.vercel.app](https://portfolionatan.vercel.app/)
+- E-mail: [natandaluz01@gmail.com](mailto:natandaluz01@gmail.com)
 
----
+### Cliente
+
+**Jonathan Rodrigues**
+
+Barbeiro especializado em atendimento infantil para crianças com Transtorno do Espectro Autista (TEA).
 
 ## 📄 Licença
 
