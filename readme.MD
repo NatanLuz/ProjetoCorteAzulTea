@@ -157,7 +157,7 @@ ProjetoCorteAzulTea/
 
 ## 🌐 Deploy
 
-O CorteAzulTea é um website institucional desenvolvido para uso em produção pelo cliente Jonathan Rodrigues.
+O Projeto CorteAzulTea é um website institucional desenvolvido para uso em produção pelo cliente Jonathan Rodrigues.
 
 Acesse aqui o link do Projeto: https://projeto-corte-azul-tea.vercel.app/
 
