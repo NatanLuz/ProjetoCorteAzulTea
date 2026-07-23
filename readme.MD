@@ -14,14 +14,14 @@ O objetivo do projeto é oferecer uma plataforma web institucional moderna e ace
 
 O projeto recebeu uma ficha de anamnese integrada, que permite o preenchimento direto pelo site em substituição ao Google Docs.
 
-### Benefícios principais
+## Benefícios principais
 
 - comunicação clara sobre o atendimento especializado a crianças com TEA;
 - interface responsiva com foco em usabilidade;
 - facilidade de contato direto por WhatsApp e as demais redes sociais;
 - apresentação estruturada de serviços, políticas e localização.
 
-### Responsividade e UX Design
+### Responsividade e UX Design do Projeto
 
 - abordagem mobile-first com breakpoints em 360px, 768px e 1024px;
 - botões com área de toque adequada e contraste legível;
