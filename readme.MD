@@ -1,4 +1,4 @@
-## CorteAzul T.E.A — Website Institucional 
+## CorteAzul T.E.A — Website Institucional Para o Barbeiro Jonathan
 
 
 Aplicação Web estática responsiva desenvolvida para **Jonathan Rodrigues**, barbeiro especializado em atendimento infantil para crianças com Transtorno do Espectro Autista (TEA). O projeto tem como foco o atendimento humanizado, a comunicação clara com as famílias e a otimização do fluxo de agendamentos.
