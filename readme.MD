@@ -1,4 +1,4 @@
-## CorteAzul T.E.A — Website Institucional Barbeiro Inclusivo Jonathan
+## CorteAzul T.E.A — Website Institucional Barbeiro Inclusivo Jonathan Rodrigues
 
 Site com atualizações connstantes.
 
