@@ -280,7 +280,8 @@ video {
 /* Efeitos de foco para acessibilidade */
 button:focus,
 a:focus {
-  @apply outline-none ring-2 ring-blue-700 ring-offset-2;
+  outline: 2px solid #1d4ed8;
+  outline-offset: 2px;
 }
 
 /* Animações de entrada para elementos */

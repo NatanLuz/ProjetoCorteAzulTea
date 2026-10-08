@@ -19,13 +19,14 @@ const mobileMenu = document.getElementById("mobile-menu");
 if (mobileMenuBtn && mobileMenu) {
   mobileMenuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
-    const icon = mobileMenuBtn.querySelector("i");
     if (mobileMenu.classList.contains("hidden")) {
-      icon.className = "fas fa-bars text-xl";
+      mobileMenuBtn.innerHTML = '<i class="fas fa-bars text-xl" aria-hidden="true"></i>';
       mobileMenuBtn.setAttribute("aria-expanded", "false");
+      mobileMenuBtn.setAttribute("aria-label", "Abrir menu");
     } else {
-      icon.className = "fas fa-times text-xl";
+      mobileMenuBtn.innerHTML = '<i class="fas fa-times text-xl" aria-hidden="true"></i>';
       mobileMenuBtn.setAttribute("aria-expanded", "true");
+      mobileMenuBtn.setAttribute("aria-label", "Fechar menu");
     }
   });
 
@@ -33,8 +34,9 @@ if (mobileMenuBtn && mobileMenu) {
   mobileMenu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       mobileMenu.classList.add("hidden");
-      const icon = mobileMenuBtn.querySelector("i");
-      icon.className = "fas fa-bars text-xl";
+      mobileMenuBtn.setAttribute("aria-expanded", "false");
+      mobileMenuBtn.setAttribute("aria-label", "Abrir menu");
+      mobileMenuBtn.innerHTML = '<i class="fas fa-bars text-xl" aria-hidden="true"></i>';
     });
   });
 }
@@ -320,6 +322,12 @@ document.querySelectorAll("[data-tooltip]").forEach((element) => {
               "Por favor, preencha todos os campos obrigatórios desta etapa.";
           return false;
         }
+        if (!el.checkValidity()) {
+          if (errorMessage)
+            errorMessage.textContent = "Confira os campos obrigatórios desta etapa.";
+          el.reportValidity();
+          return false;
+        }
       }
       // Validação flexível para data
       const dateVal = document.getElementById("desiredDate").value.trim();
@@ -468,6 +476,8 @@ document.querySelectorAll("[data-tooltip]").forEach((element) => {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    if (currentStep !== totalSteps) return;
 
     if (!validateCurrentStep()) {
       if (errorMessage) errorMessage.classList.remove("hidden");

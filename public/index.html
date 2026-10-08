@@ -81,7 +81,7 @@
       aria-label="Menu principal"
     >
       <div class="max-w-6xl mx-auto px-6 py-4">
-        <div class="hidden md:flex items-center justify-center space-x-8">
+        <div class="hidden lg:flex items-center justify-center space-x-8">
           <a
             href="#hero"
             aria-label="Início"
@@ -110,7 +110,7 @@
           </a>
         </div>
 
-        <div class="flex items-center justify-between md:hidden">
+        <div class="flex items-center justify-between lg:hidden">
           <a
             href="#hero"
             aria-label="Início"
@@ -131,7 +131,7 @@
         <!-- Mobile menu -->
         <div
           id="mobile-menu"
-          class="md:hidden hidden mt-3 space-y-2 border-t border-gray-200 pt-3"
+          class="lg:hidden hidden mt-3 space-y-2 border-t border-gray-200 pt-3"
         >
           <a href="#sobre" class="block py-2 text-gray-700 nav-link">Sobre</a>
           <a href="#diferenciais" class="block py-2 text-gray-700 nav-link"
@@ -190,7 +190,7 @@
               Atendimento especializado, ambiente acolhedor e experiência
               humanizada para toda a família.
             </p>
-            <div class="flex justify-center items-center">
+            <div class="flex flex-wrap justify-center items-center gap-4">
               <a
                 href="#sobre"
                 class="cta-button bg-blue-700/20 hover:bg-blue-700/30 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 backdrop-blur-sm"
@@ -202,7 +202,7 @@
                 target="_blank"
                 rel="noopener"
                 aria-label="Instagram"
-                class="ml-4 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+                class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 <img
                   src="assets/img/instagram.svg"
@@ -1153,6 +1153,7 @@
                 </div>
                 <textarea
                   id="sensitivitiesDescription"
+                  aria-label="Descrição das sensibilidades sensoriais (opcional)"
                   class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                   rows="3"
                   placeholder="Descreva as sensibilidades (água, talco, máquina, toque, barulhos, etc)"
@@ -1185,6 +1186,7 @@
                 </div>
                 <textarea
                   id="dryerTraumaDescription"
+                  aria-label="Descrição do trauma com secador (opcional)"
                   class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                   rows="2"
                   placeholder="Se sim, descreva brevemente como foi."
@@ -1217,6 +1219,7 @@
                 </div>
                 <textarea
                   id="haircutTraumaDescription"
+                  aria-label="Descrição do trauma com corte de cabelo (opcional)"
                   class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                   rows="2"
                   placeholder="Se sim, conte um pouco sobre essa experiência."
@@ -1256,6 +1259,7 @@
                 </div>
                 <textarea
                   id="hyperfocusDescription"
+                  aria-label="Descrição do hiperfoco (opcional)"
                   class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                   rows="2"
                   placeholder="Se sim, descreva o hiperfoco (personagens, brinquedos, temas, etc)."
@@ -1398,6 +1402,7 @@
 
             <p
               id="errorMessage"
+              role="alert"
               class="text-sm text-red-600 font-medium hidden mt-2"
             >
               Por favor, preencha todos os campos obrigatórios desta etapa.
@@ -1479,6 +1484,9 @@
       <section id="noticias" class="cv-auto py-16 px-6 max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold mb-10 text-center">
           Notícias & Entrevistas
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-gray-50 shadow rounded-xl overflow-hidden">
             <div class="p-4">
               <h3 class="font-bold mb-2">
                 Barbeiro de Viamão desenvolve PROJETO INCLUSIVO
@@ -1508,6 +1516,12 @@
             <div class="p-4">
               <h3 class="font-bold mb-2">
                 Barbeiro para Crianças Autistas T.E.A
+              </h3>
+              <a
+                href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2025/08/10/pai-atipico-barbeiro-cria-espaco-para-atender-criancas-autistas-inspirado-nos-proprios-filhos.ghtml"
+                target="_blank"
+                rel="noopener"
+                class="text-blue-600 font-semibold hover:underline text-sm"
                 >Ler na íntegra</a
               >
               <p class="text-xs text-gray-400 mt-2">Fonte: G1 Globo</p>
