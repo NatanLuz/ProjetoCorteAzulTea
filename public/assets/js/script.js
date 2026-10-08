@@ -602,7 +602,7 @@ document.querySelectorAll("[data-tooltip]").forEach((element) => {
     message += "FINALIZAÇÃO\n";
     message += `- Local do atendimento: ${serviceLocation}\n`;
     message += `- Endereço completo: ${fullAddress}\n`;
-    message += `- Corte desejado: ${desiredHaircut}\n`;
+    message += `- Expectativa para o atendimento / corte desejado: ${desiredHaircut}\n`;
     message += `- Autorização de uso de imagem: ${imageAuthorization}\n`;
     message += `- Como conheceu o serviço: ${howFound}\n`;
 
