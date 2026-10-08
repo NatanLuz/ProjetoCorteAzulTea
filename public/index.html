@@ -1017,7 +1017,7 @@
                     <label
                       for="desiredDate"
                       class="block text-sm font-medium text-gray-700 mb-1"
-                      >Data desejada *</label
+                      >Data desejada (opcional)</label
                     >
                     <input
                       type="text"
@@ -1027,7 +1027,6 @@
                       pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$"
                       autocomplete="off"
                       inputmode="numeric"
-                      required
                       onfocus="(this.type='date')"
                       onblur="if(this.value===''){this.type='text'}"
                     />
@@ -1037,13 +1036,12 @@
                     <label
                       for="desiredTime"
                       class="block text-sm font-medium text-gray-700 mb-1"
-                      >Horário de preferência *</label
+                      >Horário de preferência (opcional)</label
                     >
                     <input
                       type="time"
                       id="desiredTime"
                       class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      required
                     />
                     <small class="block text-sm text-gray-500 mt-2">Escolha o horário que prefere e confirmaremos a disponibilidade diretamente pelo WhatsApp.</small>
                   </div>
@@ -1057,7 +1055,8 @@
                 Etapa 2 – Nível de suporte
               </h3>
               <p class="text-sm text-gray-600 mb-3">
-                Selecione o nível de suporte necessário para a criança (1, 2 ou 3):
+                Preenchimento opcional: selecione o nível de suporte (1, 2 ou 3),
+                se aplicável. Se a criança não for autista, pode deixar sem preencher.
               </p>
               <div class="space-y-2">
                 <label class="inline-flex items-center">
@@ -1101,7 +1100,7 @@
               <div class="mb-4">
                 <p class="text-sm font-medium text-gray-700 mb-1">
                   A criança possui sensibilidades sensoriais? (água, talco,
-                  máquina, secador, toque, etc) *
+                  máquina, secador, toque, etc) (opcional)
                 </p>
                 <div class="space-x-4 text-sm">
                   <label class="inline-flex items-center">
@@ -1285,7 +1284,7 @@
                 <label
                   for="fullAddress"
                   class="block text-sm font-medium text-gray-700 mb-1"
-                  >Endereço Completo *</label
+                  >Endereço Completo (obrigatório somente para atendimento em casa/domicílio)</label
                 >
                 <textarea
                   id="fullAddress"
@@ -1299,7 +1298,7 @@
                 <label
                   for="desiredHaircut"
                   class="block text-sm font-medium text-gray-700 mb-1"
-                  >Corte Desejado *</label
+                  >Corte Desejado (opcional)</label
                 >
                 <textarea
                   id="desiredHaircut"
@@ -1340,7 +1339,7 @@
                 <label
                   for="howFound"
                   class="block text-sm font-medium text-gray-700 mb-1"
-                  >Como conheceu o CorteAzul? *</label
+                  >Como conheceu o CorteAzul? (opcional)</label
                 >
                 <select
                   id="howFound"
@@ -1396,7 +1395,7 @@
             </div>
               <div class="mt-8">
                 <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-900 p-4 rounded-lg text-center text-base font-bold">
-                  Atenção: É <span class="underline">OBRIGATÓRIO preencher as 5 etapas</span> da ficha para prosseguir com o agendamento.
+                  Atenção: É necessário <span class="underline">percorrer as 5 etapas</span> da ficha para prosseguir com o agendamento. Campos com * são obrigatórios; os demais são opcionais e podem ficar sem preenchimento, exceto o endereço para atendimento em casa/domicílio.
                 </div>
               </div>
           </form>

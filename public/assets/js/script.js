@@ -311,8 +311,6 @@ document.querySelectorAll("[data-tooltip]").forEach((element) => {
         "childAge",
         "guardianName",
         "phone",
-        "desiredDate",
-        "desiredTime",
       ];
       for (const id of requiredIds) {
         const el = document.getElementById(id);
@@ -326,6 +324,7 @@ document.querySelectorAll("[data-tooltip]").forEach((element) => {
       // Validação flexível para data
       const dateVal = document.getElementById("desiredDate").value.trim();
       if (
+        dateVal &&
         !/^\d{1,2}[\/\-]?\d{1,2}[\/\-]?\d{2,4}$|^\d{4}-\d{2}-\d{2}$/.test(
           dateVal,
         )
@@ -337,7 +336,7 @@ document.querySelectorAll("[data-tooltip]").forEach((element) => {
       }
       // Validação flexível para hora
       const timeVal = document.getElementById("desiredTime").value.trim();
-      if (!/^\d{1,2}:?\d{2}$/.test(timeVal)) {
+      if (timeVal && !/^\d{1,2}:?\d{2}$/.test(timeVal)) {
         if (errorMessage)
           errorMessage.textContent =
             "Digite o horário no formato hh:mm (ex: 13:30).";
@@ -354,42 +353,22 @@ document.querySelectorAll("[data-tooltip]").forEach((element) => {
       }
     }
 
-    if (currentStep === 2) {
-      const supportLevel = document.querySelector(
-        'input[name="supportLevel"]:checked',
-      );
-      if (!supportLevel) {
-        if (errorMessage)
-          errorMessage.textContent = "Selecione o nível de suporte.";
-        return false;
-      }
-    }
-
     if (currentStep === 5) {
       const serviceLocation = document.querySelector(
         'input[name="serviceLocation"]:checked',
       );
       const fullAddress = document.getElementById("fullAddress");
-      const desiredHaircut = document.getElementById("desiredHaircut");
-      const howFound = document.getElementById("howFound");
       if (!serviceLocation) {
         if (errorMessage)
           errorMessage.textContent = "Selecione o local do atendimento.";
         return false;
       }
-      if (!fullAddress || !fullAddress.value.trim()) {
+      if (
+        serviceLocation.value === "Casa" &&
+        (!fullAddress || !fullAddress.value.trim())
+      ) {
         if (errorMessage)
           errorMessage.textContent = "Preencha o endereço completo.";
-        return false;
-      }
-      if (!desiredHaircut || !desiredHaircut.value.trim()) {
-        if (errorMessage)
-          errorMessage.textContent = "Descreva o corte desejado.";
-        return false;
-      }
-      if (!howFound || !howFound.value) {
-        if (errorMessage)
-          errorMessage.textContent = "Informe como conheceu o serviço.";
         return false;
       }
     }
@@ -601,8 +580,8 @@ document.querySelectorAll("[data-tooltip]").forEach((element) => {
     message += `Idade: ${childAge}\n`;
     message += `Nome do responsável: ${guardianName}\n`;
     message += `Telefone (WhatsApp): ${phone}\n`;
-    message += `Data desejada: ${desiredDate}\n`;
-    message += `Horário de preferência: ${desiredTime}\n\n`;
+    message += `Data desejada: ${desiredDate || "Não informado"}\n`;
+    message += `Horário de preferência: ${desiredTime || "Não informado"}\n\n`;
 
     message += "NÍVEL DE SUPORTE\n";
     message += `- Nível: ${supportLevel}\n\n`;
