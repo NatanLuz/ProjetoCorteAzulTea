@@ -1,6 +1,6 @@
 ## CorteAzul T.E.A — Website Institucional Barbeiro Inclusivo Jonathan Rodrigues
 
-Site com atualizações connstantes.
+Site com atualizações connstantes..
 
 Site Web estática responsivo desenvolvida para **Jonathan Rodrigues**, barbeiro especializado em atendimento infantil para crianças com Transtorno do Espectro Autista (TEA). O projeto tem como foco o atendimento humanizado, a comunicação clara com as famílias e a otimização do fluxo de agendamentos.
 
@@ -156,8 +156,6 @@ ProjetoCorteAzulTea/
 - versão PWA completa.
 
 ## 🌐 Deploy
-
-O Projeto CorteAzulTea é um website institucional desenvolvido para uso em produção pelo cliente Jonathan Rodrigues.
 
 Acesse aqui o link do Projeto: https://projeto-corte-azul-tea.vercel.app/
 
