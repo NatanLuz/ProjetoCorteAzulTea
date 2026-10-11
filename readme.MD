@@ -215,15 +215,6 @@ O repositório contém arquivos estáticos para servir a partir de `public`. Nã
 - O repositório não comprova que cada push dispara deploy automático.
 - O endereço de produção não foi validado nesta atualização de documentação.
 
-## Roadmap
-
-Pendências e candidatos a evolução, sujeitos à definição de prioridade com o cliente:
-
-- Receber e incorporar capa, vídeo ou outro material real do livro.
-- Ampliar a validação em dispositivos reais, navegadores e tecnologias assistivas.
-- Avaliar processamento local do Tailwind e das diretivas `@apply`, além da dependência de CDNs.
-- Avaliar testes automatizados da ficha e verificações de entrega reproduzíveis.
-
 Agenda integrada, CMS, painel administrativo, envio por e-mail, analytics e PWA offline **não estão implementados** e não são compromissos de entrega desta manutenção.
 
 ## Responsáveis e licença
