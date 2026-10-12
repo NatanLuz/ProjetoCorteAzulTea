@@ -1,4 +1,4 @@
-# CorteAzul T.E.A.
+# Projeto CorteAzul T.E.A.
 
 Site institucional desenvolvido para Jonathan Rodrigues, responsável pelo Corte Azul em Viamão/RS. Apresenta o atendimento infantil humanizado, com foco em crianças com Transtorno do Espectro Autista (TEA), e uma área independente de atendimento para idosos.
 
