@@ -52,7 +52,7 @@ Pontos importantes sobre o atendimento:
 - Menu responsivo, navegação por âncoras e botão de retorno ao topo.
 - Recursos básicos de acessibilidade: link para pular ao conteúdo, nomes acessíveis, rótulos, indicação de foco e alerta de erro na ficha.
 
-## Serviços e valores
+## Serviços e Valores
 
 | Serviço | Apresentação atual | Valor |
 |---|---|---|
