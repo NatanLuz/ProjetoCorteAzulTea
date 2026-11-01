@@ -6,7 +6,7 @@ Site institucional desenvolvido para Jonathan Rodrigues, responsável pelo Corte
 
 > Esta documentação descreve o código do repositório. A publicação no ambiente do cliente e a disponibilidade dos serviços externos devem ser verificadas separadamente.
 
-## Sumário
+## Sumário do Projeto 
 
 - [Visão geral e objetivo](#visão-geral-e-objetivo)
 - [Funcionalidades implementadas](#funcionalidades-implementadas)
