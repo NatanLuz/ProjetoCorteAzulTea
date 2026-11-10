@@ -88,6 +88,7 @@
             class="font-semibold text-blue-700"
             >CorteAzulTea</a
           >
+          <a href="#form-anamnese-tea" class="nav-link">Anamnese</a>
           <a href="#sobre" class="nav-link">Sobre</a>
           <a href="#diferenciais" class="nav-link">Diferenciais</a>
           <a href="#precos" class="nav-link">Preços</a>
@@ -133,6 +134,7 @@
           id="mobile-menu"
           class="lg:hidden hidden mt-3 space-y-2 border-t border-gray-200 pt-3"
         >
+          <a href="#form-anamnese-tea" class="block py-2 text-gray-700 nav-link">Anamnese</a>
           <a href="#sobre" class="block py-2 text-gray-700 nav-link">Sobre</a>
           <a href="#diferenciais" class="block py-2 text-gray-700 nav-link"
             >Diferenciais</a
@@ -192,6 +194,12 @@
             </p>
             <div class="flex flex-wrap justify-center items-center gap-4">
               <a
+                href="#form-anamnese-tea"
+                class="cta-button inline-flex items-center justify-center bg-white hover:bg-blue-50 text-blue-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Preencher ficha de anamnese
+              </a>
+              <a
                 href="#sobre"
                 class="cta-button bg-blue-700/20 hover:bg-blue-700/30 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 backdrop-blur-sm"
               >
@@ -220,6 +228,516 @@
           class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
         >
           <i class="fas fa-chevron-down text-blue-700 text-2xl"></i>
+        </div>
+      </section>
+
+      <!-- Formulário de Anamnese Multi-etapas -->
+
+      <section
+        id="form-anamnese-tea"
+        class="cv-auto py-20 px-6 bg-white flex items-center justify-center"
+      >
+        <div
+          class="w-full max-w-3xl bg-gray-50 rounded-2xl shadow-xl p-6 md:p-10"
+        >
+          <div class="mb-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-700 mb-2">
+              Ficha de Anamnese – CorteAzul TEA
+            </h2>
+            <p class="text-sm md:text-base text-gray-600">
+              Preencha com atenção as informações da criança para um atendimento
+              personalizado e acolhedor.
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <div class="flex items-center justify-between mb-2 text-sm">
+              <span id="stepLabel" class="font-semibold text-blue-700">
+                Etapa 1 de 5
+              </span>
+              <span id="stepName" class="text-gray-500">Dados básicos</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div
+                id="progressBar"
+                class="bg-blue-600 h-2 rounded-full transition-all duration-300"
+                style="width: 20%"
+              ></div>
+            </div>
+          </div>
+
+          <form id="anamneseForm" class="space-y-6">
+            <!-- Etapa 1 -->
+            <div class="form-step" data-step="1">
+              <h3 class="text-lg font-semibold mb-4 text-gray-800">
+                Etapa 1 – Dados básicos
+              </h3>
+              <div class="mb-4">
+                <label for="serviceType" class="block text-sm font-medium text-gray-700 mb-1">Serviço desejado *</label>
+                <select id="serviceType" class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                  <option value="">Selecione o serviço</option>
+                  <option value="Corte Kids — R$ 45">Corte Kids — R$ 45</option>
+                  <option value="Corte Lúdico — R$ 65">Corte Lúdico — R$ 65</option>
+                  <option value="Corte TEA Especial — R$ 85">Corte TEA Especial — R$ 85</option>
+                  <option value="Corte Especial – R$ 85">Corte Especial – R$ 85</option>
+                </select>
+                <p class="text-sm text-gray-700 mt-2">Corte Especial: destinado a crianças que não apresentam dificuldade no corte de cabelo.</p>
+              </div>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    for="childName"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Nome da criança *</label
+                  >
+                  <input
+                    type="text"
+                    id="childName"
+                    class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="childAge"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Idade *</label
+                  >
+                  <input
+                    type="number"
+                    id="childAge"
+                    min="0"
+                    class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="guardianName"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Nome do responsável *</label
+                  >
+                  <input
+                    type="text"
+                    id="guardianName"
+                    class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Telefone (WhatsApp) *</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="(51) 98660-4404"
+                    class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                  />
+                </div>
+                <div class="md:col-span-2 grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      for="desiredDate"
+                      class="block text-sm font-medium text-gray-700 mb-1"
+                      >Data desejada (opcional)</label
+                    >
+                    <input
+                      type="text"
+                      id="desiredDate"
+                      class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="dd/mm/aaaa"
+                      pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$"
+                      autocomplete="off"
+                      inputmode="numeric"
+                      onfocus="(this.type='date')"
+                      onblur="if(this.value===''){this.type='text'}"
+                    />
+                    <small class="text-gray-500">Clique para abrir o calendário ou digite no formato <b>dd/mm/aaaa</b>.</small>
+                  </div>
+                  <div>
+                    <label
+                      for="desiredTime"
+                      class="block text-sm font-medium text-gray-700 mb-1"
+                      >Horário de preferência (opcional)</label
+                    >
+                    <input
+                      type="time"
+                      id="desiredTime"
+                      class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                    <small class="block text-sm text-gray-500 mt-2">Escolha o horário que prefere e confirmaremos a disponibilidade diretamente pelo WhatsApp.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Etapa 2 -->
+            <div class="form-step hidden" data-step="2">
+              <h3 class="text-lg font-semibold mb-4 text-gray-800">
+                Etapa 2 – Nível de suporte
+              </h3>
+              <p class="text-sm text-gray-600 mb-3">
+                Preenchimento opcional: selecione o nível de suporte (1, 2 ou 3),
+                se aplicável. Se a criança não for autista, pode deixar sem preencher.
+              </p>
+              <div class="space-y-2">
+                <label class="inline-flex items-center">
+                  <input
+                    type="radio"
+                    name="supportLevel"
+                    value="1"
+                    class="mr-2 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="text-sm text-gray-700">1</span>
+                </label>
+                <br />
+                <label class="inline-flex items-center">
+                  <input
+                    type="radio"
+                    name="supportLevel"
+                    value="2"
+                    class="mr-2 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="text-sm text-gray-700">2</span>
+                </label>
+                <br />
+                <label class="inline-flex items-center">
+                  <input
+                    type="radio"
+                    name="supportLevel"
+                    value="3"
+                    class="mr-2 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="text-sm text-gray-700">3</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Etapa 3 -->
+            <div class="form-step hidden" data-step="3">
+              <h3 class="text-lg font-semibold mb-4 text-gray-800">
+                Etapa 3 – Sensibilidades
+              </h3>
+
+              <div class="mb-4">
+                <p class="text-sm font-medium text-gray-700 mb-1">
+                  A criança possui sensibilidades sensoriais? (água, talco,
+                  máquina, secador, toque, etc) (opcional)
+                </p>
+                <div class="space-x-4 text-sm">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="hasSensitivities"
+                      value="Sim"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Sim</span>
+                  </label>
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="hasSensitivities"
+                      value="Não"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Não</span>
+                  </label>
+                </div>
+                <textarea
+                  id="sensitivitiesDescription"
+                  aria-label="Descrição das sensibilidades sensoriais (opcional)"
+                  class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="3"
+                  placeholder="Descreva as sensibilidades (água, talco, máquina, toque, barulhos, etc)"
+                ></textarea>
+              </div>
+
+              <div class="mb-4">
+                <p class="text-sm font-medium text-gray-700 mb-1">
+                  Já teve trauma com secador?
+                </p>
+                <div class="space-x-4 text-sm">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="dryerTrauma"
+                      value="Sim"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Sim</span>
+                  </label>
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="dryerTrauma"
+                      value="Não"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Não</span>
+                  </label>
+                </div>
+                <textarea
+                  id="dryerTraumaDescription"
+                  aria-label="Descrição do trauma com secador (opcional)"
+                  class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="2"
+                  placeholder="Se sim, descreva brevemente como foi."
+                ></textarea>
+              </div>
+
+              <div class="mb-2">
+                <p class="text-sm font-medium text-gray-700 mb-1">
+                  Já teve trauma com corte de cabelo?
+                </p>
+                <div class="space-x-4 text-sm">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="haircutTrauma"
+                      value="Sim"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Sim</span>
+                  </label>
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="haircutTrauma"
+                      value="Não"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Não</span>
+                  </label>
+                </div>
+                <textarea
+                  id="haircutTraumaDescription"
+                  aria-label="Descrição do trauma com corte de cabelo (opcional)"
+                  class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="2"
+                  placeholder="Se sim, conte um pouco sobre essa experiência."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Etapa 4 -->
+            <div class="form-step hidden" data-step="4">
+              <h3 class="text-lg font-semibold mb-4 text-gray-800">
+                Etapa 4 – Informações adicionais
+              </h3>
+
+              <div class="mb-4">
+                <p class="text-sm font-medium text-gray-700 mb-1">
+                  A criança possui hiperfoco em algo específico?
+                </p>
+                <div class="space-x-4 text-sm">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="hasHyperfocus"
+                      value="Sim"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Sim</span>
+                  </label>
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="hasHyperfocus"
+                      value="Não"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Não</span>
+                  </label>
+                </div>
+                <textarea
+                  id="hyperfocusDescription"
+                  aria-label="Descrição do hiperfoco (opcional)"
+                  class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="2"
+                  placeholder="Se sim, descreva o hiperfoco (personagens, brinquedos, temas, etc)."
+                ></textarea>
+              </div>
+
+              <div>
+                <label
+                  for="therapyMedication"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Faz terapia ou uso de medicação? Se sim, descreva.</label
+                >
+                <textarea
+                  id="therapyMedication"
+                  class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="3"
+                  placeholder="Ex.: Terapia ABA, fono, psicólogo, medicação, etc."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Etapa 5 -->
+            <div class="form-step hidden" data-step="5">
+              <h3 class="text-lg font-semibold mb-4 text-gray-800">
+                Etapa 5 – Finalização
+              </h3>
+
+              <div class="mb-4">
+                <p class="text-sm font-medium text-gray-700 mb-1">
+                  Local do atendimento *
+                </p>
+                <div class="space-x-4 text-sm">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="serviceLocation"
+                      value="Casa"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Em casa (domicílio)</span>
+                  </label>
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="serviceLocation"
+                      value="Ponto de encontro"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Ponto de encontro / Barbearia</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label
+                  for="fullAddress"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Endereço Completo (obrigatório somente para atendimento em casa/domicílio)</label
+                >
+                <textarea
+                  id="fullAddress"
+                  class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="3"
+                  placeholder="Rua, número, bairro, cidade, ponto de referência..."
+                ></textarea>
+              </div>
+
+              <div class="mb-4">
+                <label
+                  for="desiredHaircut"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Qual é a sua expectativa para o atendimento? (opcional)</label
+                >
+                <p id="desiredHaircutHelp" class="text-sm text-gray-700 mb-3">
+                  Sabemos que o objetivo é o corte de cabelo, mas antes dele precisamos
+                  entender as necessidades de cada criança. A família pode nos contar
+                  o corte desejado e suas expectativas. Durante o atendimento,
+                  respeitamos o tempo, os limites e as necessidades da criança,
+                  buscando tornar essa experiência mais segura e positiva.
+                </p>
+                <textarea
+                  id="desiredHaircut"
+                  aria-describedby="desiredHaircutHelp"
+                  class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  rows="2"
+                  placeholder="Conte o corte desejado e suas expectativas para o atendimento."
+                ></textarea>
+              </div>
+
+              <div class="mb-4">
+                <p class="text-sm font-medium text-gray-700 mb-1">
+                  Autoriza o uso de imagem (fotos e vídeos) da criança para fins
+                  institucionais & redes sociais?
+                </p>
+                <div class="space-x-4 text-sm">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="imageAuthorization"
+                      value="Sim"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Sim</span>
+                  </label>
+                  <label class="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="imageAuthorization"
+                      value="Não"
+                      class="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span>Não</span>
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for="howFound"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Como conheceu o CorteAzul? (opcional)</label
+                >
+                <select
+                  id="howFound"
+                  class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value="">Selecione uma opção</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="Indicação de amigo/família">
+                    Indicação de Amigo/Família
+                  </option>
+                  <option value="Google">Pesquisa no Google</option>
+                  <option value="Notícia/Reportagem">
+                    Notícia / Reportagem
+                  </option>
+                  <option value="Outros">Outros</option>
+                </select>
+              </div>
+            </div>
+
+            <p
+              id="errorMessage"
+              role="alert"
+              class="text-sm text-red-600 font-medium hidden mt-2"
+            >
+              Por favor, preencha todos os campos obrigatórios desta etapa.
+            </p>
+
+            <div
+              class="mt-6 flex items-center justify-between border-t pt-4 gap-4"
+            >
+              <button
+                type="button"
+                id="prevStep"
+                class="px-4 py-2 rounded-full border border-gray-300 text-sm font-semibold text-gray-700 hover:bg-gray-100 disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                Voltar
+              </button>
+              <div class="flex gap-3">
+                <button
+                  type="button"
+                  id="nextStep"
+                  class="px-5 py-2 rounded-full bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  Próximo
+                </button>
+                <button
+                  type="submit"
+                  id="submitForm"
+                  class="px-5 py-2 rounded-full bg-green-600 text-white text-sm font-semibold hover:bg-green-700 hidden"
+                >
+                  Enviar pelo WhatsApp
+                </button>
+              </div>
+            </div>
+              <div class="mt-8">
+                <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-900 p-4 rounded-lg text-center text-base font-bold">
+                  Atenção: É necessário <span class="underline">percorrer as 5 etapas</span> da ficha para prosseguir com o agendamento. Campos com * são obrigatórios; os demais são opcionais e podem ficar sem preenchimento, exceto o endereço para atendimento em casa/domicílio.
+                </div>
+              </div>
+          </form>
         </div>
       </section>
 
@@ -892,516 +1410,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Formulário de Anamnese Multi-etapas -->
-
-      <section
-        id="form-anamnese-tea"
-        class="cv-auto py-20 px-6 bg-white flex items-center justify-center"
-      >
-        <div
-          class="w-full max-w-3xl bg-gray-50 rounded-2xl shadow-xl p-6 md:p-10"
-        >
-          <div class="mb-6 text-center">
-            <h2 class="text-2xl md:text-3xl font-bold text-blue-700 mb-2">
-              Ficha de Anamnese – CorteAzul TEA
-            </h2>
-            <p class="text-sm md:text-base text-gray-600">
-              Preencha com atenção as informações da criança para um atendimento
-              personalizado e acolhedor.
-            </p>
-          </div>
-
-          <div class="mb-6">
-            <div class="flex items-center justify-between mb-2 text-sm">
-              <span id="stepLabel" class="font-semibold text-blue-700">
-                Etapa 1 de 5
-              </span>
-              <span id="stepName" class="text-gray-500">Dados básicos</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-2">
-              <div
-                id="progressBar"
-                class="bg-blue-600 h-2 rounded-full transition-all duration-300"
-                style="width: 20%"
-              ></div>
-            </div>
-          </div>
-
-          <form id="anamneseForm" class="space-y-6">
-            <!-- Etapa 1 -->
-            <div class="form-step" data-step="1">
-              <h3 class="text-lg font-semibold mb-4 text-gray-800">
-                Etapa 1 – Dados básicos
-              </h3>
-              <div class="mb-4">
-                <label for="serviceType" class="block text-sm font-medium text-gray-700 mb-1">Serviço desejado *</label>
-                <select id="serviceType" class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                  <option value="">Selecione o serviço</option>
-                  <option value="Corte Kids — R$ 45">Corte Kids — R$ 45</option>
-                  <option value="Corte Lúdico — R$ 65">Corte Lúdico — R$ 65</option>
-                  <option value="Corte TEA Especial — R$ 85">Corte TEA Especial — R$ 85</option>
-                  <option value="Corte Especial – R$ 85">Corte Especial – R$ 85</option>
-                </select>
-                <p class="text-sm text-gray-700 mt-2">Corte Especial: destinado a crianças que não apresentam dificuldade no corte de cabelo.</p>
-              </div>
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label
-                    for="childName"
-                    class="block text-sm font-medium text-gray-700 mb-1"
-                    >Nome da criança *</label
-                  >
-                  <input
-                    type="text"
-                    id="childName"
-                    class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    for="childAge"
-                    class="block text-sm font-medium text-gray-700 mb-1"
-                    >Idade *</label
-                  >
-                  <input
-                    type="number"
-                    id="childAge"
-                    min="0"
-                    class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    for="guardianName"
-                    class="block text-sm font-medium text-gray-700 mb-1"
-                    >Nome do responsável *</label
-                  >
-                  <input
-                    type="text"
-                    id="guardianName"
-                    class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    for="phone"
-                    class="block text-sm font-medium text-gray-700 mb-1"
-                    >Telefone (WhatsApp) *</label
-                  >
-                  <input
-                    type="tel"
-                    id="phone"
-                    placeholder="(51) 98660-4404"
-                    class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    required
-                  />
-                </div>
-                <div class="md:col-span-2 grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label
-                      for="desiredDate"
-                      class="block text-sm font-medium text-gray-700 mb-1"
-                      >Data desejada (opcional)</label
-                    >
-                    <input
-                      type="text"
-                      id="desiredDate"
-                      class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="dd/mm/aaaa"
-                      pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$"
-                      autocomplete="off"
-                      inputmode="numeric"
-                      onfocus="(this.type='date')"
-                      onblur="if(this.value===''){this.type='text'}"
-                    />
-                    <small class="text-gray-500">Clique para abrir o calendário ou digite no formato <b>dd/mm/aaaa</b>.</small>
-                  </div>
-                  <div>
-                    <label
-                      for="desiredTime"
-                      class="block text-sm font-medium text-gray-700 mb-1"
-                      >Horário de preferência (opcional)</label
-                    >
-                    <input
-                      type="time"
-                      id="desiredTime"
-                      class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    <small class="block text-sm text-gray-500 mt-2">Escolha o horário que prefere e confirmaremos a disponibilidade diretamente pelo WhatsApp.</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Etapa 2 -->
-            <div class="form-step hidden" data-step="2">
-              <h3 class="text-lg font-semibold mb-4 text-gray-800">
-                Etapa 2 – Nível de suporte
-              </h3>
-              <p class="text-sm text-gray-600 mb-3">
-                Preenchimento opcional: selecione o nível de suporte (1, 2 ou 3),
-                se aplicável. Se a criança não for autista, pode deixar sem preencher.
-              </p>
-              <div class="space-y-2">
-                <label class="inline-flex items-center">
-                  <input
-                    type="radio"
-                    name="supportLevel"
-                    value="1"
-                    class="mr-2 text-blue-600 focus:ring-blue-500"
-                  />
-                  <span class="text-sm text-gray-700">1</span>
-                </label>
-                <br />
-                <label class="inline-flex items-center">
-                  <input
-                    type="radio"
-                    name="supportLevel"
-                    value="2"
-                    class="mr-2 text-blue-600 focus:ring-blue-500"
-                  />
-                  <span class="text-sm text-gray-700">2</span>
-                </label>
-                <br />
-                <label class="inline-flex items-center">
-                  <input
-                    type="radio"
-                    name="supportLevel"
-                    value="3"
-                    class="mr-2 text-blue-600 focus:ring-blue-500"
-                  />
-                  <span class="text-sm text-gray-700">3</span>
-                </label>
-              </div>
-            </div>
-
-            <!-- Etapa 3 -->
-            <div class="form-step hidden" data-step="3">
-              <h3 class="text-lg font-semibold mb-4 text-gray-800">
-                Etapa 3 – Sensibilidades
-              </h3>
-
-              <div class="mb-4">
-                <p class="text-sm font-medium text-gray-700 mb-1">
-                  A criança possui sensibilidades sensoriais? (água, talco,
-                  máquina, secador, toque, etc) (opcional)
-                </p>
-                <div class="space-x-4 text-sm">
-                  <label class="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="hasSensitivities"
-                      value="Sim"
-                      class="mr-2 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span>Sim</span>
-                  </label>
-                  <label class="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="hasSensitivities"
-                      value="Não"
-                      class="mr-2 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span>Não</span>
-                  </label>
-                </div>
-                <textarea
-                  id="sensitivitiesDescription"
-                  aria-label="Descrição das sensibilidades sensoriais (opcional)"
-                  class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  rows="3"
-                  placeholder="Descreva as sensibilidades (água, talco, máquina, toque, barulhos, etc)"
-                ></textarea>
-              </div>
-
-              <div class="mb-4">
-                <p class="text-sm font-medium text-gray-700 mb-1">
-                  Já teve trauma com secador?
-                </p>
-                <div class="space-x-4 text-sm">
-                  <label class="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="dryerTrauma"
-                      value="Sim"
-                      class="mr-2 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span>Sim</span>
-                  </label>
-                  <label class="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="dryerTrauma"
-                      value="Não"
-                      class="mr-2 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span>Não</span>
-                  </label>
-                </div>
-                <textarea
-                  id="dryerTraumaDescription"
-                  aria-label="Descrição do trauma com secador (opcional)"
-                  class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  rows="2"
-                  placeholder="Se sim, descreva brevemente como foi."
-                ></textarea>
-              </div>
-
-              <div class="mb-2">
-                <p class="text-sm font-medium text-gray-700 mb-1">
-                  Já teve trauma com corte de cabelo?
-                </p>
-                <div class="space-x-4 text-sm">
-                  <label class="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="haircutTrauma"
-                      value="Sim"
-                      class="mr-2 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span>Sim</span>
-                  </label>
-                  <label class="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="haircutTrauma"
-                      value="Não"
-                      class="mr-2 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span>Não</span>
-                  </label>
-                </div>
-                <textarea
-                  id="haircutTraumaDescription"
-                  aria-label="Descrição do trauma com corte de cabelo (opcional)"
-                  class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  rows="2"
-                  placeholder="Se sim, conte um pouco sobre essa experiência."
-                ></textarea>
-              </div>
-            </div>
-
-            <!-- Etapa 4 -->
-            <div class="form-step hidden" data-step="4">
-              <h3 class="text-lg font-semibold mb-4 text-gray-800">
-                Etapa 4 – Informações adicionais
-              </h3>
-
-              <div class="mb-4">
-                <p class="text-sm font-medium text-gray-700 mb-1">
-                  A criança possui hiperfoco em algo específico?
-                </p>
-                <div class="space-x-4 text-sm">
-                  <label class="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="hasHyperfocus"
-                      value="Sim"
-                      class="mr-2 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span>Sim</span>
-                  </label>
-                  <label class="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="hasHyperfocus"
-                      value="Não"
-                      class="mr-2 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span>Não</span>
-                  </label>
-                </div>
-                <textarea
-                  id="hyperfocusDescription"
-                  aria-label="Descrição do hiperfoco (opcional)"
-                  class="mt-3 w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  rows="2"
-                  placeholder="Se sim, descreva o hiperfoco (personagens, brinquedos, temas, etc)."
-                ></textarea>
-              </div>
-
-              <div>
-                <label
-                  for="therapyMedication"
-                  class="block text-sm font-medium text-gray-700 mb-1"
-                  >Faz terapia ou uso de medicação? Se sim, descreva.</label
-                >
-                <textarea
-                  id="therapyMedication"
-                  class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  rows="3"
-                  placeholder="Ex.: Terapia ABA, fono, psicólogo, medicação, etc."
-                ></textarea>
-              </div>
-            </div>
-
-            <!-- Etapa 5 -->
-            <div class="form-step hidden" data-step="5">
-              <h3 class="text-lg font-semibold mb-4 text-gray-800">
-                Etapa 5 – Finalização
-              </h3>
-
-              <div class="mb-4">
-                <p class="text-sm font-medium text-gray-700 mb-1">
-                  Local do atendimento *
-                </p>
-                <div class="space-x-4 text-sm">
-                  <label class="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="serviceLocation"
-                      value="Casa"
-                      class="mr-2 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span>Em casa (domicílio)</span>
-                  </label>
-                  <label class="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="serviceLocation"
-                      value="Ponto de encontro"
-                      class="mr-2 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span>Ponto de encontro / Barbearia</span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="mb-4">
-                <label
-                  for="fullAddress"
-                  class="block text-sm font-medium text-gray-700 mb-1"
-                  >Endereço Completo (obrigatório somente para atendimento em casa/domicílio)</label
-                >
-                <textarea
-                  id="fullAddress"
-                  class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  rows="3"
-                  placeholder="Rua, número, bairro, cidade, ponto de referência..."
-                ></textarea>
-              </div>
-
-              <div class="mb-4">
-                <label
-                  for="desiredHaircut"
-                  class="block text-sm font-medium text-gray-700 mb-1"
-                  >Qual é a sua expectativa para o atendimento? (opcional)</label
-                >
-                <p id="desiredHaircutHelp" class="text-sm text-gray-700 mb-3">
-                  Sabemos que o objetivo é o corte de cabelo, mas antes dele precisamos
-                  entender as necessidades de cada criança. A família pode nos contar
-                  o corte desejado e suas expectativas. Durante o atendimento,
-                  respeitamos o tempo, os limites e as necessidades da criança,
-                  buscando tornar essa experiência mais segura e positiva.
-                </p>
-                <textarea
-                  id="desiredHaircut"
-                  aria-describedby="desiredHaircutHelp"
-                  class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  rows="2"
-                  placeholder="Conte o corte desejado e suas expectativas para o atendimento."
-                ></textarea>
-              </div>
-
-              <div class="mb-4">
-                <p class="text-sm font-medium text-gray-700 mb-1">
-                  Autoriza o uso de imagem (fotos e vídeos) da criança para fins
-                  institucionais & redes sociais?
-                </p>
-                <div class="space-x-4 text-sm">
-                  <label class="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="imageAuthorization"
-                      value="Sim"
-                      class="mr-2 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span>Sim</span>
-                  </label>
-                  <label class="inline-flex items-center">
-                    <input
-                      type="radio"
-                      name="imageAuthorization"
-                      value="Não"
-                      class="mr-2 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span>Não</span>
-                  </label>
-                </div>
-              </div>
-
-              <div>
-                <label
-                  for="howFound"
-                  class="block text-sm font-medium text-gray-700 mb-1"
-                  >Como conheceu o CorteAzul? (opcional)</label
-                >
-                <select
-                  id="howFound"
-                  class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                >
-                  <option value="">Selecione uma opção</option>
-                  <option value="Instagram">Instagram</option>
-                  <option value="Indicação de amigo/família">
-                    Indicação de Amigo/Família
-                  </option>
-                  <option value="Google">Pesquisa no Google</option>
-                  <option value="Notícia/Reportagem">
-                    Notícia / Reportagem
-                  </option>
-                  <option value="Outros">Outros</option>
-                </select>
-              </div>
-            </div>
-
-            <p
-              id="errorMessage"
-              role="alert"
-              class="text-sm text-red-600 font-medium hidden mt-2"
-            >
-              Por favor, preencha todos os campos obrigatórios desta etapa.
-            </p>
-
-            <div
-              class="mt-6 flex items-center justify-between border-t pt-4 gap-4"
-            >
-              <button
-                type="button"
-                id="prevStep"
-                class="px-4 py-2 rounded-full border border-gray-300 text-sm font-semibold text-gray-700 hover:bg-gray-100 disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                Voltar
-              </button>
-              <div class="flex gap-3">
-                <button
-                  type="button"
-                  id="nextStep"
-                  class="px-5 py-2 rounded-full bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed"
-                >
-                  Próximo
-                </button>
-                <button
-                  type="submit"
-                  id="submitForm"
-                  class="px-5 py-2 rounded-full bg-green-600 text-white text-sm font-semibold hover:bg-green-700 hidden"
-                >
-                  Enviar pelo WhatsApp
-                </button>
-              </div>
-            </div>
-              <div class="mt-8">
-                <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-900 p-4 rounded-lg text-center text-base font-bold">
-                  Atenção: É necessário <span class="underline">percorrer as 5 etapas</span> da ficha para prosseguir com o agendamento. Campos com * são obrigatórios; os demais são opcionais e podem ficar sem preenchimento, exceto o endereço para atendimento em casa/domicílio.
-                </div>
-              </div>
-          </form>
         </div>
       </section>
 
