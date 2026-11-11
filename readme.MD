@@ -1,225 +1,223 @@
-# Projeto CorteAzul T.E.A 
+# CorteAzul T.E.A. Project
 
-Site institucional desenvolvido para Jonathan Rodrigues, responsável pelo Corte Azul em Viamão/RS. Apresenta o atendimento infantil humanizado, com foco em crianças com Transtorno do Espectro Autista (T.E.A), e uma área independente de atendimento para idosos.
+Institutional website developed for Jonathan Rodrigues, who is responsible for Corte Azul in Viamão, Rio Grande do Sul, Brazil. It presents humanized care for children, focusing on children with Autism Spectrum Disorder (ASD), as well as an independent service area for seniors.
 
-**Links rápidos:** [Site publicado](https://projeto-corte-azul-tea.vercel.app/) · [Repositório do desenvolvedor no GitHub](https://github.com/NatanLuz)
+**Quick links:** [Published website](https://projeto-corte-azul-tea.vercel.app/) · [Developer's GitHub repository](https://github.com/NatanLuz)
 
-> Esta documentação descreve o código do repositório. A publicação no ambiente do cliente e a disponibilidade dos serviços externos devem ser verificadas separadamente.
+> This documentation describes the repository code. Publication in the client's environment and the availability of external services should be verified separately.
 
-## Sumário do Projeto 
+## Project summary
 
-- [Visão geral e objetivo](#visão-geral-e-objetivo)
-- [Funcionalidades implementadas](#funcionalidades-implementadas)
-- [Serviços e valores](#serviços-e-valores)
-- [Fluxo de atendimento](#fluxo-de-atendimento)
-- [Ficha de anamnese](#ficha-de-anamnese)
-- [Tecnologias e arquitetura](#tecnologias-e-arquitetura)
-- [Estrutura do projeto](#estrutura-do-projeto)
-- [Como executar localmente](#como-executar-localmente)
-- [Qualidade, testes e checklist](#qualidade-testes-e-checklist)
-- [Manutenção e contribuição](#manutenção-e-contribuição)
-- [Deploy e produção](#deploy-e-produção)
+- [Overview and objective](#overview-and-objective)
+- [Implemented features](#implemented-features)
+- [Services and prices](#services-and-prices)
+- [Service flow](#service-flow)
+- [Anamnesis form](#anamnesis-form)
+- [Technologies and architecture](#technologies-and-architecture)
+- [Project structure](#project-structure)
+- [How to run locally](#how-to-run-locally)
+- [Quality, testing, and checklist](#quality-testing-and-checklist)
+- [Maintenance and contribution](#maintenance-and-contribution)
+- [Deployment and production](#deployment-and-production)
 - [Roadmap](#roadmap)
-- [Responsáveis e licença](#responsáveis-e-licença)
+- [Owners and license](#owners-and-license)
 
-## Visão geral e objetivo
+## Overview and objective
 
-O site reúne informações sobre o projeto, serviços, valores, orientações de agendamento, localização e conteúdos de divulgação. A ficha de anamnese permite à família informar necessidades e preferências da criança e preparar uma mensagem para contato pelo WhatsApp.
+The website brings together information about the project, services, prices, scheduling guidelines, location, and promotional content. The anamnesis form allows the family to provide the child's needs and preferences and prepare a WhatsApp contact message.
 
-**O que o projeto é:** um site estático, com HTML, CSS e JavaScript.
+**What the project is:** a static website using HTML, CSS, and JavaScript.
 
-**O que o projeto não tem:** backend, banco de dados, API própria, CMS, autenticação, agendamento automático ou processamento de pagamentos.
+**What the project does not have:** a backend, database, proprietary API, CMS, authentication, automatic scheduling, or payment processing.
 
-Pontos importantes sobre o atendimento:
+Important information about the service:
 
-- Agendamento e confirmação de disponibilidade são tratados diretamente com o profissional pelo WhatsApp.
-- Não há agenda integrada nem reserva automática.
-- As orientações de sinal via PIX são apenas informativas: o site não verifica pagamentos nem comprovantes.
+- Scheduling and availability confirmation are handled directly with the professional through WhatsApp.
+- There is no integrated calendar or automatic reservation.
+- PIX deposit instructions are for informational purposes only: the website does not verify payments or receipts.
 
-## Funcionalidades implementadas
+## Implemented features
 
-- Apresentação do profissional, do projeto e dos diferenciais do atendimento.
-- Seção sobre a história do Corte Azul em livro, após a apresentação institucional, com destaque decorativo preparado para receber material do cliente. Não há capa ou vídeo específico do livro incorporado.
-- Serviços infantis, valores e políticas de atendimento.
-- Atendimento a domicílio infantil, com o texto “Atendimento a domicílio – valor a combinar.”
-- Opção “Corte Especial – R$ 85” na ficha, indicada para crianças sem dificuldade no corte. Não há cartão independente desse serviço.
-- Área de idosos com botões diretos para WhatsApp, sem utilizar a ficha infantil.
-- Ficha infantil em cinco etapas, com validações no navegador e mensagem preparada para WhatsApp.
-- Notícias, entrevistas, vídeos e imagens de avaliações incluídos diretamente no HTML.
-- Links para Instagram, Google Maps e Waze, além de mapa incorporado.
-- Menu responsivo, navegação por âncoras e botão de retorno ao topo.
-- Recursos básicos de acessibilidade: link para pular ao conteúdo, nomes acessíveis, rótulos, indicação de foco e alerta de erro na ficha.
+- Presentation of the professional, project, and service differentiators.
+- Section about the history of Corte Azul in a book, after the institutional presentation, with a decorative highlight prepared to receive client material. No specific book cover or video is embedded.
+- Children's services, prices, and service policies.
+- Children's in-home service, with the text “In-home service — price to be agreed.”
+- “Special Haircut — R$ 85” option in the form, intended for children without difficulty during haircuts. There is no separate card for this service.
+- Senior area with direct WhatsApp buttons, without using the children's form.
+- Five-step children's form, with browser validation and a message prepared for WhatsApp.
+- News, interviews, videos, and review images included directly in the HTML.
+- Links to Instagram, Google Maps, and Waze, in addition to an embedded map.
+- Responsive menu, anchor navigation, and back-to-top button.
+- Basic accessibility features: skip-to-content link, accessible names, labels, focus indication, and form error alert.
 
-## Serviços e Valores
+## Services and prices
 
-| Serviço | Apresentação atual | Valor |
-|---|---|---|
-| Corte Kids | Cartão e opção na ficha infantil | R$ 45 |
-| Corte Lúdico | Cartão e opção na ficha infantil | R$ 65 |
-| Corte TEA Especial | Cartão e opção na ficha infantil | R$ 85 |
-| Corte Especial | Opção na ficha infantil | R$ 85 |
-| Atendimento a domicílio infantil | Informação na seção de serviços | Valor a combinar |
-| Idoso acamado — Porto Alegre | Área de idosos, contato direto por WhatsApp | R$ 80 |
-| Atendimento para idosos em Viamão | Área de idosos, contato direto por WhatsApp | R$ 70 |
+| Service | Current presentation | Price |
+| --------------------------------- | ------------------------------------------- | ---------------- |
+| Kids Haircut | Card and option in the children's form | R$ 45 |
+| Playful Haircut | Card and option in the children's form | R$ 65 |
+| Special ASD Haircut | Card and option in the children's form | R$ 85 |
+| Special Haircut | Option in the children's form | R$ 85 |
+| Children's in-home service | Information in the services section | Price to be agreed |
+| Bedridden senior — Porto Alegre | Senior area, direct WhatsApp contact | R$ 80 |
+| Senior service in Viamão | Senior area, direct WhatsApp contact | R$ 70 |
 
-## Fluxo de atendimento
+## Service flow
 
-**Infantil:** apresentação → serviços e orientações → cinco etapas da ficha → mensagem preparada no WhatsApp → contato e confirmação com o profissional.
+**Children:** presentation → services and guidelines → five form steps → message prepared in WhatsApp → contact and confirmation with the professional.
 
-**Idosos:** área de idosos → escolha de cidade/serviço → WhatsApp com mensagem preenchida → contato e confirmação com o profissional.
+**Seniors:** senior area → city/service selection → WhatsApp with a pre-filled message → contact and confirmation with the professional.
 
-O site abre o WhatsApp com o texto codificado na URL. Ele **não** envia a mensagem automaticamente, não recebe confirmação de envio e não registra o agendamento.
+The website opens WhatsApp with the encoded text in the URL. It **does not** send the message automatically, receive confirmation of delivery, or register the appointment.
 
-## Ficha de anamnese
+## Anamnesis form
 
-### Etapas
+### Steps
 
-| Etapa | Conteúdo |
-|---|---|
-| 1 — Dados básicos | Serviço, criança, idade, responsável, telefone, data e horário |
-| 2 — Nível de suporte | Seleção opcional de nível 1, 2 ou 3 |
-| 3 — Sensibilidades | Sensibilidades e histórico de trauma com secador ou corte |
-| 4 — Informações adicionais | Hiperfoco, terapia e medicação |
-| 5 — Finalização | Local, endereço, expectativa/corte desejado, autorização de imagem e origem do contato |
+| Step | Content |
+| -------------------------- | -------------------------------------------------------------------------------------- |
+| 1 — Basic information | Service, child, age, guardian, phone, date, and time |
+| 2 — Support level | Optional selection of level 1, 2, or 3 |
+| 3 — Sensitivities | Sensitivities and history of trauma involving a hair dryer or haircut |
+| 4 — Additional information | Hyperfocus, therapy, and medication |
+| 5 — Completion | Location, address, expectations/desired haircut, image authorization, and contact source |
 
-### Regras de validação
+### Validation rules
 
-**Campos obrigatórios:** serviço, nome da criança, idade, nome do responsável, telefone e local do atendimento.
+**Required fields:** service, child's name, age, guardian's name, phone number, and service location.
 
-**Endereço:** obrigatório somente quando `serviceLocation` tem o valor `Casa`. Para “Ponto de encontro / Barbearia”, pode ficar vazio.
+**Address:** required only when `serviceLocation` has the value `Casa`. For “Meeting point / Barbershop,” it may be left blank.
 
-**Telefone:** deve conter 10 ou 11 dígitos, incluindo DDD.
+**Phone:** must contain 10 or 11 digits, including the area code.
 
-**Demais campos:** opcionais.
+**Other fields:** optional.
 
-- O nível de suporte pode ficar vazio, inclusive para crianças não autistas. Não existe campo específico de diagnóstico.
-- Data e horário preenchidos continuam sujeitos às validações existentes.
-- O campo `desiredHaircut` é opcional e representa a expectativa da família e o corte desejado. Sua orientação é associada por `aria-describedby`.
+- The support level may be left blank, including for non-autistic children. There is no specific diagnosis field.
+- Entered date and time remain subject to the existing validations.
+- The `desiredHaircut` field is optional and represents the family's expectations and desired haircut. Its guidance is associated through `aria-describedby`.
 
-### Mensagem gerada
+### Generated message
 
-Opcionais vazios aparecem como “Não informado” ou “Sem descrição”, conforme o campo. A ausência de resposta sobre uso de imagem aparece como “Não informado” e **não** equivale a autorização.
+Empty optional fields appear as “Not provided” or “No description,” depending on the field. The absence of an answer about image usage appears as “Not provided” and **does not** constitute authorization.
 
-## Tecnologias e arquitetura
+## Technologies and architecture
 
-| Tecnologia | Uso |
-|---|---|
-| HTML5 | Conteúdo institucional, seções e formulário |
-| CSS3 | Estilos locais, animações, foco e ajustes de apresentação |
-| Tailwind CSS (via CDN) | Classes utilitárias e responsividade |
-| JavaScript (sem framework) | Menu, âncoras, efeitos de rolagem, etapas da ficha, validações e composição do link do WhatsApp |
-| Google Fonts | Fonte Inter |
-| Font Awesome (via CDN) | Ícones |
-| Web App Manifest | Metadados em `public/manifest.json` |
+| Technology | Use |
+| -------------------------- | ----------------------------------------------------------------------------------------------- |
+| HTML5 | Institutional content, sections, and form |
+| CSS3 | Local styles, animations, focus, and presentation adjustments |
+| Tailwind CSS (via CDN) | Utility classes and responsiveness |
+| JavaScript (no framework) | Menu, anchors, scrolling effects, form steps, validation, and WhatsApp link composition |
+| Google Fonts | Inter font |
+| Font Awesome (via CDN) | Icons |
+| Web App Manifest | Metadata in `public/manifest.json` |
 
-### Arquitetura
+### Architecture
 
-A arquitetura é estática, com separação entre conteúdo (`index.html`), estilos locais (`style.css`) e comportamento (`script.js`). Não há React, backend, banco de dados, API própria, CMS ou autenticação.
+The architecture is static, with a separation between content (`index.html`), local styles (`style.css`), and behavior (`script.js`). There is no React, backend, database, proprietary API, CMS, or authentication.
 
-### Observações técnicas
+### Technical notes
 
-- **Tailwind:** a configuração usada pela página está no HTML. O arquivo `tailwind.config.js` também existe, mas não há build configurado para consumi-lo.
-- **Diretivas `@apply`:** o CSS local contém algumas, que dependem de processamento Tailwind e não são CSS nativo. Sem build configurado, não se deve presumir que sejam processadas pelo navegador. A página também usa classes utilitárias diretamente no HTML.
-- **PWA:** há manifest, mas não há service worker nem suporte offline implementado.
-- **Dados da ficha:** são lidos do DOM e incluídos no link do WhatsApp. Não há persistência própria desses dados no código atual.
-- **Serviços de terceiros:** fontes, CDNs, mapa e links externos dependem de serviços externos.
+- **Tailwind:** the configuration used by the page is in the HTML. The `tailwind.config.js` file also exists, but no build is configured to consume it.
+- **`@apply` directives:** the local CSS contains some directives that depend on Tailwind processing and are not native CSS. Without a configured build, they should not be assumed to be processed by the browser. The page also uses utility classes directly in the HTML.
+- **PWA:** there is a manifest, but no service worker or offline support is implemented.
+- **Form data:** data is read from the DOM and included in the WhatsApp link. There is no native persistence for this data in the current code.
+- **Third-party services:** fonts, CDNs, the map, and external links depend on external services.
 
-## Estrutura do projeto
+## Project structure
 
 ```text
 ProjetoCorteAzulTea/
-├── public/                         # Diretório a servir/publicar
-│   ├── index.html                  # Conteúdo, layout e ficha
-│   ├── manifest.json               # Metadados do web app
+├── public/                         # Directory to serve/publish
+│   ├── index.html                  # Content, layout, and form
+│   ├── manifest.json               # Web app metadata
 │   └── assets/
-│       ├── css/style.css            # Estilos locais
-│       ├── js/script.js             # Interatividade e ficha
-│       └── img/                     # Imagens, ícones SVG e vídeos
-├── tailwind.config.js              # Configuração presente, sem build integrado
-├── readme.MD                       # Documentação
+│       ├── css/style.css            # Local styles
+│       ├── js/script.js             # Interactivity and form
+│       └── img/                     # Images, SVG icons, and videos
+├── tailwind.config.js              # Present configuration, without integrated build
+├── readme.MD                       # Documentation
 ├── .gitignore
 ├── homecorteazultea.PNG
 ├── servicoscorteazultea.PNG
 ├── contatocorteazultea.PNG
-└── FichaAnamnese.PNG                # Capturas históricas
+└── FichaAnamnese.PNG                # Historical screenshots
 ```
 
-As capturas na raiz são referências históricas e podem não refletir as alterações recentes. Depoimentos e notícias são estáticos: não há `depoimentos.js` nem carga de dados por JSON na versão atual.
+The screenshots in the root are historical references and may not reflect recent changes. Testimonials and news are static: there is no `depoimentos.js` or JSON data loading in the current version.
 
-## Como executar localmente
+## How to run locally
 
-Não é necessário instalar dependências do projeto nem executar build. A partir da raiz do repositório, sirva a pasta `public`.
+No project dependencies need to be installed and no build needs to be run. From the repository root, serve the `public` directory.
 
-Com Python 3 instalado:
+With Python 3 installed:
 
 ```sh
 python -m http.server 8000 --directory public
 ```
 
-Alternativamente, com Node.js e npm disponíveis:
+Alternatively, with Node.js and npm available:
 
 ```sh
 npx http-server public -p 8000
 ```
 
-O segundo comando pode baixar o `http-server`, que não é uma dependência versionada do projeto.
+The second command may download `http-server`, which is not a versioned project dependency.
 
-Acesse `http://localhost:8000`.
+Open `http://localhost:8000`.
 
-- É necessário acesso à internet para carregar Tailwind, fontes, ícones e mapa externos.
-- Abrir `public/index.html` diretamente permite uma conferência básica, mas o servidor local é preferível para validação.
+- Internet access is required to load Tailwind, fonts, icons, and the external map.
+- Opening `public/index.html` directly allows a basic check, but a local server is preferable for validation.
 
-## Qualidade, testes e checklist
+## Quality, testing, and checklist
 
-### Verificações já realizadas
+### Checks already performed
 
-Na revisão de manutenção foram realizados:
+The maintenance review included:
 
-- Verificação estática de IDs, âncoras, referências ARIA, caminhos locais, fechamentos HTML e sintaxe JavaScript.
-- Testes em navegador headless nas larguras de 320, 375, 768, 1024 e 1440 px, sem overflow horizontal observado após os ajustes.
-- Testes do menu, campos obrigatórios, idade negativa e telefone inválido.
-- Percurso das cinco etapas com opcionais vazios, bloqueio de endereço para atendimento em casa e geração da mensagem sem endereço para barbearia.
-- Conferência da expectativa e dos valores substitutos na mensagem, interceptando a navegação ao WhatsApp, sem envio real.
-- `git diff --check` e conferência de ausência de exceções JavaScript no cenário testado.
+- Static verification of IDs, anchors, ARIA references, local paths, HTML closing tags, and JavaScript syntax.
+- Headless browser tests at widths of 320, 375, 768, 1024, and 1440 px, with no horizontal overflow observed after the adjustments.
+- Tests of the menu, required fields, negative age, and invalid phone number.
+- Completion of all five steps with empty optional fields, address blocking for in-home service, and message generation without an address for the barbershop.
+- Verification of expectations and fallback values in the message by intercepting navigation to WhatsApp, without actually sending anything.
+- `git diff --check` and confirmation that there were no JavaScript exceptions in the tested scenario.
 
-### Limites
+### Limitations
 
-Essas verificações **não** constituem certificação de acessibilidade, teste completo entre navegadores ou garantia de disponibilidade externa. Não há suíte automatizada de testes nem pipeline de QA versionados.
+These checks **do not** constitute accessibility certification, complete cross-browser testing, or a guarantee of external availability. There is no automated test suite or versioned QA pipeline.
 
-### Checklist antes de cada entrega
+### Checklist before each delivery
 
-1. Conferir menu, âncoras, foco e apresentação em celular real, tablet e desktop, incluindo zoom de 200%.
-2. Confirmar nomes, valores, separação dos serviços e contato direto dos idosos.
-3. Percorrer Próximo/Voltar e testar obrigatórios, opcionais, telefone e data/horário preenchidos.
-4. Testar endereço vazio com `Casa` e `Ponto de encontro`, inclusive após trocar a seleção.
-5. Conferir a mensagem com expectativa preenchida e vazia e autorização de imagem não informada, sem enviar mensagens de teste ao cliente.
-6. Abrir Instagram, notícias e rotas; verificar mapa, vídeos e imagens.
-7. Conferir rótulos e orientação com leitor de tela.
-8. Executar `git diff --check` e, com Node.js instalado, `node --check public/assets/js/script.js`.
+1. Check the menu, anchors, focus, and presentation on a real mobile device, tablet, and desktop, including 200% zoom.
+2. Confirm names, prices, service separation, and direct contact for seniors.
+3. Go through Next/Back and test required fields, optional fields, phone number, and entered date/time.
+4. Test an empty address with `Casa` and `Meeting point`, including after changing the selection.
+5. Check the message with filled and empty expectations and image authorization not provided, without sending test messages to the client.
+6. Open Instagram, news, and routes; check the map, videos, and images.
+7. Check labels and guidance with a screen reader.
+8. Run `git diff --check` and, with Node.js installed, `node --check public/assets/js/script.js`.
 
-## Manutenção e contribuição
+## Maintenance and contribution
 
-- **Conteúdo e valores** são mantidos em `public/index.html`.
-- **Alterações na ficha** exigem revisar `public/index.html` e `public/assets/js/script.js` em conjunto: indicadores visuais, validações, identificadores e texto da mensagem devem permanecer coerentes.
-- **Fluxo de trabalho:** use branches por tarefa e commits separados para mudanças independentes. Revise o diff antes de integrar na `main`, preservando preços e fluxos de outros públicos.
-- **Após publicar,** repita a conferência em produção. Uma alteração no repositório não comprova que ela já esteja publicada.
+- **Content and prices** are maintained in `public/index.html`.
+- **Changes to the form** require reviewing `public/index.html` and `public/assets/js/script.js` together: visual indicators, validation, identifiers, and message text must remain consistent.
+- **Workflow:** use branches per task and separate commits for independent changes. Review the diff before integrating into `main`, preserving prices and flows for other audiences.
+- **After publishing,** repeat the verification in production. A repository change does not prove that it has already been published.
 
-## Deploy e produção
+## Deployment and production
 
-Endereço registrado para o projeto: [CorteAzul T.E.A. na Vercel](https://projeto-corte-azul-tea.vercel.app/).
+Registered project address: [CorteAzul T.E.A. on Vercel](https://projeto-corte-azul-tea.vercel.app/).
 
-O repositório contém arquivos estáticos para servir a partir de `public`. Não há `vercel.json`, workflow de deploy ou comando de build versionado.
+The repository contains static files to be served from `public`. There is no `vercel.json`, deployment workflow, or versioned build command.
 
-- Configure a hospedagem para servir `public`, sem build obrigatório, e valide `assets/`, manifest e links após a publicação.
-- A conexão Git, a branch de produção e o diretório publicado precisam ser conferidos no painel da hospedagem.
-- O repositório não comprova que cada push dispara deploy automático.
-- O endereço de produção não foi validado nesta atualização de documentação.
+- Configure hosting to serve `public`, with no mandatory build, and validate `assets/`, the manifest, and links after publication.
+- The Git connection, production branch, and published directory must be checked in the hosting dashboard.
+- The repository does not prove that every push triggers an automatic deployment.
+- The production address was not validated in this documentation update.
 
-Agenda integrada, CMS, painel administrativo, envio por e-mail, analytics e PWA offline **não estão implementados** e não são compromissos de entrega desta manutenção.
+Integrated scheduling, a CMS, an administration panel, email sending, analytics, and offline PWA **are not implemented** and are not delivery commitments for this maintenance.
 
-## Responsáveis e licença
+## Owners 
 
-- **Cliente:** Jonathan Rodrigues — CorteAzul T.E.A.
-
-- **Desenvolvedor:** Natan Da Luz — [GitHub](https://github.com/NatanLuz).
-
+- **Client:** Jonathan Rodrigues — CorteAzul T.E.A.
+- **Developer:** Natan Da Luz — [GitHub](https://github.com/NatanLuz).
