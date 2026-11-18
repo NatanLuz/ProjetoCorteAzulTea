@@ -1,4 +1,4 @@
-# CorteAzul T.E.A. Project
+# CorteAzul T.E.A Project
 
 Institutional website developed for Jonathan Rodrigues, who is responsible for Corte Azul in Viamão, Rio Grande do Sul, Brazil. It presents humanized care for children, focusing on children with Autism Spectrum Disorder (ASD), as well as an independent service area for seniors.
 
