@@ -36,7 +36,7 @@ Important information about the service:
 - There is no integrated calendar or automatic reservation.
 - PIX deposit instructions are for informational purposes only: the website does not verify payments or receipts.
 
-## Implemented features
+## Implemented Features
 
 - Presentation of the professional, project, and service differentiators.
 - Section about the history of Corte Azul in a book, after the institutional presentation, with a decorative highlight prepared to receive client material. No specific book cover or video is embedded.
